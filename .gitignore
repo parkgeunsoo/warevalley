@@ -1,0 +1,21 @@
+# .gitignore 예시
+
+# 특정 파일 무시
+file.txt
+
+# 특정 확장자의 모든 파일 무시
+*.log
+
+# 특정 디렉토리 무시
+logs/
+
+# 디렉토리 내의 모든 .md 파일 무시
+docs/*.md
+
+# 특정 디렉토리 및 하위 디렉토리 무시
+build/
+
+# 특정 패턴을 가진 파일 무시
+*.tmp
+*dist
+*node_modules
