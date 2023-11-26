@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap" class="login bg-gray">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div class="sign-container">
+      <div class="content">
+        <div class="login-head">
+          <div class="top-head">
+            <a href="javascript:void(0)" class="back">
+              <i class="icon-back"></i>
+            </a>
+            <p class="sign-title">비밀번호 재설정</p>
+          </div>
+        </div>
+        <div class="sign-content">
+          <div class="input-form">
+            <p class="input-form-title">아이디</p>
+            <input type="text" class="form-control" value="test" readonly>
+            <!-- <p class="input-txt">일치하지 않습니다</p> -->
+          </div>
+          <div class="input-form">
+            <p class="input-form-title">비밀번호</p>
+            <input type="text" class="form-control" value="" placeholder="새로운 비밀번호를 입력해주세요 ​">
+            <!-- <p class="input-txt">일치하지 않습니다</p> -->
+          </div>
+          <div class="input-form">
+            <p class="input-form-title">비밀번호 확인</p>
+            <input type="text" class="form-control" value="" placeholder="새로운 비밀번호를 한번 더 입력해주세요 ​">
+            <!-- <p class="input-txt">일치하지 않습니다</p> -->
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn login-btn btn-dark">비밀번호 변경</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('html').addClass('bg-gray');
+  })
+</script>
+
+</html>

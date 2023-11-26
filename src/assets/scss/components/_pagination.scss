@@ -1,0 +1,23 @@
+.navigation{
+    display: flex; align-items: center; justify-content: center; margin-top: 50px; gap: 5px;
+    .page-prev, .page-next{
+        a{padding: 0;}
+    }
+    .pagination{
+        display: flex; align-items: center; gap: 5px;
+    }
+    a{ 
+      width: 34px; height: 34px; border:1px solid #eeee; display: flex; align-items: center; justify-content: center; font-size: 12px; font-family:'Pretendard';
+      &.active{ background-color: #202020; color:#fff;}
+    }
+    @include media-breakpoint-up(lg){
+        gap: 10px; margin-top: 100px;
+        .pagination{
+            gap:10px;
+        }
+        a{ 
+          width: 48px; height: 48px; font-size: 16px;
+          &.active{ background-color: #202020; color:#fff;}
+        }
+    }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap" class="login bg-gray">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div class="sign-container">
+      <div class="content h-auto">
+        <div class="login-head">
+          <div class="top-head">
+            <a href="javascript:void(0)" class="back">
+              <i class="icon-back"></i>
+            </a>
+            <p class="sign-title">회원가입</p>
+          </div>
+        </div>
+        <div class="sign-content">
+          <!-- 회원구분 -->
+          <p class="signup-title">회원 정보</p>
+          <div class="input-form">
+            <p class="input-form-title">회원구분</p>
+            <div class="radio-form">
+              <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="capacity" id="btncheck1">
+                <label class="form-check-label" for="btncheck1">기관회원​</label>
+              </div>
+              <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="capacity" id="btncheck2">
+                <label class="form-check-label" for="btncheck2">일반회원​</label>
+              </div>
+            </div>
+          </div>
+          <!-- 아이디 -->
+          <div class="input-form">
+            <p class="input-form-title">아이디<span class="text-danger">*</span></p>
+            <input type="text" class="form-control" value="" placeholder="아이디를 입력하세요 ​">
+            <!-- <p class="input-txt">아이디는 생성규칙</p> -->
+          </div>
+          <!-- 이름 -->
+          <div class="input-form">
+            <p class="input-form-title">이름<span class="text-danger">*</span></p>
+            <input type="text" class="form-control" value="" placeholder="이름을 입력하세요 ​">
+            <!-- <p class="input-txt">이름은 필수항목입니다.​</p> -->
+          </div>
+          <!-- 비밀번호 -->
+          <div class="input-form">
+            <p class="input-form-title">비밀번호<span class="text-danger">*</span></p>
+            <input type="password" class="form-control" value="" placeholder="비밀번호를 입력하세요 ​">
+            <!-- <p class="input-txt">비밀번호는 생성규칙</p> -->
+          </div>
+          <!-- 비밀번호 확인 -->
+          <div class="input-form">
+            <p class="input-form-title">비밀번호 확인<span class="text-danger">*</span></p>
+            <input type="password" class="form-control" value="" placeholder="비밀번호를 입력하세요 ​">
+            <!-- <p class="input-txt">비밀번호와 비밀번호 확인이 일치하지 않습니다.​</p> -->
+          </div>
+          <!-- 휴대폰 -->
+          <div class="input-form">
+            <p class="input-form-title">휴대폰번호<span class="text-danger">*</span>​</p>
+            <div class="certification-form">
+              <div class="">
+                <input type="number" class="form-control" placeholder="휴대폰번호를 입력하세요 ​">
+                <button type="button" class="btn btn-outline-primary round">인증번호 발송</button>
+              </div>
+              <!-- <p class="input-txt">일치하지 않습니다</p> -->
+            </div>
+            <div class="time-form">
+              <input type="number" class="form-control" placeholder="인증번호를 입력하세요 ​">
+              <p class="timer">03:00</p>
+              <!-- <p class="input-txt">일치하지 않습니다</p> -->
+            </div>
+          </div>
+          <!-- 이메일 -->
+          <div class="input-form">
+            <p class="input-form-title">이메일<span class="text-danger">*</span></p>
+            <div class="certification-form">
+              <div class="">
+                <input type="email" class="form-control" placeholder="이메일을 입력하세요 ​">
+                <button type="button" class="btn btn-outline-primary round">인증번호 발송</button>
+              </div>
+              <p class="input-txt">일치하지 않습니다</p>
+            </div>
+            <div class="time-form">
+              <input type="number" class="form-control" placeholder="인증번호를 입력하세요 ​">
+              <p class="timer">03:00</p>
+              <!-- <p class="input-txt">일치하지 않습니다</p> -->
+            </div>
+          </div>
+
+          <!-- 기관정보 체크했을 때  -->
+          <!-- 기관분류 -->
+          <p class="signup-title">기관 정보</p>
+          <div class="input-form">
+            <p class="input-form-title">기관 분류<span class="text-danger">*</span></p>
+            <select name="" id="" class="form-select">
+              <option value="">유치원</option>
+            </select>
+          </div>
+          <!-- 원 명 -->
+          <div class="input-form">
+            <p class="input-form-title">원 명<span class="text-danger">*</span></p>
+            <div class="search-form" data-bs-toggle="modal" data-bs-target="#modal-won-search">
+              <input type="text" class="form-control" value="" readonly placeholder="원을 검색해주세요">
+              <i class="icon-search"></i>
+            </div>
+          </div>
+          <!-- 사업자번호(고유번호) -->
+          <div class="input-form">
+            <p class="input-form-title">사업자번호(고유번호)<span class="text-danger">*</span></p>
+            <input type="number" class="form-control" value="" placeholder="사업자번호(고유번호)를 입력해주세요 ​">
+            <!-- <p class="input-txt">비밀번호와 비밀번호 확인이 일치하지 않습니다.​</p> -->
+          </div>
+          <!-- 사업자등록증 첨부 -->
+          <div class="input-form">
+            <p class="input-form-title">사업자등록증 첨부<span class="text-danger">*</span></p>
+            <input type="file" class="form-control" value="" placeholder=" ​">
+            <!-- <p class="input-txt">비밀번호와 비밀번호 확인이 일치하지 않습니다.​</p> -->
+          </div>
+
+          <!-- 약관동의 -->
+          <p class="signup-title">유아스토리 이용약관에 동의해주세요</p>
+          <div class="agree-form">
+            <div class="form-check all-check">
+              <input type="checkbox" class="form-check-input" name="capacity" id="allCheck">
+              <label class="form-check-label" for="allCheck">모두 동의합니다.</label>
+            </div>
+            <p class="desc">
+              동의에는 필수 및 선택 목적에 대한 동의가 포함되어 있으며,​<br class="d-none d-lg-block">
+              선택 목적의 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.​
+            </p>
+            <div class="agree-content">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="capacity" id="check1">
+                <label class="form-check-label" for="check1">[필수] 약관제목</label>
+              </div>
+              <div class="txt-box">
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+              </div>
+            </div>
+            <div class="agree-content">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="capacity" id="check2">
+                <label class="form-check-label" for="check2">[필수] 약관제목</label>
+              </div>
+              <div class="txt-box">
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+              </div>
+            </div>
+            <div class="agree-content">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="capacity" id="check3">
+                <label class="form-check-label" for="check3">[선택] 약관제목</label>
+              </div>
+              <div class="txt-box">
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+                약관내용 약관내용 약관내용 약관내용 약관내용<br>
+              </div>
+            </div>
+          </div>
+
+          <!-- 메일 수신여부 -->
+          <div class="input-form">
+            <p class="input-form-title">메일 수신여부</p>
+            <div class="radio-form">
+              <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="reception" id="reception1">
+                <label class="form-check-label" for="reception1">수신</label>
+              </div>
+              <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="reception" id="reception2">
+                <label class="form-check-label" for="reception2">미수신</label>
+              </div>
+            </div>
+          </div>
+          <!-- 문자 수신여부 -->
+          <div class="input-form">
+            <p class="input-form-title">문자 수신여부</p>
+            <div class="radio-form">
+              <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="capacity" id="btncheck1">
+                <label class="form-check-label" for="btncheck1">수신</label>
+              </div>
+              <div class="form-check-inline">
+                <input type="radio" class="form-check-input" name="capacity" id="btncheck2">
+                <label class="form-check-label" for="btncheck2">미수신</label>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-dark login-btn">가입하기</button>
+            <button type="button" class="btn login-btn">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('html').addClass('bg-gray');
+  })
+</script>
+
+</html>

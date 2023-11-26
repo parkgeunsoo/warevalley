@@ -1,0 +1,142 @@
+
+.scroll-tab{
+  &.date-tab {margin-bottom: 82px;}
+  .nav-tabs{
+    gap: 8px; width: auto;  
+    .nav-item{
+      width: auto; flex: 0 0 auto;
+      .nav-link{
+        width: 100%; font-size: 14px;line-height: 24px; padding: 10px 20px; font-weight: 500; border-radius: 0; border: 0; background-color: #f7f7f7; border-radius: 160px; color: #666;
+        &.active{
+          color: $white; background-color: #000;
+        }
+      }
+    }
+    &.mypage{
+      gap: 24px; 
+      &:not(.plan) {
+        border-bottom: 1px solid $border-color;
+      }
+      .nav-item{
+        .nav-link{
+          width: 100%; font-size: 14px; line-height: 150%; padding: 14px 0; font-weight: 600; border: 0; background-color: transparent; color: #999; position: relative; letter-spacing: -0.28px;
+          &.active{
+            color: $dark; background-color: transparent;
+            &::after{
+              content:""; position: absolute; width: 100%; height: 3px; left: 0; bottom: 0; background-color: $dark;
+            }
+          }
+        }
+      }
+    }
+    &.date{
+      gap: 30px; border-color: $border-color;
+      .nav-item{
+        .nav-link{
+          width: 100%; font-size: 14px; line-height: 150%; padding: 7px 3px 11px; font-weight: 400; border: 0; background-color: transparent; color: #999; position: relative;
+          strong {font-weight: 700;}
+          &.active{
+            color: $primary; background-color: transparent; font-weight: 600;
+            &::after{
+              content:""; position: absolute; width: 100%; height: 3px; left: 0; bottom: 0; background-color: $primary;
+            }
+          }
+        }
+      }
+    }
+    &.table-tab {
+      margin: 28px 0 33px;
+      /* border: 0; margin: 60px 0 16px;
+      .nav-item{
+        .nav-link{
+          padding: 8px 16px; 
+          &.active{background-color: $primary;}
+        }
+      }
+      &.tab-center{margin: 0 0 40px;} */
+    }
+    &.detail-content {
+      border-top: 1px solid $border-color; margin-bottom: 60px; gap: 0;
+      .nav-item {
+        .nav-link{
+          border-radius: 0; padding: 16px 32px;
+          &.active {
+            background-color: $bg-color;
+            &::after{content: none;}
+          }
+        }  
+      }
+    }
+  }
+  @include media-breakpoint-down(lg){
+    margin-left: -16px;margin-right: -16px;
+    .nav-tabs{
+      white-space: nowrap;overflow-x: auto;overflow-y: hidden; padding: 1px 18px; flex-wrap: nowrap;justify-content: flex-start; border-bottom: 0;
+      &::-webkit-scrollbar{
+        display:none;
+      }
+      &.detail-content {padding: 0;}
+    }
+  }
+  @include media-breakpoint-up(lg){
+    .nav-tabs{
+      border-bottom: 0; flex-flow: inherit;
+      .nav-item{
+        .nav-link{
+          font-size: 16px; line-height: 150%; padding: 12px 26px;
+        }
+      }
+      &.mypage{
+        .nav-item{
+          .nav-link{
+            font-size: 18px;
+          }
+        }
+      }
+      &.date {
+        justify-content: center; gap: 42px; border-bottom: 1px solid $border-color;
+        .nav-item{
+          .nav-link {
+            font-size: 15px; letter-spacing: -0.3px;
+          }
+        }
+      }
+      &.table-tab {
+        justify-content: center; margin: 60px 0 40px;
+        /* margin: 80px 0 32px;
+        .nav-item{
+          .nav-link{
+            padding: 12px 26px; 
+          }
+        } 
+        &.tab-center {
+          justify-content: center; margin: 0 0 40px;} */
+        }  
+    }
+  }
+}
+.common-depth{
+  background-color: #F8F8F8;
+  ul{
+    margin-bottom: 20px; display: flex; align-items: center; justify-content: center;
+    li{
+      padding: 16px; 
+      &.active{
+        a{ font-weight: 600; color: $primary;}
+      }
+      a{
+        font-size: 16px; color: #999; font-weight: 500; line-height: 150%;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg){
+    background-color: #F8F8F8;
+    ul{
+      display:flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; padding: 1px 18px; flex-wrap: nowrap; justify-content: flex-start; border-bottom: 0; gap: 20px;
+      li{
+        width: auto; flex: 0 0 auto; padding: 10px 6px;
+        a{ font-size: 14px;}
+      }
+    }
+  }
+}

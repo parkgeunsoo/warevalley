@@ -1,0 +1,32 @@
+.overflow-y-scroll{height: 100%;overflow-y: auto;overflow-x: hidden;}
+
+.m-b-30{margin-bottom:30px;}
+
+.g-10px{
+  --bs-gutter-x: 0.625rem;
+  --bs-gutter-y: 0.625rem;
+}
+.g-20px{
+  --bs-gutter-x: 1.25rem;
+  --bs-gutter-y: 1.25rem;
+}
+.gap-10px{
+  gap: 10px !important;
+}
+.gap-20px{
+  gap: 20px !important;
+}
+.gap-30px{
+  gap: 30px !important;
+}
+.gap-40px{
+  gap: 40px !important;
+}
+.gap-60px{
+  gap: 60px !important;
+}
+
+.bg-black{ background-color: #000 !important;}
+.color-blue {color: $blue;}
+.bold {font-weight: 700;}
+.vertical-top {vertical-align: top;}

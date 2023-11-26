@@ -1,0 +1,90 @@
+
+.form-control {
+  display: block; 
+  width: 100%; 
+  font-size: 15px;
+  line-height: 150%;
+  color: #000;
+  padding: 10px 40px 10px 12px;
+  border: 1px solid #f7f7f7;
+  border-radius: 8px;
+  background-color: #f7f7f7;  
+  &.white{ background-color: #fff; border: 1px solid #ddd;}
+  &::placeholder{ color: #999;}
+
+  &:focus {
+    outline: 1px solid #222;
+    &::placeholder{ color: #222;}
+  }
+  &[type="file"] {
+    margin-top: 10px;
+  }
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &:disabled {
+    background-color: #fff; color: #ccc; font-weight: 400;
+  }
+ 
+}
+.input-form{
+  .input-txt{ display: none;}
+  .form{
+    position: relative;
+  }
+  &.error{
+    .input-txt{display: block;}
+    .form-control{ border: 1px solid $danger;}
+  }
+   &.success{
+    .form{
+      &::after{
+        content:""; position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background-image: url('../images/check-input.svg'); width: 18px; height: 18px; background-size: cover; background-position: center; background-repeat: no-repeat;
+      }
+    }
+  }
+}
+.search-form{
+  position: relative;
+  .icon-search{
+    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  }
+}
+.form-password{
+  position: relative;
+  .view-pw{
+    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  }
+}
+.input-txt{
+  color: $danger-dark; font-size: 14px; margin-top: 3px;
+}
+
+.input-form{
+  .input-form-title{font-size: 14px;line-height: 160%; margin-bottom: 5px;}
+}
+//  ID 찾기 -------
+.certification-form{
+  >div{ 
+    display: flex; align-items: center; gap: 15px;
+    .form-control{ flex-shrink: 1;}
+    .btn{ flex-shrink: 0;}
+  }
+}
+.time-form{
+  position: relative; margin-top: 10px;
+  .timer{
+    position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: $danger-dark; font-size: 14px;
+  }
+}
+.g-10{ gap: 10px;}
+.g-20{ gap: 20px;}
+
+.clearButton {
+  display: none; position: absolute; top: 50%; transform: translateY(-50%); right: 10px;
+}
+.form-control:not(:placeholder-shown) + .clearButton {
+  display: inline-block; /* input에 값이 있을 때만 버튼을 표시 */
+}

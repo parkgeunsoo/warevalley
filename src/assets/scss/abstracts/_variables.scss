@@ -1,0 +1,44 @@
+$primary: #0965EE;
+$secondary: #FEF4F5;
+$danger: #DF0D0D;
+$danger-dark: #FA4555;
+$white: #fff;
+$gray: #ccc;
+
+$dark: #222222;
+$orange: #F68655;
+$yellow: #FAC942;
+$light-green: #ADDE44;
+$green: #45D889;
+$blue: #4698E3;
+$purple: #8E85F0;
+
+$border-color: #eee;
+$bg-color: #f7f7f7;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "danger":  $danger,
+) !default;
+
+$font-family-base: 'Pretendard', system-ui, -apple-system, arial !default;
+$body-color: $dark;
+
+$grid-gutter-width: 1.25rem !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1280px,
+  xxl: 1344px,
+) !default;
+
+$header-height: 60px;
+$header-height-lg: 70px;
+$header-height-lg-expand: 120px;
+
+$container-max-width: 1344px !default;
+
+$header-z-index: 99;

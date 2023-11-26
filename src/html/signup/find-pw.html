@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap" class="login bg-gray">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div class="sign-container">
+      <div class="content">
+        <div class="login-head">
+          <div class="top-head">
+            <a href="javascript:void(0)" class="back">
+              <i class="icon-back"></i>
+            </a>
+            <p class="sign-title">비밀번호 찾기</p>
+          </div>
+        </div>
+        <div class="sign-content">
+          <div class="text-box">
+            <p>비밀번호를 모르시나요?</p>
+            <p>휴대폰 인증 후 비밀번호를 다시 설정할 수 있습니다.</p>
+          </div>
+          <div class="input-form">
+            <p class="input-form-title">아이디</p>
+            <input type="text" class="form-control" value="" placeholder="아이디를 입력해주세요 ​">
+            <!-- <p class="input-txt">일치하지 않습니다</p> -->
+          </div>
+          <div class="input-form">
+            <p class="input-form-title">이름</p>
+            <input type="text" class="form-control" value="" placeholder="이름을 입력해주세요 ​">
+            <!-- <p class="input-txt">일치하지 않습니다</p> -->
+          </div>
+          <div class="input-form">
+            <p class="input-form-title">휴대폰번호​</p>
+            <div class="certification-form">
+              <div class="">
+                <input type="password" class="form-control" placeholder="휴대폰번호를 입력해주세요 ​">
+                <button type="button" class="btn btn-outline-primary round">인증번호 발송</button>
+              </div>
+              <p class="input-txt">일치하지 않습니다</p>
+            </div>
+            <div class="time-form">
+              <input type="password" class="form-control" placeholder="인증번호를 입력해주세요 ​">
+              <p class="timer">03:00</p>
+              <!-- <p class="input-txt">일치하지 않습니다</p> -->
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn login-btn btn-dark">비밀번호 찾기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('html').addClass('bg-gray');
+  })
+</script>
+
+</html>

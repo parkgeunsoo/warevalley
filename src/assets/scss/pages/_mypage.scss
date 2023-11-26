@@ -1,0 +1,261 @@
+.main-title-area{
+  margin-bottom: 40px; margin-top: 40px;
+  .main-title {
+    font-size: 26px; font-weight: 700; line-height: 130%; text-align: center;
+  }
+  @include media-breakpoint-up(lg){
+    margin-bottom: 40px; margin-top: 0;
+    .main-title{
+      font-size: 36px; margin-bottom: 80px;
+    }
+  }
+}
+.sub-content{
+  .scroll-tab{margin-bottom: 30px;}
+  .table-header{
+    margin-bottom: 20px; flex-direction: column;
+  }
+  @include media-breakpoint-up(lg){
+    .scroll-tab{margin-bottom: 80px;}
+    .table-header{
+      margin-bottom: 20px; flex-direction: row;
+    }
+  }
+}
+.sub-content-head{
+  margin: 30px 0 40px;
+  .form-select{
+    width: auto; 
+  }
+}
+.class-management{
+  display: flex; flex-direction: column; gap: 20px;
+  .class-table{
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg){
+    gap: 30px; flex-direction: row;
+    .class-table{
+      width: 50%;
+    }
+  }
+}
+.my-info{
+  border-radius: 16px; background-color:#F7F7F7; padding: 45px 40px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;
+  .name{ display: flex; align-items: center; gap: 8px; font-size: 24px; font-weight: 700; line-height: 130%; color: #000;}
+  .grade{
+    margin-top: 12px; color: #666; font-size: 16px; font-weight: 500; line-height: 150%;
+  }
+  .date{
+    color: #666; font-size: 16px; font-weight: 500; line-height: 150%;
+  }
+  .point{
+    color: #000; font-size: 24px; font-weight: 700; line-height: 130%;
+    .cnt{ font-size: 36px;}
+  }
+  @include media-breakpoint-down(lg){
+    padding:24px; flex-direction: column; align-items: start;
+    .name{ gap: 4px; font-size: 18px;}
+    .grade{ font-size: 14px; }
+    .date{ font-size: 14px; }
+    .point{
+      width: 100%; font-size: 18px; margin-top: 24px; text-align: right;
+      .cnt{ font-size: 24px;}
+    }
+  }
+}
+
+// 쿠폰 다운로드
+.coupon-list{
+  display: flex; flex-flow: wrap; gap: 33px; padding-top: 70px; border-top: 1px solid $border-color;
+  .coupon{
+    width: calc( 33.3% - 22px); border: 1px solid $border-color; border-radius: 8px;
+  }
+  @include media-breakpoint-down(xl) {
+    padding-top: 35px;
+    .coupon{
+      width: calc( 50% - 17px);
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .coupon{
+      width: 100%;
+    }
+  }
+  .coupon-content{
+    padding: 24px 32px;
+    .coupon-name{font-size: 24px; font-weight: 700; line-height: 130%; color: #000;}
+    .coupon-txt{font-size: 18px; font-weight: 500; line-height: 130%; color: #000; margin-top: 8px;}
+    @include media-breakpoint-down(md) {
+    padding: 16px 20px;
+      .coupon-name{font-size: 20px;}
+      .coupon-txt{font-size: 16px;}
+    }
+  }
+  .coupon-download{
+    background-color: #000; display: block; border-radius: 0 0 8px 8px;
+    .desc{
+      display: flex; align-items: center; justify-content: space-between; border-top: 1px dashed #fff; padding: 16px 32px;
+      p{color: #fff; font-size: 14px; line-height: 130%;}
+    }
+    @include media-breakpoint-down(md) {
+      .desc{
+        padding: 16px 20px;
+        p{font-size: 13px;}
+      }
+    }
+  }
+}
+.inquiry-answer{
+  color: rgb(255, 165, 0); font-weight: 500;
+}
+.download-link{
+  margin-top: 50px;
+  a{ display: block; padding: 5px 0; display: flex; align-items: center; gap: 6px;font-weight: 500; line-height: 150%;}
+}
+.inquiry-object{
+  display: flex; align-items: center; gap: 4px;
+}
+.comment-title {
+  font-size: 18px; color: #000; font-weight: 600; line-height: 1.8; margin-top: 146px;
+  span {color: $danger-dark;}
+}
+.comment-wrap{
+  border-top: 2px solid #231815; margin-bottom: 84px;
+  .comment-wrap__content{
+    .reply{
+      display: flex; padding: 24px; border-bottom: 1px solid #ddd;
+      .desc{
+        width: 80%; font-size: 16px; line-height: 28px; color: #212222; display: flex; align-items: center;
+        .icon-lock{ margin-right: 15px;}
+      }
+      .user{
+        width:10%; font-weight: 500; font-size: 16px; line-height: 28px; color: #666666; text-align: center; word-break: break-all;
+      }
+      .date{
+        width:10%; display: flex; justify-content: end; font-size: 16px; line-height: 28px; color: #5A5B5D;
+      }
+    }
+    .re-reply{
+      display: flex; flex-direction: column; padding: 32px 24px; border-bottom: 1px solid #ddd; background-color:#F6F6F6;
+      .desc{
+        font-size: 16px; line-height: 28px; color: #212222;
+      }
+      .info {
+        display: flex; align-items: center; margin-top: 32px;
+        .btn-box {
+          width: 80%;
+          .btn:nth-child(2) {margin-left: 8px;}
+        }
+      }
+      .txt-box {display: flex; align-items: center; }
+      .user {width: 10%; word-break: break-all;}
+      .date{width: 10%; font-size: 16px; line-height: 28px; color: #5A5B5D; display: flex; justify-content: end;}
+    }
+  }
+  .no-reply{
+    padding: 120px 0; display: flex; align-items: center; justify-content: center;
+    .desc{ font-weight: 500; font-size: 16px; line-height: 19px; color: #666666; }
+  }
+  .comment-write{
+    width: 100%; margin-top: 30px; display: flex; flex-direction: column; align-items: flex-end; gap: 9px;
+    textarea {
+      padding: 15px 20px;
+    }
+  }
+  @include media-breakpoint-down(lg){
+    .comment-wrap__content{
+      .reply{
+        display: block; padding: 18px 12px 18px 15px; border-bottom: 1px solid #ddd;
+        .desc{
+          width: 100%; font-size: 14px; line-height: 24px; color: #5A5B5D; display: flex; align-items: center;
+          .icon-lock{ margin-right: 8px;}
+        }
+        .user{
+          font-weight: 500; font-size: 14px; line-height: 24px; color: #666666; margin-top: 10px; display: inline-block; margin-right: 16px; width: auto;
+        }
+        .date{
+          display: inline-flex; gap: 15px; width: auto; font-size: 14px; line-height: 24px; color: #5A5B5D;
+        }
+      }
+      .re-reply{
+        display: block; padding: 18px 18px 18px 15px; border-bottom: 1px solid #ddd; background-color:#F8F8F8;
+        .desc{
+          width: 100%; display: flex;
+          span{
+            font-size: 16px; line-height: 28px; color: #5A5B5D; width: 90%;
+          }                    
+        }
+        .info {
+          .btn-box {
+            width: 50%;
+          }
+        }
+        .user{
+          font-weight: 500; font-size: 14px; line-height: 24px; color: #666666; display: inline-block; margin-right: 16px; width: auto;
+        } 
+        .date{
+          display: inline-flex; gap: 15px; width: auto;
+          span{
+            font-size: 14px; line-height: 24px; 
+            &:nth-child(1){
+              color: #999999;
+            }
+            &:nth-child(2){
+              color: #5A5B5D;
+            }
+          }
+        }
+      }
+    }
+    .no-reply{
+        padding: 80px 0; display: flex; align-items: center; justify-content: center;
+        .desc{ font-weight: 500; font-size: 16px; line-height: 19px; color: #666666; }
+    }
+    .comment-write{
+      width: 100%; margin-top: 30px;
+      textarea {
+        padding: 15px 20px; border-radius: 0;
+      }
+    }
+  }
+}
+
+.registration-wrap {
+  border-top: 2px solid #222; border-bottom: 1px solid #eee; padding-bottom: 50px; margin-bottom: 40px;
+  .input-form {padding-top: 40px;}
+  .input-form-title {font-weight: 500; line-height: 1.3; margin-bottom: 16px;}
+  .form-check-label {font-weight: 400; line-height: 1.3;}
+  @include media-breakpoint-up(lg) {
+  .form-select {
+    width: 25%;
+    }
+  }
+}
+
+//간편 로그인
+.easy-login-wrap {
+  .switch-box {
+    .form-switch{
+      border: 1px solid #eee; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; padding: 24px; 
+      label {color: #000; font-weight: 500; font-size: 16px;}
+    }
+  }
+}
+
+.content{
+  &.inquiry{
+    .desc-title{
+      font-size: 20px; font-weight: 700;line-height: 140%;padding: 22px 0; border-top: 2px solid #222; border-bottom: 1px solid #eee; margin-bottom: 16px;
+      @include media-breakpoint-up(lg) {
+        font-size: 32px; padding: 32px 0;
+      }
+    }
+    .sub{
+      font-size: 14px; font-weight: 500; display: flex; gap: 24px; align-items: center; margin-bottom: 40px;
+      @include media-breakpoint-up(lg) {
+        font-size: 16px; margin-bottom: 80px;
+      }
+    }
+  }
+}

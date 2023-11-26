@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>Warevalley</title>
+  @@include('@@webRoot/html/_include/_head.html')
+  <style>
+    body {
+      background: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    section {
+      border-bottom: 1px solid #e8e8e8;
+      padding: 1.5rem;
+      flex: 0 0 50%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #df1f1f;
+    }
+
+    .group {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btns button {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 992px) {
+      .container {
+        display: block;
+      }
+
+      section {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <h1 class="mb-3">TAB</h1>
+      <div class="scroll-tab">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="type-tab1" data-bs-toggle="tab" data-bs-target="#tab1">#놀이아지트</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button">#두번째키워드</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button">#세번째키워드</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button">#네번째키워드</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button">#다섯번째키워드</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane fade active show" id="tab1" role="tabpanel" aria-labelledby="type-tab1">
+          1
+        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="type-tab2">
+          2
+        </div>
+        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="type-tab3">
+          3
+        </div>
+        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="type-tab4">
+          4
+        </div>
+      </div>
+      <h1 class="mb-3">마이페이지 탭</h1>
+      <div class="scroll-tab">
+        <ul class="nav nav-tabs mypage" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="type-tab1" data-bs-toggle="tab" data-bs-target="#tab1">#네번째키워드</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button">#네번째키워드</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button">#네번째키워드</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button">#네번째키워드</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="type-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button">#네번째키워드</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane fade active show" id="tab1" role="tabpanel" aria-labelledby="type-tab1">
+          1
+        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="type-tab2">
+          2
+        </div>
+        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="type-tab3">
+          3
+        </div>
+        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="type-tab4">
+          4
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 class="mb-3">pagination</h1>
+      <div>
+        <nav aria-label="Page navigation" class="navigation">
+          <div class="page-prev">
+            <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-left-twin"></i></a>
+          </div>
+          <div class="page-prev">
+            <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-left"></i></a>
+          </div>
+          <ul class="pagination custom-pagination">
+            <li class="page-item active"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+          </ul>
+          <div class="page-next">
+            <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-right"></i></a>
+          </div>
+          <div class="page-prev">
+            <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-right-twin"></i></a>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="mb-3">Form</h1>
+      <div>
+
+        <div class="input-form">
+          <p class="input-form-title">이름</p>
+          <div class="form">
+            <input type="text" class="form-control" value="" placeholder="테스트입니다.">
+            <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+            <button class="clearButton"><i class="icon-del"></i></button>
+          </div>
+        </div>
+
+        <div class="input-form error">
+          <p class="input-form-title">이름</p>
+          <div class="form">
+            <input type="text" class="form-control" value="" placeholder="테스트입니다.">
+            <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+            <button class="clearButton">Clear</button>
+          </div>
+        </div>
+
+        <div class="input-form success">
+          <p class="input-form-title">이름</p>
+          <div class="form">
+            <input type="text" class="form-control" value="" placeholder="테스트입니다.">
+            <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+            <button class="clearButton"><i class="icon-del"></i>class</button>
+          </div>
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class="input-form">
+          <p class="input-form-title">비밀번호<span class="text-danger">*</span></p>
+          <div class="form-password">
+            <input type="password" class="form-control" value="" placeholder="비밀번호를 입력하세요 ​">
+            <a href="javascript:void(0)" class="view-pw">
+              <i class="icon-eyes"></i>
+            </a>
+          </div>
+          <!-- <p class="input-txt">비밀번호는 생성규칙</p> -->
+        </div>
+      </div>
+      <h1 class="mb-3 mt-4">Search bar</h1>
+      <div>
+        <div class="search-form" data-bs-toggle="modal" data-bs-target="#modal-won-search">
+          <input type="text" class="form-control" value="" readonly placeholder="원을 검색해주세요">
+          <i class="icon-search"></i>
+        </div>
+      </div>
+      <div class="certification-form">
+        <div class="">
+          <input type="email" class="form-control" placeholder="이메일을 입력하세요 ​">
+          <button type="button" class="btn btn-outline-primary round">인증번호 발송</button>
+        </div>
+        <p class="input-txt">일치하지 않습니다</p>
+      </div>
+      <div class="time-form">
+        <input type="number" class="form-control" placeholder="인증번호를 입력하세요 ​">
+        <p class="timer">03:00</p>
+        <!-- <p class="input-txt">일치하지 않습니다</p> -->
+      </div>
+    </section>
+    <section>
+      <h1 class="mb-3">Checkbox button groups</h1>
+      <div class="row gx-2 gy-2 mb-2">
+        <div class="">
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off">
+            <label class="form-check-label" for="btncheck1">테스트</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="capacity" id="btncheck2" autocomplete="off">
+            <label class="form-check-label" for="btncheck2">테스트</label>
+          </div>
+        </div>
+        <div class="">
+          <div class="form-check-inline">
+            <input type="radio" class="form-check-input" name="capacity" id="btncheck1" autocomplete="off">
+            <label class="form-check-label" for="btncheck1">테스트</label>
+          </div>
+          <div class="form-check-inline">
+            <input type="radio" class="form-check-input" name="capacity" id="btncheck2" autocomplete="off">
+            <label class="form-check-label" for="btncheck2">테스트</label>
+          </div>
+        </div>
+        <div class="">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
+            <label class="form-check-label">개인정보 취급위탁 동의</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
+            <label class="form-check-label">개인정보 취급위탁 동의</label>
+          </div>
+        </div>
+        <div class="">
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
+            <label class="form-check-label">개인정보 취급위탁 동의</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
+            <label class="form-check-label">개인정보 취급위탁 동의</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="mb-3">Select</h1>
+      <div class="mt-5">
+        <p>form-select</p>
+        <div class="mb-2">
+          <select class="form-select form-select-sm d-inline w-auto" aria-label="Default select">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <select class="form-select d-inline w-auto" aria-label="Default select">
+            <option selected>form-select-md</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-5">
+          <select class="form-select select-sm d-inline w-auto" aria-label="Default select">
+            <option selected>form-select-sm</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <div class="input-icon w-50">
+            <input type="text" class="datepicker" placeholder="YYYY-MM-DD" data-picker="date">
+            <i class="icon-calendar"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="width: 100%; margin: 100px 0;">
+      <h1 class="mb-3">Table</h1>
+      <div class="table-container">
+        <div class="table-header">
+          <div class="table-title">일일놀이계획안</div>
+          <div class="type-1">
+            <p>추천연령</p>
+            <select name="" id="" class="form-select">
+              <option value="">혼합반(만 1,2세)</option>
+            </select>
+          </div>
+          <div class="type-2">
+            <p>총 <span>13</span> 건의 게시물이 있습니다.</p>
+            <select name="" id="" class="form-select">
+              <option value="">2023 학년</option>
+            </select>
+          </div>
+        </div>
+        <table class="table custom-table swipe">
+          <tbody>
+            <tr>
+              <th class="text-center">생활주제</th>
+              <td class="">어린이집에 왔어요</td>
+            </tr>
+            <tr>
+              <th class="text-center">주제</th>
+              <td class="">나는 00반이에요.</td>
+            </tr>
+            <tr>
+              <th class="text-center">목표</th>
+              <td class="">
+                <p>· [만 1세] 부모님과 우리 반을 둘러보며 환경을 탐색한다.</p>
+                <p>· [만 2세] 우리 반에 관심을 가지고 탐색해본다.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-container" style="margin-top: 50px;">
+        <table class="table custom-table swipe">
+          <colgroup>
+            <col width="10%">
+            <col width="10%">
+            <col width="45%">
+            <col width="35%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">구분</th>
+              <th class="text-center">활동명</th>
+              <th class="text-center">활동자료</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="text-center" colspan="2">
+                <p>등원 및 맞이하기</p>
+              </th>
+              <td class="text-center">
+                <p>부모님과 놀이실에 들어와요</p>
+              </td>
+              <td class="text-center">
+                <p>-</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center" rowspan="3">
+                <p>일상생활</p>
+              </th>
+              <th class="text-center">
+                <p>수유 및 이유식</p>
+              </th>
+              <td class="text-center">
+                <p>[수유] 부모님과 우유를 먹어요</p>
+              </td>
+              <td class="text-center">
+                <p>-</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <p>낮잠</p>
+              </th>
+              <td class="text-center">
+                <p>낮잠 자는 곳의 환경을 익혀요</p>
+              </td>
+              <td class="text-center">
+                <p>-</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <p>기저귀 갈이</p>
+              </th>
+              <td class="text-center">
+                <p>기저귀 가는 장소를 알아요</p>
+              </td>
+              <td class="text-center">
+                <p>-</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center" rowspan="3">
+                <p>
+                  실내<br>
+                  자유놀이
+                </p>
+              </th>
+              <th class="text-center">
+                <p>신체</p>
+              </th>
+              <td class="text-center">
+                <p>스펀지 매트에서 뒹굴거려요</p>
+              </td>
+              <td class="text-center">
+                <p>-</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <p>언어</p>
+              </th>
+              <td class="text-center">
+                <p>선생님이 가리키는 것 쳐다보아요</p>
+                <p>가족사진 보고 엄마, 아빠를 가리켜보아요</p>
+              </td>
+              <td class="text-center">
+                <p>-</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center">
+                <p>탐색/표현</p>
+              </th>
+              <td class="text-center">
+                <p>[역할] 바스락 인형을 살펴보아요</p>
+                <p>[미술]부모님과 크레용으로 끼적어요</p>
+                <p>[탐색] 부모님과 함께 우리 반을 둘러보아요</p>
+              </td>
+              <td class="text-center">
+                <p>-</p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center" colspan="2">
+                <p>실외놀이 (대체놀이)</p>
+              </th>
+              <td class="text-center">
+                <p>부모님과 바깥 풍경을 살펴보아요</p>
+                <p>[대체] 부모님과 유희실로 이동해보아요</p>
+              </td>
+              <td class="text-center">
+                <p>
+                  <img src="@@webRoot/assets/images/thumb.png" alt="">
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center" colspan="2">
+                <p>기본생활습관</p>
+              </th>
+              <td class="text-center">
+                <p>부모님과 내 신발장을 찾아보아요</p>
+              </td>
+              <td class="text-center">
+                <p>
+                  <img src="@@webRoot/assets/images/thumb.png" alt="">
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center" colspan="2">
+                <p>안전교육</p>
+              </th>
+              <td class="text-center">
+                <p>[실종/유괴의 예방, 방지] 선생님과 안전하게 산책해요. </p>
+                <p>[감염병 예방교육] 마스크를 바르게 써요</p>
+              </td>
+              <td class="text-center">
+                <p>
+                  <img src="@@webRoot/assets/images/thumb.png" alt="">
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center" colspan="2">
+                <p>귀가 및 가정과의 연계</p>
+              </th>
+              <td class="text-center">
+                <p>선생님과 인사하고 헤어져요 </p>
+              </td>
+              <td class="text-center">
+                <p></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container" style="width: 100%; margin: 100px 0; display: block;">
+      <h1 class="mb-3">Fixed Width</h1>
+      <div class="d-flex" style="gap:30px;">
+        <div class="mb-2 group">
+          <div class="btns">
+            <button class="btn btn-md btn-dark">MAP</button>
+          </div>
+          <div class="btns">
+            <button class="btn btn-md btn-gray">MAP</button>
+          </div>
+          <div class="btns">
+            <button class="btn btn-md btn-primary">MAP</button>
+          </div>
+        
+        </div>
+        <div class="mb-2 group">
+          <div class="btns">
+            <button class="btn btn-md btn-outline-dark">MAP</button>
+          </div>
+          <div class="btns">
+            <button class="btn btn-md btn-outline-gray">MAP</button>
+          </div>
+          <div class="">
+            <div class="btns">
+              <button class="btn btn-md btn-outline-primary">MAP</button>
+            </div>
+            <div class="btns">
+              <button class="btn btn-md btn-outline-primary" disabled>MAP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <script>
+    // eslint-disable-next-line
+    const swiper = new Swiper('.swiper', {
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+</body>
+
+</html>

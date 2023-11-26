@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap" class="login bg-gray">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div class="sign-container">
+      <div class="content h-auto">
+        <div class="login-head">
+          <div class="top-head">
+            <a href="javascript:void(0)" class="back">
+              <i class="icon-back"></i>
+            </a>
+            <p class="sign-title">로그인</p>
+          </div>
+        </div>
+        <div class="sign-content">
+          <div class="input-form">
+            <p class="input-form-title">아이디</p>
+            <input type="text" class="form-control" placeholder="이메일 주소 또는 휴대폰 번호">
+          </div>
+          <div class="input-form">
+            <p class="input-form-title">비밀번호</p>
+            <input type="password" class="form-control" placeholder="비밀번호">
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn login-btn btn-dark">로그인</button>
+          </div>
+          <div class="save-login">
+            <div class="form-check form-check-inline">
+              <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
+              <label class="form-check-label essential">아이디 저장</label>
+            </div>
+          </div>
+          <ul class="link-login">
+            <li class="findId"><a href="#none">아이디/비밀번호 찾기</a></li>
+            <li class="memberJoin"><a href="#none">회원가입</a></li>
+          </ul>
+          <div class="login-type">
+            <ul>
+              <li class="kakao"><a href="#" data-sns-id="KKO">카카오로 로그인</a></li>
+              <li class="naver"><a href="#" data-sns-id="NAV">Naver로 로그인</a></li>
+              <li class="google"><a href="#" data-sns-id="GGL">Google로 로그인</a></li>
+              <li class="apple"><a href="#" data-sns-id="aap">Apple로 로그인</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('html').addClass('bg-gray');
+  })
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap" class="login bg-gray">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div class="sign-container">
+      <div class="content">
+        <div class="login-head">
+          <div class="top-head">
+            <a href="javascript:void(0)" class="back">
+              <i class="icon-back"></i>
+            </a>
+          </div>
+          <p class="sign-title">아이디 찾기</p>
+        </div>
+        <div class="sign-content">
+          <div class="find-result">
+            홍길동 님의 아이디는​<br>
+            <strong>t******3</strong> 입니다.​
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn login-btn btn-dark">로그인으로 이동</button>
+            <button type="button" class="btn login-btn">비밀번호 재설정</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('html').addClass('bg-gray');
+  })
+</script>
+
+</html>

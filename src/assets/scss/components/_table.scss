@@ -1,0 +1,95 @@
+.table-container{
+	overflow: auto;
+	position: relative;
+	margin-bottom: 50px;
+	&.modal-table {margin-bottom: 0;}
+	.pagination{
+		margin-top: 80px;
+	}
+}
+.table-header{
+	display: flex; align-items: center; gap: 16px; margin-bottom: 1rem;
+	.table-title{
+		font-weight: 700; font-size: 20px; line-height: 140%; color: #000000; 
+	}
+	@include media-breakpoint-up(lg){
+		.table-title{
+			 font-size: 28px;
+		}
+	}
+	.form-select{
+		width: auto; border: 0; font-size: 15px; font-weight: 500; letter-spacing: -0.3px; color: #2D3338; padding-left: 0;
+		@include media-breakpoint-up(lg) {
+			font-size: 18px; letter-spacing: -0.36px;
+		}
+	}
+	.type-1{
+		display: flex; align-items: center; gap: 24px; letter-spacing: -0.3px;
+		p{ font-size: 15px; color: $danger; line-height: 150%; font-weight: 700;
+		}
+		div {
+			position: relative;
+			&::before {content: ''; height: 10px; width: 1px; background-color: $gray; left: -12px; display: block; position: absolute; top: 50%; transform: translateY(-50%);}
+		}
+		@include media-breakpoint-up(lg){
+			letter-spacing: -0.36px;
+			p{font-size: 18px; position: relative;}
+		}
+	}
+	.type-2{
+		display: flex; align-items: center; gap: 40px; 
+		p{ 
+			font-size: 14px;line-height: 150%; font-weight: 500;
+			span{font-weight: 700; color: $danger; }
+		}
+		@include media-breakpoint-up(lg){
+			p{ font-size: 16px;}
+		}
+	}
+}
+.table{
+	width: 100%;
+	&.custom-table{
+		border-top: 2px solid #222;
+		thead{
+			border: 1px solid $border-color;
+			th{
+				font-weight: 700; padding: 12px; background-color: #f7f7f7; font-size: 12px; border-bottom: 1px solid $border-color;
+				span {color: $primary;}
+			}
+		}
+		tbody{
+			th{ 
+				background-color: #f7f7f7; border:1px solid #eee; padding: 12px; font-size: 13px; line-height: 150%; color: #222222; font-weight: 700; letter-spacing: -0.3px; border-left: 0;
+			}
+			td{
+				padding: 12px; border: 1px solid #eee; font-size: 13px; line-height: 150%; color: #666;
+				a {color: #666;}
+			}
+		}
+		.input-form{ padding-top:0;}
+	}
+	@include media-breakpoint-down(md){
+		&.swipe{
+			width: 800px;
+		}
+	}
+	@include media-breakpoint-up(lg){
+		&.custom-table{
+			thead{
+				th{
+					font-weight: 700; padding: 12px; font-size: 15px;
+				}
+			}
+			tbody{
+				th{ 
+					font-size: 15px; line-height: 150%; font-weight: 700;
+					
+				}
+				td{
+					padding: 12px;font-size: 15px; line-height: 150%;
+				}
+			}
+		}
+	}
+}
