@@ -13,10 +13,7 @@
       }
     }
     &.mypage{
-      gap: 24px; 
-      &:not(.plan) {
-        border-bottom: 1px solid $border-color;
-      }
+      gap: 24px; justify-content: center;
       .nav-item{
         .nav-link{
           width: 100%; font-size: 14px; line-height: 150%; padding: 14px 0; font-weight: 600; border: 0; background-color: transparent; color: #999; position: relative; letter-spacing: -0.28px;

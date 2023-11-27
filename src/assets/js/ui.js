@@ -29,6 +29,14 @@ let Common = {
         });
       });
     });
+    $('.certification-content').hover(
+      function () {
+        $(this).addClass('active')
+      },
+      function () {
+        $(this).removeClass('active')
+      }
+    );
   },
 };
 
