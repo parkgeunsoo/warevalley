@@ -5,7 +5,9 @@
     padding-left: 30px;padding-right: 30px;
   }
 }
-
+.main{
+  &#wrap{ padding: 0;}
+}
 #wrap{
   padding-top: $header-height;
   @include media-breakpoint-up(xl){

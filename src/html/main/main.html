@@ -6,684 +6,168 @@
 </head>
 
 <body>
-  <div id="wrap">
+  <div class="main" id="wrap">
     @@include('@@webRoot/html/_include/_header.html')
     <main id="main">
-      <div class="main-banner">
-        <div class="swiper-container swiper-banner">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="banner-wrap">
-                <div class="img">
-                  <img src="../../assets/images/main-banner.png" alt="">
-                </div>
-                <div class="desc-wrap">
-                  <div class="container">
-                    <p>건강과 안전을 위하여</p>
-                    <p class="title">여름맞이 이벤트<br>
-                      럭키박스 9,900원</p>
-                    <p class="desc">2023.06.05 ~ 소진시 판매 종료</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-wrap">
-                <div class="img">
-                  <img src="../../assets/images/main-banner.png" alt="">
-                </div>
-                <div class="desc-wrap">
-                  <div class="container">
-                    <p>건강과 안전을 위하여</p>
-                    <p class="title">여름맞이 이벤트<br>
-                      럭키박스 9,900원</p>
-                    <p class="desc">2023.06.05 ~ 소진시 판매 종료</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner-wrap">
-                <div class="img">
-                  <img src="../../assets/images/main-banner.png" alt="">
-                </div>
-                <div class="desc-wrap">
-                  <div class="container">
-                    <p>건강과 안전을 위하여</p>
-                    <p class="title">여름맞이 이벤트<br>
-                      럭키박스 9,900원</p>
-                    <p class="desc">2023.06.05 ~ 소진시 판매 종료</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-tool-wrap">
-            <div class="container">
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-wrap">
-                <div class="swiper-button-prev">
-                  <img src="../../assets/images/arrow-default.svg" alt="">
-                </div>
-                <div class="swiper-button-next">
-                  <img src="../../assets/images/arrow-right-default.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="event-banner">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="">첫구매 고객 5,000원 쿠폰 지급</a>
-            </li>
-            <li>
-              <a href="">재구매 고객 10% 쿠폰 지급</a>
-            </li>
-            <li>
-              <a href="">The First 고객 상상스토리샵 최대 90% 할인</a>
-            </li>
-          </ul>
-          <div class="btn-group">
-            <button type="button" class="btn btn-outline-white btn-md round">회원가입 하러가기</button>
-          </div>
-        </div>
-      </div>
-      <!-- 카테고리 -->
-      <section class="category-wrap">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-01.svg" alt="">
-                </div>
-                <p class="desc">연간놀이<br> 계획안</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-02.svg" alt="">
-                </div>
-                <p class="desc">기본생활 습관</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-03.svg" alt="">
-                </div>
-                <p class="desc">안전교육</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-04.svg" alt="">
-                </div>
-                <p class="desc">상상북<br> 이야기</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-05.svg" alt="">
-                </div>
-                <p class="desc">일상생활</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-06.svg" alt="">
-                </div>
-                <p class="desc">특별한 날</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-07.svg" alt="">
-                </div>
-                <p class="desc">환경구성</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-08.svg" alt="">
-                </div>
-                <p class="desc">가정통신문</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/main-category-09.svg" alt="">
-                </div>
-                <p class="desc">고객지원</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- 이달의 추천놀이 -->
-      <section class="suggestion-wrap">
-        <div class="container">
-          <p class="section-title">이달의 추천놀이</p>
-          <div class="scroll-tab">
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="type-tab1" data-bs-toggle="tab"
-                  data-bs-target="#tab1">#놀이아지트</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="type-tab2" data-bs-toggle="tab" data-bs-target="#tab2"
-                  type="button">#두번째키워드</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="type-tab3" data-bs-toggle="tab" data-bs-target="#tab3"
-                  type="button">#세번째키워드</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="type-tab4" data-bs-toggle="tab" data-bs-target="#tab4"
-                  type="button">#네번째키워드</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="type-tab4" data-bs-toggle="tab" data-bs-target="#tab4"
-                  type="button">#다섯번째키워드</button>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-play">
-            <a href="" class="more-btn">
-              컨텐츠 더 알아보기 <i class="icon-more-arrow"></i>
-            </a>
-            <div class="swiper-container">
+      <div id="fullpage">
+        <div class="section section-visual">
+          <div class="main-banner">
+            <div class="swiper-container swiper-banner">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="content" style="background-color:#FEF4F5;">
-                    <p>첨범청범! 팔딱팔딱! 수산시장으로 출발~!</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="content" style="background-color:#FEF5F1;">
-                    <p>24시간! 연중무휴! 편리한 만능 가게</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="content" style="background-color:#FFFBF0;">
-                    <p>콩! 콩! 누구를 찍을까요?</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="content" style="background-color:#F8FCF0;">
-                    <p>더운 여름을 시원하게 열어줄 아이스크리 트럭 놀이</p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="content" style="background-color:#F0FCF6;">
-                    <p>부릉 부릉, 음식배달 왔어요</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-scrollbar"></div>
-            </div>
-          </div>
-          <div class="card-wrap">
-            <div class="card-page">
-              <div>
-                <p class="desc">일상생활의 기초와 근본이 되는</p>
-                <p class="title">기본생활습관</p>
-              </div>
-              <a href="" class="more-btn">
-                더보기 <i class="icon-more-arrow"></i>
-              </a>
-            </div>
-            <div class="card-page second">
-              <div>
-                <p class="desc">지역사회의 자원을 통해 다양한 경험이있는</p>
-                <p class="title">지역사회 연계 활동</p>
-              </div>
-              <a href="" class="more-btn">
-                더보기 <i class="icon-more-arrow"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="video-wrap">
-          <div class="container">
-            <div class="video-content">
-              <iframe src="https://www.youtube.com/embed/5GrKuaXBg4k"
-                title="에일리(AILEE)의 킬링보이스를 라이브로! - Heaven, 보여줄게, 저녁하늘, U&amp;I, Higher, 노래가 늘었어, 손대지마, 첫눈처럼 너에게 가겠다, If youㅣ딩고뮤직"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-            <div class="text-box">
-              <div class="ball"></div>
-              <p class="title">#피에르 코르유 </p>
-              <p class="desc">새로운 소식을 아무런 위험없이 승리하는 것은 영광없는 승리에 다름 아니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 상상 스토리샵 -->
-      <section class="story-shop">
-        <div class="container">
-          <p class="section-title">상상 스토리샵</p>
-          <p class="section-subtitle">상상력 높여주는 상품을 구경하기!</p>
-          <div class="swiper-story-shop">
-            <a href="" class="more-btn">
-              컨텐츠 더 알아보기 <i class="icon-more-arrow"></i>
-            </a>
-            <div class="shop-content-list">
-              <div class="shop-content">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/story-shop-01.png" alt="">
-                </div>
-                <div class="desc">
-                  <div class="company">
-                    <span class="badge new">NEW</span>
-                    <span class="badge best">BEST</span>
-                    <span class="company-name">도도리클래스</span>
-                  </div>
-                  <div class="product-name">
-                    가게놀이를 해요
-                  </div>
-                  <div class="price-wrap">
-                    <p class="sale">22,000원</p>
-                    <p class="box">
-                      <span class="percent">10%</span>
-                      <span class="total-price">19,800원</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="shop-content">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/story-shop-02.png" alt="">
-                </div>
-                <div class="desc">
-                  <div class="company">
-                    <span class="badge new">NEW</span>
-                    <span class="badge best">BEST</span>
-                    <span class="company-name">도도리클래스</span>
-                  </div>
-                  <div class="product-name">
-                    가게놀이를 해요
-                  </div>
-                  <div class="price-wrap">
-                    <p class="sale">22,000원</p>
-                    <p class="box">
-                      <span class="percent">10%</span>
-                      <span class="total-price">19,800원</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="shop-content">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/story-shop-03.png" alt="">
-                </div>
-                <div class="desc">
-                  <div class="company">
-                    <span class="badge new">NEW</span>
-                    <span class="badge best">BEST</span>
-                    <span class="company-name">도도리클래스</span>
-                  </div>
-                  <div class="product-name">
-                    가게놀이를 해요
-                  </div>
-                  <div class="price-wrap">
-                    <p class="sale">22,000원</p>
-                    <p class="box">
-                      <span class="percent">10%</span>
-                      <span class="total-price">19,800원</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="shop-content">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/story-shop-04.png" alt="">
-                </div>
-                <div class="desc">
-                  <div class="company">
-                    <span class="company-name">도도리클래스</span>
-                  </div>
-                  <div class="product-name">
-                    살랑살랑 봄에 꼭 해야 하는 ‘나는 아름다운 나비'
-                  </div>
-                  <div class="price-wrap">
-                    <p class="sale">22,000원</p>
-                    <p class="box">
-                      <span class="percent">10%</span>
-                      <span class="total-price">19,800원</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 특색 프로그램 -->
-      <section class="feature-program">
-        <div class="container">
-          <div class="feature-program-content">
-            <div class="banner">
-              <div class="img">
-                <img src="@@webRoot/assets/images/program-img-01.svg" alt="">
-              </div>
-            </div>
-            <div class="swiper-program">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="content">
-                      <div class="box">
-                        <p class="title">특색 프로그램</p>
-                        <p class="desc">
-                          주변에서 볼 수 있는 소도구를 이용해<br>
-                          즐겁게 신체를 움직일 수 있는 소도구 놀이
-                        </p>
-                      </div>
-                      <a href="" class="more-btn">
-                        컨텐츠 더 알아보기 <i class="icon-more-arrow"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="content">
-                      <div class="box">
-                        <p class="title">특색 프로그램</p>
-                        <p class="desc">
-                          주변에서 볼 수 있는 소도구를 이용해<br>
-                          즐겁게 신체를 움직일 수 있는 소도구 놀이
-                        </p>
-                      </div>
-                      <a href="" class="more-btn">
-                        컨텐츠 더 알아보기 <i class="icon-more-arrow"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="content">
-                      <div class="box">
-                        <p class="title">특색 프로그램</p>
-                        <p class="desc">
-                          주변에서 볼 수 있는 소도구를 이용해<br>
-                          즐겁게 신체를 움직일 수 있는 소도구 놀이
-                        </p>
-                      </div>
-                      <a href="" class="more-btn">
-                        컨텐츠 더 알아보기 <i class="icon-more-arrow"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-tool-wrap">
                   <div class="container">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-wrap">
-                      <div class="swiper-button-prev">
-                        <img src="../../assets/images/arrow-default.svg" alt="">
+                    <div class="main-visual-desc">
+                      <div class="text">
+                        <p class="title subText-first" id="">We are</p>
+                        <div class="desc">
+                          <p class="first-txt1">Open The</p>
+                          <p class="first-txt2">New Era</p>
+                          <p class="first-txt3">Of Technology</p>
+                        </div>
                       </div>
-                      <div class="swiper-button-next">
-                        <img src="../../assets/images/arrow-right-default.svg" alt="">
+                      <div class="img main-visual-first" id="">
+                        <img src="@@webRoot/assets/images/main-visual-01.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container">
+                    <div class="main-visual-desc">
+                      <div class="text">
+                        <p class="title subText-second" id="">We are</p>
+                        <div class="desc">
+                          <p class="second-txt1">A masterpiece</p>
+                          <p class="second-txt2">of long </p>
+                          <p class="second-txt3">experience</p>
+                        </div>
+                      </div>
+                      <div class="img main-visual-second" id="">
+                        <img src="@@webRoot/assets/images/main-visual-02.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container">
+                    <div class="main-visual-desc">
+                      <div class="text">
+                        <p class="title subText-third" id="">We are</p>
+                        <div class="desc">
+                          <p class="third-txt1">World-class</p>
+                          <p class="third-txt2">satisfaction</p>
+                        </div>
+                      </div>
+                      <div class="img main-visual-third" id="">
+                        <img src="@@webRoot/assets/images/main-visual-03.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="container">
+                    <div class="main-visual-desc">
+                      <div class="text">
+                        <p class="title subText-fourth" id="">We are</p>
+                        <div class="desc">
+                          <p class="fourth-txt1">from 20 years</p>
+                          <p class="fourth-txt2">to eternity</p>
+                        </div>
+                      </div>
+                      <div class="img main-visual-fourth" id="">
+                        <img src="@@webRoot/assets/images/main-visual-04.png" alt="">
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- <div class="swiper-tool-wrap">
+                <div class="container">
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div> -->
+              <div class="swiper-pagination">
+                <!-- 사용자 정의된 Pagination -->
+                <span class="custom-pagination-item" data-slide-index="0"></span>
+                <span class="custom-pagination-item" data-slide-index="1"></span>
+                <span class="custom-pagination-item" data-slide-index="2"></span>
+              </div>
+
+            </div>
+            <div class="scroll-down" id="nextButton">
+              <p>SCROLL</p>
+              <i class="icon-scroll-down" id="animatedButton"></i>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- 유아스토리 후기, 놀이사례 -->
-      <section class="story-review">
-        <div class="container">
-          <p class="section-title">유아스토리 후기, 놀이사례</p>
-          <p class="section-subtitle">유아스토리의 후기/놀이 사례를 구경하세요.</p>
-          <div class="swiper-story-review">
-            <a href="" class="more-btn">
-              더 보기 <i class="icon-more-arrow"></i>
-            </a>
-            <div class="review-content-list">
-              <div class="review-content card">
-                <div class="card-title">놀이 후기 공유</div>
-                <div class="card-txt">선생님들의 톡톡 튀는 놀이
-                  아이디어를 자랑해주세요!</div>
-                <i class="icon-review"></i>
-              </div>
-              <div class="review-content">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/story-shop-02.png" alt="">
-                </div>
-                <div class="desc">
-                  <div class="title">
-                    상상북클럽 - 동문한우리유치원
-                  </div>
-                  <div class="txt">
-                    안녕하세요 본 일러스트는 장애인식개선 교육 시 필요한 관련 삽화를 조사해 제작되었습니다.
-                  </div>
-                </div>
-              </div>
-              <div class="review-content">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/story-shop-03.png" alt="">
-                </div>
-                <div class="desc">
-                  <div class="title">
-                    상상북클럽 - 동문한우리유치원
-                  </div>
-                  <div class="txt">
-                    안녕하세요 본 일러스트는 장애인식개선 교육 시 필요한 관련 삽화를 조사해 제작되었습니다.
-                  </div>
-                </div>
-              </div>
-              <div class="review-content">
-                <div class="img">
-                  <img src="@@webRoot/assets/images/story-shop-04.png" alt="">
-                </div>
-                <div class="desc">
-                  <div class="title">
-                    상상북클럽 - 동문한우리유치원
-                  </div>
-                  <div class="txt">
-                    안녕하세요 본 일러스트는 장애인식개선 교육 시 필요한 관련 삽화를 조사해 제작되었습니다. 교육 시 필요한 관련 삽화를 조사해 제작되었습니다.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 공지사항 -->
-      <section class="announcement-wrap">
-        <div class="container">
-          <p class="section-title">공지사항</p>
-          <p class="section-subtitle">새로운 소식을 둘러보세요.</p>
-          <div class="scroll-tab">
-            <ul class="nav nav-tabs justify-content-center" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="type-tab1" data-bs-toggle="tab" data-bs-target="#tab1">공지사항</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="type-tab2" data-bs-toggle="tab" data-bs-target="#tab2"
-                  type="button">자주묻는질문</button>
-              </li>
-            </ul>
-          </div>
-          <div class="announcement-content">
-            <div class="announcement-content-head">
-              <div class="txt">
-                <span class="badge outline-dark round">NEW</span>
-                <span class="date">2023.06.08</span>
-                <span class="object">[장애인식개선] 장애인식개선 일러스트 56종</span>
-              </div>
-              <a href="" class="more-btn">
-                컨텐츠 더 알아보기 <i class="icon-more-arrow"></i>
-              </a>
-            </div>
-            <div class="announcement-list">
-              <div class="announcement-box">
-                <p class="date">06.08 <span class="badge outline-dark round">NOTI</span></p>
-                <p class="title">
-                  [장애인식개선] 장애인식개선 일러스트 56종
-                </p>
-                <p class="desc">
-                  안녕하세요 본 일러스트는 장애인식개선 교육 시 필요한 관련 삽화를 조사해 제작되었습니다...
-                </p>
-              </div>
-              <div class="announcement-box">
-                <p class="date">06.08 <span class="badge outline-dark round">NOTI</span></p>
-                <p class="title">
-                  [장애인식개선] 장애인식개선 일러스트 56종
-                </p>
-                <p class="desc">
-                  안녕하세요 본 일러스트는 장애인식개선 교육 시 필요한 관련 삽화를 조사해 제작되었습니다...
-                </p>
-              </div>
-              <div class="announcement-box">
-                <p class="date">06.08 <span class="badge outline-dark round">NOTI</span></p>
-                <p class="title">
-                  [장애인식개선] 장애인식개선 일러스트 56종
-                </p>
-                <p class="desc">
-                  안녕하세요 본 일러스트는 장애인식개선 교육 시 필요한 관련 삽화를 조사해 제작되었습니다...
-                </p>
-              </div>
-              <div class="announcement-box">
-                <p class="date">06.08 <span class="badge outline-dark round">NOTI</span></p>
-                <p class="title">
-                  [장애인식개선] 장애인식개선 일러스트 56종
-                </p>
-                <p class="desc">
-                  안녕하세요 본 일러스트는 장애인식개선 교육 시 필요한 관련 삽화를 조사해 제작되었습니다...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- snn -->
-      <section class="announcement-wrap">
-        <div class="container">
-          <p class="section-title">Instagram</p>
-          <p class="section-subtitle">@유아스토리</p>
-          <div class="swiper-sns">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="">
-                    <div class="img" style="background-image:url('@@webRoot/assets/images/story-shop-02.png')"></div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="">
-                    <div class="img" style="background-image:url('@@webRoot/assets/images/story-shop-02.png')"></div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="">
-                    <div class="img" style="background-image:url('@@webRoot/assets/images/story-shop-02.png')"></div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="">
-                    <div class="img" style="background-image:url('@@webRoot/assets/images/story-shop-02.png')"></div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="">
-                    <div class="img" style="background-image:url('@@webRoot/assets/images/story-shop-02.png')"></div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="">
-                    <div class="img" style="background-image:url('@@webRoot/assets/images/story-shop-02.png')"></div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div class="section">Section 2</div>
+        <div class="section">Section 3</div>
+        <!-- 추가적인 섹션들을 원하는 만큼 추가할 수 있습니다. -->
+      </div>
+      
     </main>
     @@include('@@webRoot/html/_include/_footer.html')
     @@include('@@webRoot/html/_include/_modal.html')
   </div>
 
   <script>
-    const mySwiper = new Swiper('.swiper-banner', {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    const playSwiper = new Swiper('.swiper-play .swiper-container', {
-      slidesPerView: 1,
-      progressbar: false,
-      spaceBetween: 32,
-      breakpoints: {
-        992: {
-          slidesPerView: '4',
-          progressbar: true,
-          spaceBetween: 32,
-          progressbar: {
-            el: '.swiper-scrollbar',
-            // 기타 옵션들
+    $(document).ready(function() {
+      gsap.to('#animatedButton', {
+        y: 3,
+        repeat: -1, 
+        yoyo: true,
+        ease: 'power1.inOut', 
+        duration: 1
+      });
+      $('#fullpage').fullpage({
+        afterLoad: function (anchorLink, index) {
+          const nextButton = document.getElementById('nextButton');
+          nextButton.addEventListener('click', function () {
+            $.fn.fullpage.moveTo(index + 1); // 다음 페이지로 이동
+          });
+        },
+      });
+  
+      const mySwiper = new Swiper('.swiper-banner', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        on: {
+          init: function () {
+            // 첫 페이지 진입 시 GSAP 애니메이션 실행
+            gsap.to(".main-visual-first", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
+            gsap.to(".subText-first", { opacity: 1, y: 0,  ease: "power1.out" });
+            gsap.to(".first-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
+            gsap.to(".first-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
+            gsap.to(".first-txt3", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.6 });
+            
           },
-        }
-      }
-    });
-    const programSwiper = new Swiper('.swiper-program .swiper-container', {
-      slidesPerView: '1',
-      spaceBetween: 10,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    const snsSwiper = new Swiper('.swiper-sns .swiper-container', {
-      slidesPerView: 2.2,
-      progressbar: true,
-      spaceBetween: 16,
-      progressbar: {
-        el: '.swiper-scrollbar',
-        // 기타 옵션들
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 4.5,
-          spaceBetween: 24,
+          slideChange: function () {
+            const currentIndex = mySwiper.activeIndex;
+            if (currentIndex === 1) {
+              gsap.to(".main-visual-second", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
+              gsap.to(".subText-second", { opacity: 1, y: 0,  ease: "power1.out" });
+              gsap.to(".second-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
+              gsap.to(".second-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
+              gsap.to(".second-txt3", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.6 });
+            } else if (currentIndex === 2) {
+              gsap.to(".main-visual-third", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
+              gsap.to(".subText-third", { opacity: 1, y: 0,  ease: "power1.out" });
+              gsap.to(".third-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
+              gsap.to(".third-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
+            }else if (currentIndex === 3) {
+              gsap.to(".main-visual-fourth", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
+              gsap.to(".subText-fourth", { opacity: 1, y: 0,  ease: "power1.out" });
+              gsap.to(".fourth-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
+              gsap.to(".fourth-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
+            }
+
+       
+          },
         },
-        1200: {
-          slidesPerView: 6,
-          spaceBetween: 32,
-        },
-      }
+      });
     });
   </script>
 </body>
