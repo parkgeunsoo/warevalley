@@ -1,0 +1,13 @@
+//content-head
+.content-head{
+  display:flex;flex-direction:column;align-items:center;row-gap:32px;
+  &.bg-support{
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #E9EBF4 88.02%);
+  }
+  h1{font-size: 80px;font-weight: 700;line-height: 130%;text-transform: capitalize;}
+  .text{color:$gray-6;font-size: 18px;line-height: 160%;}
+  margin-bottom:160px;
+}
+.support-inquiry-text{
+
+}

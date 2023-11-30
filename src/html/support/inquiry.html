@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div id="layout">
+      <main id="main">
+        <div class="dep2">
+          <ul>
+            <li><a href="../support/inquiry.html">도입 및 기술문의</a></li>
+            <li><a href="../support/qna.html">문의하기</a></li>
+            <li><a href="../support/faq.html">자주하는 질문</a></li>
+            <li><a href="../support/download.html">다운로드</a></li>
+          </ul>
+        </div>
+        <div class="sub-content">
+          <div class="content-head bg-support">
+            <h1 class="top-title">Product Inquiry</h1>
+            <div class="text">제품에 대해 문의하는 공간입니다. <br>
+              궁금하신 부분이 있으신가요? 웨어밸리가 도와드릴께요</div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="form-container">
+                  <div><label for="" class="form-text-label">성함</label><input type="text" class="form-control" placeholder=""></div>
+                  <div><label for="" class="form-text-label">회사명</label><input type="text" class="form-control"></div>
+                  <div><label for="" class="form-text-label">부서/직함</label><input type="text" class="form-control"></div>
+                  <div><label for="" class="form-text-label">이메일</label><input type="text" class="form-control"></div>
+                  <div><label for="" class="form-text-label">연락처</label><input type="tel" class="form-control"></div>
+                  <div>
+                    <label for="" class="form-text-label">문의부서</label>
+                    <select name="" id="" class="form-select form-control select-sm d-inline w-auto">
+                      <option value="">영업문의</option>
+                    </select>
+                  </div>
+                  <div><label for="" class="form-text-label">문의내용</label><textarea name="" id="" cols="30" rows="10"  class="form-control"></textarea> </div>
+                  <button type="submit" classs="btn btn">Submit</button>
+                </div>
+                
+              </div>
+
+            </div>
+            <div class="">
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    @@include('@@webRoot/html/_include/_footer.html')
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+
+</html>
