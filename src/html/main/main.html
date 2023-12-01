@@ -1,175 +1,273 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    @@include('@@webRoot/html/_include/_head.html')
+  </head>
 
-<head>
-  @@include('@@webRoot/html/_include/_head.html')
-</head>
-
-<body>
-  <div class="main" id="wrap">
-    @@include('@@webRoot/html/_include/_header.html')
-    <main id="main">
-      <div id="fullpage">
-        <div class="section section-visual">
-          <div class="main-banner">
-            <div class="swiper-container swiper-banner">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="container">
-                    <div class="main-visual-desc">
-                      <div class="text">
-                        <p class="title subText-first" id="">We are</p>
-                        <div class="desc">
-                          <p class="first-txt1">Open The</p>
-                          <p class="first-txt2">New Era</p>
-                          <p class="first-txt3">Of Technology</p>
+  <body>
+    <div class="main" id="wrap">
+      @@include('@@webRoot/html/_include/_header.html')
+      <main id="main">
+        <div id="fullpage">
+          <div class="section section-visual">
+            <div class="main-banner">
+              <div class="swiper-container swiper-banner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="container">
+                      <div class="main-visual-desc">
+                        <div class="text">
+                          <p class="title subText-first" id="">We are</p>
+                          <div class="desc">
+                            <p class="first-txt1">Open The</p>
+                            <p class="first-txt2">New Era</p>
+                            <p class="first-txt3">Of Technology</p>
+                          </div>
+                        </div>
+                        <div class="img main-visual-first" id="">
+                          <img
+                            src="@@webRoot/assets/images/main-visual-01.png"
+                            alt=""
+                          />
                         </div>
                       </div>
-                      <div class="img main-visual-first" id="">
-                        <img src="@@webRoot/assets/images/main-visual-01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                      <div class="main-visual-desc">
+                        <div class="text">
+                          <p class="title subText-second" id="">We are</p>
+                          <div class="desc">
+                            <p class="second-txt1">A masterpiece</p>
+                            <p class="second-txt2">of long </p>
+                            <p class="second-txt3">experience</p>
+                          </div>
+                        </div>
+                        <div class="img main-visual-second" id="">
+                          <img
+                            src="@@webRoot/assets/images/main-visual-02.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                      <div class="main-visual-desc">
+                        <div class="text">
+                          <p class="title subText-third" id="">We are</p>
+                          <div class="desc">
+                            <p class="third-txt1">World-class</p>
+                            <p class="third-txt2">satisfaction</p>
+                          </div>
+                        </div>
+                        <div class="img main-visual-third" id="">
+                          <img
+                            src="@@webRoot/assets/images/main-visual-03.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                      <div class="main-visual-desc">
+                        <div class="text">
+                          <p class="title subText-fourth" id="">We are</p>
+                          <div class="desc">
+                            <p class="fourth-txt1">from 20 years</p>
+                            <p class="fourth-txt2">to eternity</p>
+                          </div>
+                        </div>
+                        <div class="img main-visual-fourth" id="">
+                          <img
+                            src="@@webRoot/assets/images/main-visual-04.png"
+                            alt=""
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="container">
-                    <div class="main-visual-desc">
-                      <div class="text">
-                        <p class="title subText-second" id="">We are</p>
-                        <div class="desc">
-                          <p class="second-txt1">A masterpiece</p>
-                          <p class="second-txt2">of long </p>
-                          <p class="second-txt3">experience</p>
-                        </div>
-                      </div>
-                      <div class="img main-visual-second" id="">
-                        <img src="@@webRoot/assets/images/main-visual-02.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="container">
-                    <div class="main-visual-desc">
-                      <div class="text">
-                        <p class="title subText-third" id="">We are</p>
-                        <div class="desc">
-                          <p class="third-txt1">World-class</p>
-                          <p class="third-txt2">satisfaction</p>
-                        </div>
-                      </div>
-                      <div class="img main-visual-third" id="">
-                        <img src="@@webRoot/assets/images/main-visual-03.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="container">
-                    <div class="main-visual-desc">
-                      <div class="text">
-                        <p class="title subText-fourth" id="">We are</p>
-                        <div class="desc">
-                          <p class="fourth-txt1">from 20 years</p>
-                          <p class="fourth-txt2">to eternity</p>
-                        </div>
-                      </div>
-                      <div class="img main-visual-fourth" id="">
-                        <img src="@@webRoot/assets/images/main-visual-04.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="swiper-tool-wrap">
+                <!-- <div class="swiper-tool-wrap">
                 <div class="container">
                   <div class="swiper-pagination"></div>
                 </div>
               </div> -->
-              <div class="swiper-pagination">
-                <!-- 사용자 정의된 Pagination -->
-                <span class="custom-pagination-item" data-slide-index="0"></span>
-                <span class="custom-pagination-item" data-slide-index="1"></span>
-                <span class="custom-pagination-item" data-slide-index="2"></span>
+                <div class="swiper-pagination">
+                  <!-- 사용자 정의된 Pagination -->
+                  <span
+                    class="custom-pagination-item"
+                    data-slide-index="0"
+                  ></span>
+                  <span
+                    class="custom-pagination-item"
+                    data-slide-index="1"
+                  ></span>
+                  <span
+                    class="custom-pagination-item"
+                    data-slide-index="2"
+                  ></span>
+                </div>
               </div>
-
-            </div>
-            <div class="scroll-down" id="nextButton">
-              <p>SCROLL</p>
-              <i class="icon-scroll-down" id="animatedButton"></i>
+              <div class="scroll-down" id="nextButton">
+                <p>SCROLL</p>
+                <i class="icon-scroll-down" id="animatedButton"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="section">Section 2</div>
-        <div class="section">Section 3</div>
-        <!-- 추가적인 섹션들을 원하는 만큼 추가할 수 있습니다. -->
-      </div>
-      
-    </main>
-    @@include('@@webRoot/html/_include/_footer.html')
-    @@include('@@webRoot/html/_include/_modal.html')
-  </div>
+          <div class="section section-desc">
+            <div class="container">
+              <div class="main-desc">
+                <p class="sub-title section-desc-sub">OUR PROMISE</p>
+                <p class="title section-desc-title">
+                  최고의 기술만을<br />
+                  제공하지 않습니다.
+                </p>
+              </div>
+              <div class="txt-box">
+                <div class="txt section-desc-txt">
+                  고객의 입장에서 필요한 것을 먼저 고민하고<br class="d-lg-block d-none">
+                  매일 변화하는 다양한 세상 속에서 미래의 성장<br class="d-lg-block d-none">
+                  동력인 창의적 인재들과 함께 당당하게<br class="d-lg-block d-none">
+                  더 큰 미래를 향하여 끊임없이 걸어가겠습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="container">
+              <div class="poligon">
 
-  <script>
-    $(document).ready(function() {
-      gsap.to('#animatedButton', {
-        y: 4,
-        repeat: -1, 
-        yoyo: true,
-        ease: 'power1.inOut', 
-        duration: 1
-      });
-      $('#fullpage').fullpage({
-        afterLoad: function (anchorLink, index) {
-          const nextButton = document.getElementById('nextButton');
-          nextButton.addEventListener('click', function () {
-            $.fn.fullpage.moveTo(index + 1); // 다음 페이지로 이동
-          });
-        },
-      });
-  
-      const mySwiper = new Swiper('.swiper-banner', {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true,
-        },
-        on: {
-          init: function () {
-            // 첫 페이지 진입 시 GSAP 애니메이션 실행
-            gsap.to(".main-visual-first", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
-            gsap.to(".subText-first", { opacity: 1, y: 0,  ease: "power1.out" });
-            gsap.to(".first-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
-            gsap.to(".first-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
-            gsap.to(".first-txt3", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.6 });
-            
-          },
-          slideChange: function () {
-            const currentIndex = mySwiper.activeIndex;
-            if (currentIndex === 1) {
-              gsap.to(".main-visual-second", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
-              gsap.to(".subText-second", { opacity: 1, y: 0,  ease: "power1.out" });
-              gsap.to(".second-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
-              gsap.to(".second-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
-              gsap.to(".second-txt3", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.6 });
-            } else if (currentIndex === 2) {
-              gsap.to(".main-visual-third", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
-              gsap.to(".subText-third", { opacity: 1, y: 0,  ease: "power1.out" });
-              gsap.to(".third-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
-              gsap.to(".third-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
-            }else if (currentIndex === 3) {
-              gsap.to(".main-visual-fourth", { opacity: 1, y: 0, x: 0,  ease: "power1.out", delay: 1, duration: 0.7  });
-              gsap.to(".subText-fourth", { opacity: 1, y: 0,  ease: "power1.out" });
-              gsap.to(".fourth-txt1", { opacity: 1, y: 0,  ease: "power1.out" });
-              gsap.to(".fourth-txt2", { opacity: 1, y: 0,  ease: "power1.out", delay: 0.3 });
+              </div>
+            </div>
+            <div class="rolling-container">
+              <div class="rolling-box">
+                <div class="img-wrap">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/rolling-img-01.png" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/rolling-img-02.png" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/rolling-img-03.png" alt="">
+                  </div>
+                  
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/rolling-img-04.png" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/rolling-img-05.png" alt="">
+                  </div>
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/rolling-img-06.png" alt="">
+                  </div>
+                  <div class="rolling-txt">
+                    Keep
+                  </div>
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/rolling-img-07.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 추가적인 섹션들을 원하는 만큼 추가할 수 있습니다. -->
+        </div>
+      </main>
+      @@include('@@webRoot/html/_include/_footer.html')
+      @@include('@@webRoot/html/_include/_modal.html')
+    </div>
+
+    <script>
+      let roller = document.querySelector('.rolling-box');
+      roller.id = 'roller1'; // 아이디 부여
+
+      let clone = roller.cloneNode(true);
+      clone.id = 'roller2';
+      document.querySelector('.rolling-container').appendChild(clone); // wrap 하위 자식으로 부착
+
+      document.querySelector('.rolling-container').insertBefore(clone, document.querySelector('#roller1')); // 오리지날 앞에 클론 삽입
+
+      document.querySelector('#roller1').style.left = '0px';
+      document.querySelector('#roller2').style.left = document.querySelector('.rolling-box .img-wrap').offsetWidth + 'px';
+
+      roller.classList.add('original');
+      clone.classList.add('clone');
+
+
+      $(document).ready(function () {
+        gsap.to('#animatedButton', {
+          y: 4,
+          repeat: -1,
+          yoyo: true,
+          ease: 'power1.inOut',
+          duration: 1,
+        })
+        $('#fullpage').fullpage({
+          afterLoad: function (anchorLink, index) {
+            const nextButton = document.getElementById('nextButton');
+            nextButton.addEventListener('click', function () {
+              $.fn.fullpage.moveTo(index + 1) // 다음 페이지로 이동
+            });
+
+            if( index == 2){
+              gsap.to('.section-desc-sub', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
+              gsap.to('.section-desc-title', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.2, })
+              gsap.to('.section-desc-txt', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.3, })
             }
 
-       
           },
-        },
-      });
-    });
-  </script>
-</body>
+        })
 
+        const mySwiper = new Swiper('.swiper-banner', {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+          },
+          on: {
+            init: function () {
+              // 첫 페이지 진입 시 GSAP 애니메이션 실행
+              gsap.to('.main-visual-first', { opacity: 1, y: 0, x: 0, ease: 'bounce.out', delay: 0.5, duration: 2, })
+              gsap.to('.subText-first', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.5, })
+              gsap.to('.first-txt1', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.6, })
+              gsap.to('.first-txt2', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.7, })
+              gsap.to('.first-txt3', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.8, })
+            },
+            slideChange: function () {
+              const currentIndex = mySwiper.activeIndex
+              if (currentIndex === 1) {
+
+                gsap.to('.main-visual-second', { opacity: 1, y: 0, x: 0, ease: 'bounce.out', delay: 0.5, duration: 2, })
+                gsap.to('.subText-second', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.5, })
+                gsap.to('.second-txt1', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.6, })
+                gsap.to('.second-txt2', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.7, })
+                gsap.to('.second-txt3', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.8, })
+
+              } else if (currentIndex === 2) {
+
+                gsap.to('.main-visual-third', { opacity: 1, y: 0, x: 0, ease: 'bounce.out', delay: 0.5, duration: 2, })
+                gsap.to('.subText-third', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.5, })
+                gsap.to('.third-txt1', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.6, })
+                gsap.to('.third-txt2', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.7, })
+
+              } else if (currentIndex === 3) {
+
+                gsap.to('.main-visual-fourth', { opacity: 1, y: 0, x: 0, ease: 'bounce.out',  delay: 0.5, duration: 2, })
+                gsap.to('.subText-fourth', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.5, })
+                gsap.to('.fourth-txt1', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.6, })
+                gsap.to('.fourth-txt2', { opacity: 1, y: 0, ease: 'power1.out', delay: 1.7, })
+
+              }
+            },
+          },
+        })
+      })
+    </script>
+  </body>
 </html>
