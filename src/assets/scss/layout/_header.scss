@@ -1,5 +1,5 @@
 header{
-  width: 100%; display: flex; align-items: center; justify-content: space-between; position:fixed; top: 0; left: 0;  z-index: 9999; padding: 17px 80px;
+  width: 100%; display: flex; align-items: center; justify-content: space-between; position:fixed; top: 0; left: 0;  z-index: 9999; padding: 17px 80px; 
   nav{
     ul{
       display: flex; align-items: center; gap: 50px;
@@ -9,7 +9,23 @@ header{
     }
   }
   .tool-box{
-    display: flex; align-items: center; gap: 12px;
+    display: flex; align-items: center; gap: 32px;
+    .sns{
+      display: flex; align-items: center;gap: 12px;
+    }
+    .info-form{
+      display: flex; align-items: center; gap: 25px;
+      .login{ font-size: 14px;}
+      .select-wrap{ 
+        width: 50px; font-size: 14px;
+        .select-btn{ padding: 0;}
+        .optionlist{
+          padding: 0;
+          .optionitem{ padding: 8px; margin-top: 0;}
+        }
+      }
+    }
   }
 }
+
 $gray-6: #666;

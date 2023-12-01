@@ -37,6 +37,18 @@ let Common = {
         $(this).removeClass('active')
       }
     );
+     // selectbox 커스텀
+    $(".select-btn").click(function () {
+      $(".select-wrap").toggleClass("show");
+    });
+
+    $(".select-wrap .optionitem").click(function () {
+      const text = $(this).html();
+
+      $(".select-btn > span").html(text);
+      $(".select-wrap").removeClass("show");
+    });
+
   },
 };
 

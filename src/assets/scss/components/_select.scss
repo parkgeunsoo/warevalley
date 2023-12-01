@@ -85,3 +85,22 @@
     border: 0; width: 100%;
   }
 }
+
+
+//selectbx 커스텀
+.select-wrap {
+  position: relative;
+  .select-btn {padding: 9px 16px;  width: 25%;  border-radius: 4px; display: flex; align-items: center; justify-content: space-between;}
+  .optionlist {
+    padding: 0 16px 9px; border: 1px solid $border-color; border-top: 0; width: 25%; border-radius: 0 0 4px 4px; max-height: 240px; overflow-y: auto; position: absolute; top: 35px; background-color: #fff; display: none; z-index: 1;
+    .optionitem {margin-top: 16px; cursor: pointer;}
+  }
+  &.show {
+    .select-btn {border-bottom: 0; border-radius: 4px 4px 0 0;}
+    .optionlist {display: block;}
+  }
+  @include media-breakpoint-down(lg) {
+    .select-btn {width: 50%;}
+    .optionlist {width: 50%;}
+  }
+}
