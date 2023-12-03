@@ -9,6 +9,7 @@
       @@include('@@webRoot/html/_include/_header.html')
       <main id="main">
         <div id="fullpage">
+          <!-- section1 -->
           <div class="section section-visual">
             <div class="main-banner">
               <div class="swiper-container swiper-banner">
@@ -119,6 +120,9 @@
               </div>
             </div>
           </div>
+          <!-- section2 -->
+          <div class="section"></div>
+          <!-- section3 -->
           <div class="section section-desc">
             <div class="container">
               <div class="main-desc">
@@ -138,11 +142,10 @@
               </div>
             </div>
           </div>
+          <!-- section4 -->
           <div class="section">
             <div class="container">
-              <div class="poligon">
-
-              </div>
+              <div class="poligon"></div>
             </div>
             <div class="rolling-container">
               <div class="rolling-box">
@@ -176,7 +179,77 @@
               </div>
             </div>
           </div>
-          <!-- 추가적인 섹션들을 원하는 만큼 추가할 수 있습니다. -->
+          <!-- section5 -->
+          <div class="section section-desc">
+            <div class="container position-relative">
+              <div class="main-desc position">
+                <p class="sub-title section-desc-sub2">OUR PROMISE</p>
+                <p class="title section-desc-title2">
+                  완벽하다고<br>
+                  멈추지 않습니다.
+                </p>
+              </div>
+              <div class="img-box position img-slide-1">
+                <div>
+                  <img src="@@webRoot/assets/images/section-img-01.png" alt="시대를 초월하는 장인의 고집으로 완벽 그 이상의 퀄리티를 추구합니다. ">
+                  <p class="txt">시대를 초월하는 장인의 고집으로 완벽 그 이상의<br>퀄리티를 추구합니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- section6 -->
+          <div class="section section-desc">
+            <div class="container position-relative">
+              <div class="img-box none-position img-slide-2">
+                <div>
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/section-img-02.png" alt="고객의 입장에서 필요한 것을 먼저 고민하고 365일 고객에게 안심을 선물합니다.">
+                  </div>
+                  <p class="txt">고객의 입장에서 필요한 것을 먼저 고민하고 <br>
+                    365일 고객에게 안심을 선물합니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- section7 -->
+          <div class="section section-desc">
+            <div class="container position-relative">
+              <div class="img-box another-img-box img-slide-3">
+                <div class="section-desc__sub">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/section-img-03.png" alt="새로운 생각과 혁신적인 기술로더 나은 고객의 미래를 함께 그려갑니다.">
+                  </div>
+                  <p class="txt">새로운 생각과 혁신적인 기술로더 나은 고객의 미래를 함께 그려갑니다.</p>
+                </div>
+              </div>
+            </div>
+            <p class="section-text slide-text-1">
+              <span>W</span>ARE VALLEY
+            </p>
+            <p class="section-text slide-text-2">TOGETHER IN MORE PLACES</p>
+          </div>
+          <!-- section8 -->
+          <div class="section section-desc">
+            
+          </div>
+          <!-- section9 -->
+          <div class="section section-community">
+            <div class="container">
+              <div class="main-desc section-desc-sub3">
+                <p class="sub-title section-desc-title3">Community</p>
+                <p class="title">
+                  고객의 입장에서 먼저 고민하고<br>
+                  365일 고객에게 안심을 <br>
+                  선물합니다
+                </p>
+              </div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       @@include('@@webRoot/html/_include/_footer.html')
@@ -215,12 +288,29 @@
               $.fn.fullpage.moveTo(index + 1) // 다음 페이지로 이동
             });
 
-            if( index == 2){
+            if( index == 3){
               gsap.to('.section-desc-sub', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
               gsap.to('.section-desc-title', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.2, })
               gsap.to('.section-desc-txt', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.3, })
             }
-
+            if( index == 5){
+              gsap.to('.section-desc-sub2', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
+              gsap.to('.section-desc-title2', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.2, })
+              gsap.to('.img-slide-1', { opacity: 1, y: -50+'%', ease: 'power1.out', delay: 0.3, duration: 0.5 })
+            }
+            if( index == 6){
+              gsap.to('.img-slide-2', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.5, duration: 0.5 })
+            }
+            if( index == 7){
+              gsap.to('.img-slide-3', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.5, duration: 0.5 })
+              gsap.to('.slide-text-1', { opacity: 1, x: 5 + '%', ease: 'power1.out', delay: 0.5, duration: 1.5 })
+              gsap.to('.slide-text-2', { opacity: 1, x: 23 + '%', ease: 'power1.out', delay: 0.5, duration: 1.5 })
+            }
+            if( index == 9){
+              gsap.to('.section-desc-sub3', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
+              gsap.to('.section-desc-title3', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.2, })
+              gsap.to('.slide-text-2', { opacity: 1, x: 23 + '%', ease: 'power1.out', delay: 0.5, duration: 1.5 })
+            }
           },
         })
 
