@@ -21,36 +21,115 @@
         <div class="sub-content">
           <div class="content-head bg-support">
             <h1 class="top-title">Product Inquiry</h1>
-            <div class="text">제품에 대해 문의하는 공간입니다. <br>
-              궁금하신 부분이 있으신가요? 웨어밸리가 도와드릴께요</div>
+            <div class="text">제품에 대해 문의하는 공간입니다. <br>궁금하신 부분이 있으신가요? 웨어밸리가 도와드릴께요</div>
+            <div class="sub-visual"><img src="@@webRoot/assets/images/inquiry-visual.png" alt="서브비주얼 이미지"></div>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="col-12 col-lg-6">
-
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="form-container">
-                  <div><label for="" class="form-text-label">성함</label><input type="text" class="form-control" placeholder=""></div>
-                  <div><label for="" class="form-text-label">회사명</label><input type="text" class="form-control"></div>
-                  <div><label for="" class="form-text-label">부서/직함</label><input type="text" class="form-control"></div>
-                  <div><label for="" class="form-text-label">이메일</label><input type="text" class="form-control"></div>
-                  <div><label for="" class="form-text-label">연락처</label><input type="tel" class="form-control"></div>
+            <div class="row support-inquiry">
+              <div class="col-12 col-lg-5">
+                <div class="top-text">
+                  <strong class="title">Let’s Talk</strong>
+                  <p class="text">Have some big idea or brand to develop and need help?<br>Then reach out we'd love to hear about your project and<br>provide help</p>  
+                </div>
+                <div class="email-text">
+                  <strong class="title">Email</strong>
                   <div>
-                    <label for="" class="form-text-label">문의부서</label>
-                    <select name="" id="" class="form-select form-control select-sm d-inline w-auto">
-                      <option value="">영업문의</option>
-                    </select>
+                    <p>영업문의 (sales@warevalley.com)</p> 
+                    <p>기술문의 (consulting@warevalley.com)</p>  
                   </div>
-                  <div><label for="" class="form-text-label">문의내용</label><textarea name="" id="" cols="30" rows="10"  class="form-control"></textarea> </div>
-                  <button type="submit" classs="btn btn">Submit</button>
+                </div>
+                <div class="terms">
+                  <div class="terms-title">개인정보 수집동의</div>
+                  <div class="terms-content">
+                    개인정보를 제공받는 자의 개인정보 이용 목적 : 주문상품의 배송, 고객상담 및 불만처리
+                    제공하는 개인정보의 항목 : 아이디(ID), 성명, 주소, 유무선 포함 연락처(안심번호 적용시 연락처는 제외), 이메일주소(입력시), 개인통관고유부호(선택시), 공동현관 출입번호(입력,저장선택시)
+                    ※ 구매자와 수취인이 다른 경우에는 입력하신 수취인의 정보가 제공될 수 있습니다.
+                    개인정보를 제공받는 자의 개인정보 보유 및 이용기간 : 구매확정 후 3개월까지(e쿠폰 상품의 경우 유효기간 연장, CS 등을 위해 1년까지)
+                  </div>
+                  <div class="terms-agree">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
+                      <label class="form-check-label">개인정보 수집 및 이용에 동의합니다.</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="form-container">
+                  <div class="input-form">
+                    <label class="input-form-title">성함</label>
+                    <div class="form">
+                      <input type="text" class="form-control" value="" placeholder="성함을 입력해주세요">
+                      <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+                      <button class="clearButton"><i class="icon-del"></i></button>
+                    </div>
+                  </div>
+                  <div class="input-form">
+                    <label class="input-form-title">회사명</label>
+                    <div class="form">
+                      <input type="text" class="form-control" value="" placeholder="회사명을 입력해주세요">
+                      <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+                      <button class="clearButton"><i class="icon-del"></i></button>
+                    </div>
+                  </div>
+                  <div class="input-form">
+                    <label class="input-form-title">부서/직함</label>
+                    <div class="form">
+                      <input type="text" class="form-control" value="" placeholder="부서/직함을 입력해주세요">
+                      <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+                      <button class="clearButton"><i class="icon-del"></i></button>
+                    </div>
+                  </div>
+                  <div class="input-form">
+                    <label class="input-form-title">이메일</label>
+                    <div class="form">
+                      <input type="text" class="form-control" value="" placeholder="이메일을 입력해주세요">
+                      <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+                      <button class="clearButton"><i class="icon-del"></i></button>
+                    </div>
+                  </div>
+                  <div class="input-form">
+                    <label class="input-form-title">연락처</label>
+                    <div class="form">
+                      <input type="text" class="form-control" value="" placeholder="연락처를 입력해주세요">
+                      <p class="input-txt"><i class="icon-error"></i> 일치하지 않습니다</p>
+                      <button class="clearButton"><i class="icon-del"></i></button>
+                    </div>
+                  </div>
+                  <div class="input-form">
+                    <label class="input-form-title">문의부서</label>
+                    <div class="form">
+                      <select class="form-select d-inline w-100" aria-label="Default select">
+                        <option selected="">영업문의</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-form">
+                    <label class="input-form-title">문의내용</label>
+                    <div class="form">
+                      <textarea name="" id="" cols="30" rows="8" class="form-control" placeholder="내용을 입력해주세요"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-md btn-dark w-100">Submit</button>
                 </div>
                 
               </div>
 
             </div>
-            <div class="">
-
+            <div class="support-banner">
+              <div class="text-box">
+                <p class="title">웹어밸리 회원가입 시 무상 제공!</p>
+                <p class="text">Orange v7.0은 최초 설치 후 라인선스 메니저를 통해 트라이얼을<br>요청할 수 있습니다, 28일간의 트라이얼 사용 후, 구입 문의 바랍니다.</p>
+              </div>
+              <div class="inquiry-box">
+                <p><strong>구매 / 유지보수 / 계약문의</strong></p>
+                <p>Tel <strong>1660 - 1675</strong> / E-mail <strong>Sales@warevalley.com</strong></p>
+                <button type="button" class="btn btn-md btn-primary">Orange 문의하기</button>
+              </div>
             </div>
           </div>
         </div>
