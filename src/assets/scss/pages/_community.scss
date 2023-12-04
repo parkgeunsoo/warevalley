@@ -22,6 +22,13 @@
     }
   }
 }
+//scroll-bar 공통
+.scroll-bar{
+  overflow-y:auto;padding:0 8px 0 0;
+  &::-webkit-scrollbar{width:4px;background-color: $border-color;}
+  &::-webkit-scrollbar-thumb {background-color:#999999}
+}
+
 //search-box 공통
 .search-box{
   display: flex;align-items: center;margin-bottom:80px;padding:8px 0;border-bottom:1px solid $border-color;
@@ -47,20 +54,21 @@
       h2{width:100%;}
     }
     .icon-community{margin-top:-40px;}
-    .search-box{width:calc(100% - 184px);margin-bottom:60px;}
-    }
-    @include media-breakpoint-down(md){
-      .commu-title{
-        column-gap:6px;
-        h2{width:calc(100% - 67px);padding-bottom:16px;font-size: 16px;line-height: 20.8px;}
-        .icon-community{margin-top:-5px;width:61px;height:61px;}
-        .search-box{
-          margin-bottom:40px;width:100%;
-          input{width:100%;}
-        }
-      }
-    }  
   }
+  .search-box{width:calc(100% - 184px);margin-bottom:60px;}
+  @include media-breakpoint-down(md){
+    .commu-title{
+      column-gap:6px;
+      h2{width:calc(100% - 67px);padding-bottom:16px;font-size: 16px;line-height: 20.8px;}
+      .icon-community{margin-top:-5px;width:61px;height:61px;}
+    }
+    .search-box{
+      margin-bottom:40px;width:100%;
+      input{width:100%;}
+    }
+  }
+      
+}
 
 
 
@@ -105,11 +113,11 @@
   }
 }
 
-//notice-detail
-.notice-detail-wrap{
+//content-detail 공통
+.content-detail-wrap{
   margin-bottom:40px;
   .top-title{padding:24px;font-size: 32px;font-weight: 700;line-height: 51px;border-bottom:1px solid $border-color;}
-  .date{display:flex;align-items:center;margin-bottom:80px;padding:16px 24px 0 24px;column-gap:8px;color:$gray-6;font-weight:500;}
+  .date{display:flex;align-items:center;padding:16px 24px 0 24px;column-gap:8px;color:$gray-6;font-weight:500;}
   .text-box{padding:80px 24px;}
   .file-box{
     padding:0 24px 40px 24px;border-bottom:1px solid $border-color;

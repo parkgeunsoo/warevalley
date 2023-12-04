@@ -23,7 +23,7 @@
   background-position: center;
   background-size: contain;
   appearance: none;
- 
+  cursor: pointer;
 
 
   &[type="checkbox"] {
@@ -78,6 +78,7 @@
   font-weight: 500;
   margin-left: 8px;
   vertical-align: sub;
+  cursor: pointer;
 }
 
 /* switch */

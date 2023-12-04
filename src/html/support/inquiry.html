@@ -22,7 +22,12 @@
           <div class="content-head bg-support">
             <h1 class="top-title">Product Inquiry</h1>
             <div class="text">제품에 대해 문의하는 공간입니다. <br>궁금하신 부분이 있으신가요? 웨어밸리가 도와드릴께요</div>
-            <div class="sub-visual"><img src="@@webRoot/assets/images/inquiry-visual.png" alt="서브비주얼 이미지"></div>
+            <div class="sub-visual">
+              <picture>
+                <source srcset="@@webRoot/assets/images/inquiry-visual-m.png" media="(max-width: 768px)" />
+                <img src="@@webRoot/assets/images/inquiry-visual.png" alt="서브 비주얼" />
+              </picture>
+            </div>
           </div>
           <div class="container">
             <div class="row support-inquiry">
@@ -41,10 +46,12 @@
                 <div class="terms">
                   <div class="terms-title">개인정보 수집동의</div>
                   <div class="terms-content">
-                    개인정보를 제공받는 자의 개인정보 이용 목적 : 주문상품의 배송, 고객상담 및 불만처리
+                    <div class="scroll-bar">
+                      개인정보를 제공받는 자의 개인정보 이용 목적 : 주문상품의 배송, 고객상담 및 불만처리
                     제공하는 개인정보의 항목 : 아이디(ID), 성명, 주소, 유무선 포함 연락처(안심번호 적용시 연락처는 제외), 이메일주소(입력시), 개인통관고유부호(선택시), 공동현관 출입번호(입력,저장선택시)
                     ※ 구매자와 수취인이 다른 경우에는 입력하신 수취인의 정보가 제공될 수 있습니다.
                     개인정보를 제공받는 자의 개인정보 보유 및 이용기간 : 구매확정 후 3개월까지(e쿠폰 상품의 경우 유효기간 연장, CS 등을 위해 1년까지)
+                    </div>
                   </div>
                   <div class="terms-agree">
                     <div class="form-check">
