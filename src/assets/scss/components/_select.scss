@@ -44,7 +44,7 @@
 .form-select{
   width: 100%;  
   border: none;
-  border: 1px solid $border-color; 
+  border: 1px solid $bg-color; 
   font-size: 14px; 
   line-height: 150%;
   padding: 6px 30px 6px 10px;
@@ -53,7 +53,7 @@
    background-position: 97% 50%; 
    background-repeat: no-repeat; 
    border-radius: 6px;
-   background-color: transparent;
+   background-color: $bg-color;
   &.sub-page {background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 8L10 13L5 8' stroke='%23999999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"); background-position: 88% 50%;}
   &.select-sm{
     font-size: 12px;
