@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div id="layout">
+      <main id="main">
+        <div class="dep2">
+          <ul>
+            <li><a href="../support/inquiry.html">도입 및 기술문의</a></li>
+            <li><a href="../support/qna-list.html" class="active">문의하기</a></li>
+            <li><a href="../support/faq.html">자주하는 질문</a></li>
+            <li><a href="../support/download.html">다운로드</a></li>
+          </ul>
+        </div>
+        <div class="sub-content">
+          <div class="content-head bg-support">
+            <h1 class="top-title">Q&amp;A</h1>
+            <div class="text">간편하게 게시판으로 답변을 듣고싶은 분들은 글을 작성해주세요. <br>빠른 답변 드리겠습니다.</div>
+            <div class="sub-visual">
+              <picture>
+                <source srcset="@@webRoot/assets/images/qna-visual-m.png" media="(max-width: 768px)" />
+                <img src="@@webRoot/assets/images/qna-visual.png" alt="서브 비주얼" />
+              </picture>
+            </div>
+          </div>
+          <div class="container">
+            <div class="search-box">
+              <i class="icon-search-bk"></i>
+              <input type="text" placeholder="Search by keyword">
+            </div>
+
+            
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-primary"><i class="icon-write"></i>글쓰기</button>
+            </div>
+            <div>
+              <nav aria-label="Page navigation" class="navigation">
+                <div class="page-prev">
+                  <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-left-twin"></i></a>
+                </div>
+                <div class="page-prev">
+                  <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-left"></i></a>
+                </div>
+                <ul class="pagination custom-pagination">
+                  <li class="page-item active"><a class="page-link active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                </ul>
+                <div class="page-next">
+                  <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-right"></i></a>
+                </div>
+                <div class="page-prev">
+                  <a class="page-link btn round-btn btn-white" href="#"><i class="icon-pagination-right-twin"></i></a>
+                </div>
+              </nav>
+            </div>
+
+            <div class="support-banner">
+              <div class="text-box">
+                <p class="title">웹어밸리 회원가입 시 무상 제공!</p>
+                <p class="text">Orange v7.0은 최초 설치 후 라인선스 메니저를 통해 트라이얼을<br>요청할 수 있습니다, 28일간의 트라이얼 사용 후, 구입 문의 바랍니다.</p>
+              </div>
+              <div class="inquiry-box">
+                <p><strong>구매 / 유지보수 / 계약문의</strong></p>
+                <p>Tel <strong>1660 - 1675</strong> / E-mail <strong>Sales@warevalley.com</strong></p>
+                <button type="button" class="btn btn-md btn-primary">Orange 문의하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    @@include('@@webRoot/html/_include/_footer.html')
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+
+</html>

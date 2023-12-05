@@ -11,12 +11,12 @@
   }
 }
 .sub-content{
-  .scroll-tab{margin-bottom: 30px;}
+  //.scroll-tab{margin-bottom: 30px;}
   .table-header{
     margin-bottom: 20px; flex-direction: column;
   }
   @include media-breakpoint-up(lg){
-    .scroll-tab{margin-bottom: 80px;}
+    //.scroll-tab{margin-bottom: 80px;}
     .table-header{
       margin-bottom: 20px; flex-direction: row;
     }
