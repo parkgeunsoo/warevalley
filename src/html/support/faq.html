@@ -13,23 +13,28 @@
         <div class="dep2">
           <ul>
             <li><a href="../support/inquiry.html">도입 및 기술문의</a></li>
-            <li><a href="../support/qna.html">문의하기</a></li>
-            <li><a href="../support/faq.html">자주하는 질문</a></li>
+            <li><a href="../support/qna-list.html">문의하기</a></li>
+            <li><a href="../support/faq.html" class="active">자주하는 질문</a></li>
             <li><a href="../support/download.html">다운로드</a></li>
           </ul>
         </div>
         <div class="sub-content">
-          <div class="content-head bg-support bg-sub-faq">
+          <div class="content-head bg-support">
             <h1 class="top-title">FAQ</h1>
             <div class="text">질문과 답변으로 그동안 알지 못했던 내용들을 확인해보세요.<br>유용한 정보와 기술로 알차게 준비되어 있습니다. </div>
-            <div class="sub-visual"><img src="@@webRoot/assets/images/faq-visual.png" alt="서브비주얼 이미지"></div>
+            <div class="sub-visual">
+              <picture>
+                <source srcset="@@webRoot/assets/images/faq-visual-m.png" media="(max-width: 768px)" />
+                <img src="@@webRoot/assets/images/faq-visual.png" alt="서브 비주얼" />
+              </picture>
+            </div>
           </div>
           <div class="container">
             <div class="search-box">
               <i class="icon-search-bk"></i>
               <input type="text" placeholder="Search by keyword">
             </div>
-            <div class="d-flex justify-content-between">
+            <div class="top-scroll-tab-box">
               <div class="scroll-tab">
                 <ul class="nav nav-tabs mypage" role="tablist">
                   <li class="nav-item" role="presentation">
@@ -46,7 +51,7 @@
                   </li>
                 </ul>
               </div>
-              <span>총 38건</span>
+              <span class="total-num">총 38건</span>
             </div>
 
             <div class="accordion faq-accordion" id="faq-accordion">
@@ -70,7 +75,7 @@
                     <span class="cate">라이센스</span>입사 지원 시 양식이 따로 있나요?
                   </button>
                 </h2>
-                <div id="faq-collapse-0" class="accordion-collapse collapse" aria-labelledby="faq-item-1" data-bs-parent="#faq-accordion">
+                <div id="faq-collapse-1" class="accordion-collapse collapse" aria-labelledby="faq-item-1" data-bs-parent="#faq-accordion">
                   <div class="accordion-body">
                     <div class="answer-content">
                       경력자와 신입으로 구분하며, 각각의 포지션별로 나눠지기 때문에 전첵적으로 동일한 고려사항이 있지는 않습니다. 

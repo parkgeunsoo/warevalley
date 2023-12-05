@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //content-head
 .content-head{
   display:flex;flex-direction:column;align-items:center;row-gap:32px;
@@ -8,6 +9,9 @@
   .text{color:$gray-6;font-size: 18px;line-height: 160%;text-align:center;}
   margin-bottom:160px;
 }
+=======
+
+>>>>>>> hyo
 .support-inquiry{
   justify-content: space-between;margin-bottom:100px;
   .top-text{margin-bottom:40px;display:flex;flex-direction:column;row-gap:16px;
@@ -24,12 +28,42 @@
   }
   .terms{
     .terms-title{margin-bottom:8px;font-weight:700;}
+<<<<<<< HEAD
     .terms-content{padding:12px 24px 12px 12px;margin-bottom:16px;background-color:$bg-color;font-size:14px;line-height:22.4px;color:#999;}
+=======
+    .terms-content{
+      padding:12px;margin-bottom:16px;background-color:$bg-color;font-size:14px;line-height:22.4px;color:#999;
+      .scroll-bar{height:196px;}
+    }
+  }
+  @include media-breakpoint-down(md){
+    margin-bottom:0;
+    .top-text{
+      .title{font-size: 24px;}
+      .text{font-size: 15px;}
+    }
+    .email-text{
+      row-gap:8px;margin-bottom:40px;
+      .title{font-size: 16px;}
+      p{font-size:14px;}
+    }
+    .form-container{
+      .btn{margin-top:40px;}
+    }
+    .terms{
+      .terms-content{
+        .scroll-bar{height:266px;}
+      }
+    }
+>>>>>>> hyo
   }
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> hyo
 .support-banner{
   display:flex;column-gap:109px;padding:44px 0 39px 58px;margin-top:40px;border-radius: 24px;background: rgba(9, 101, 238, 0.04) url("../images/bg-support-banner.png")no-repeat 100% 0;
   .text-box{
@@ -43,6 +77,7 @@
     }
     .btn{width:200px;margin-top:20px;}
   }
+<<<<<<< HEAD
 }
 
 //qna
@@ -50,23 +85,209 @@
 
 
 //faq
+=======
+  @include media-breakpoint-down(md){
+    display:none;
+  }
+}
+
+//qna-list
+.icon-write{width:19px;height:18px;margin-right:12px;background:url("../images/icon-write.svg");}
+
+
+//qna-write
+.qna-write-wrap{
+  .top-text{row-gap:40px;margin-bottom:186px;}
+}
+.scroll-textarea{height: 340px;
+  padding: 8px;
+  background-color: $bg-color;
+  textarea{
+    overflow-y:auto;padding:0 8px 0 0;
+    &::-webkit-scrollbar{width:4px;background-color: $border-color;}
+    &::-webkit-scrollbar-thumb {background-color:#999999}
+  }
+}
+
+
+//qna-detail
+.icon-reply{width:22px;height:24px;background:url("../images/icon-reply.svg");}
+.comment-write{
+  width: 100%; margin-top: 80px; display: flex; flex-direction: column; align-items: flex-end;
+  button{margin-top:40px;}
+  textarea {padding: 24px 35px;border-radius:0;}
+  @include media-breakpoint-down(md){
+    margin-top: 30px;
+    textarea {
+      padding: 15px 20px; border-radius: 0;
+    }
+  }
+}
+.comment-wrap{
+  border-top: 2px solid #231815; margin-top: 80px;
+  .reply{
+    display: flex; padding: 34px 30px; border-bottom: 1px solid $border-color;
+    .desc{
+      width: 80%; line-height: 28px; color: #212222; display: flex; align-items: center;
+      .icon-lock{ margin-right: 8px;}
+    }
+    .info{
+      display: flex;align-items: center;width:20%;
+      .user{
+        width:50%; font-weight: 500; font-size: 16px; line-height: 28px; color: $gray-6; text-align: center; word-break: break-all;
+      }
+      .date{
+        width:50%; display: flex; justify-content: end; font-size: 16px; line-height: 28px; color: #5A5B5D;
+      }
+    }
+
+    &.re-reply{
+      display: flex;align-items: start;padding: 36px 30px; border-bottom: 1px solid $border-color; background-color:$bg-color;
+      .icon-reply{margin-right:15px;}
+      .info{
+        .answer{width:auto;margin:0 auto;padding:8px 12.75px;border-radius:32px;border:1px solid $primary;color:$primary;font-size:14px;font-weight:500;line-height:16.8px;}
+      }
+      
+    }
+  }
+  .no-reply{
+    padding: 87px 0; display: flex; align-items: center; justify-content: center;border-bottom: 1px solid $border-color;
+    .desc{font-size: 16px; line-height: 19px; color:$gray-6; }
+  }
+  @include media-breakpoint-down(md){
+    .reply{
+      flex-direction:column;row-gap: 5px;align-items: flex-start; padding: 18px 12px 18px 15px; border-bottom: 1px solid #ddd;
+      .desc{
+        width: 100%; font-size: 14px; line-height: 24px; color: #5A5B5D; display: flex; align-items: center;
+        .icon-lock{ margin-right: 8px;}
+      }
+      .info{
+        width:100%;
+        .user{width: auto;font-weight: 500; font-size: 14px; line-height: 24px; display: inline-block; margin-right: 16px; }
+        .date{width: auto;font-size: 14px; line-height: 24px;}
+      }
+      &.re-reply{
+        padding: 18px 12px 18px 15px;
+        .info{
+          .answer{margin:0 16px 0 0;padding: 5px 11.75px;border-radius: 28px;line-height: 13px;font-size: 13px;}
+        }
+      }
+    }
+  
+    .no-reply{
+      padding: 80px 0; display: flex; align-items: center; justify-content: center;
+      .desc{ font-weight: 500; font-size: 16px; line-height: 19px;}
+    }
+  }
+}
+
+  
+
+
+  
+  
+
+//faq
+.top-scroll-tab-box{
+  display:flex;justify-content: space-between;align-items: center;margin-bottom:40px;
+  .total-num{display:inline-block;font-size: 14px;line-height: 160%;letter-spacing: 0.135px;}
+  @include media-breakpoint-down(md){
+    margin:0;
+    .scroll-tab{margin-bottom:24px;}
+    .total-num{display:none;}
+  }
+}
+>>>>>>> hyo
 .faq-accordion{
   margin-bottom:100px;
   .accordion-button{
     position:relative;padding:24px 0;font-size: 18px;font-weight: 700;line-height: 160%;width: 100%;text-align: left;
+<<<<<<< HEAD
     &::after{position:absolute;right:0;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);display:inline-block;width: 25px;height: 25px;content: "";background: url("../images/icon-faq-arr.svg")no-repeat;transition: 0s;}
+=======
+    &::after{position:absolute;right:0;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);display:inline-block;width: 25px;height: 25px;content: "";background: url("../images/icon-faq-arr.svg")no-repeat;transition: transform .3s;}
+    &:not(.collapsed)::after{transform:translateY(-50%) rotate(-180deg);-webkit-transform:translateY(-50%) rotate(-180deg);}
+>>>>>>> hyo
   }
   .cate{display:inline-block;margin-right:12px;text-align:center;min-width:70px;color:$primary;font-size: 18px;font-weight: 700;line-height: 160%;letter-spacing: 0.135px;}
   .answer-content{padding:24px 80px 24px 24px;border:1px solid $primary;border-radius: 8px;background: rgba(9, 101, 238, 0.06);}
 
   @include media-breakpoint-down(md){
     .accordion-button{
+<<<<<<< HEAD
   
       &::after{}
     }
     .cate{}
     .answer-content{}
+=======
+      font-size: 14px;line-height: 160%;
+      &::after{width:20px;height:20px;}
+    }
+    .cate{min-width:60px;font-size: 14px;line-height: 160%; /* 22.4px */letter-spacing: 0.135px;}
+    .answer-content{padding:24px;}
+>>>>>>> hyo
   }
 
 }
 
+<<<<<<< HEAD
+=======
+//download
+.down-list{
+  display:flex;flex-direction:column;row-gap:24px;
+  li{
+    padding:24px 0;
+    >a{display:flex;flex-direction:column;align-items: flex-start;row-gap:16px;
+    .cate{color:#1535AD;font-weight: 700;line-height: 140%; }
+    .title-line{
+      width:100%;
+      // display:flex;align-items:center;
+      .noti{width: calc(100% - 94%);padding:5px 10px;background-color: $primary;color:$white;font-size:14px;margin-right:16px;border-radius:4px;}
+      .title{color:$dark;font-size: 24px;font-weight: 700;line-height: 29px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;
+        &.active{display: inline;box-shadow: inset 0 -7px 0 #B3F200;
+          &::after{content:"";
+            width: 0;
+            height: 10px;
+            display: inline-block;
+            background: #D9FCDB;
+            position: absolute;
+            bottom:0;
+            left:0;
+            z-index:-1;
+            transition: 0.2s all;}
+        }
+      }
+    }
+    
+    .desc{color:$gray-6;}
+    }
+    .file-line{
+      display:flex;justify-content:space-between;align-items:center;margin-top:16px;
+      a{display:flex;align-items:center;color:#999;column-gap:8px;}
+      .date{color:#999;}
+    }
+  }
+  @include media-breakpoint-down(md){
+    row-gap:0;
+    li{
+      >a{row-gap:8px;
+        .cate{font-size:14px; }
+        .title-line{
+          flex-direction:column;align-items: flex-start;row-gap: 8px;
+          .noti{width: calc(100% - 94%);font-size:12px;margin-right:0;letter-spacing: -0.06px;}
+          .title{font-size: 15px;line-height: 24px;-webkit-box-orient: vertical;display: -webkit-box;white-space: inherit;-webkit-line-clamp: 2;word-break: break-all;
+            &.active{}
+          }
+        }
+        .desc{font-size:14px;}
+      }
+      .file-line{
+        margin-top:8px;
+        a{font-size:13px;}
+        .date{font-size:13px;}
+      }
+    }
+  }
+}
+>>>>>>> hyo

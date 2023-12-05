@@ -8,7 +8,9 @@
     }
     a{ 
       width: 34px; height: 34px;border-radius:100%;display: flex; align-items: center; justify-content: center; font-size: 14px; font-family:'Pretendard';
-      &.active{ background-color:$dark; color:#fff;}
+      &.active{ background-color:$dark; color:#fff;
+        &:hover{background-color:$dark;}
+        }
       &:hover{background-color: $border-color;}
     }
     @include media-breakpoint-down(md){
