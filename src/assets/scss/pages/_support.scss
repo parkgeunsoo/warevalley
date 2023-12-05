@@ -21,7 +21,7 @@
     }
   }
   @include media-breakpoint-down(md){
-    margin-bottom:0;
+    margin-bottom:0;row-gap: 80px;
     .top-text{
       .title{font-size: 24px;}
       .text{font-size: 15px;}
