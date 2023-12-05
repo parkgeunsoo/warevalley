@@ -10,13 +10,8 @@
     @@include('@@webRoot/html/_include/_header.html')
     <div class="sign-container">
       <div class="content h-auto">
-        <div class="login-head">
-          <div class="top-head">
-            <a href="javascript:void(0)" class="back">
-              <i class="icon-back"></i>
-            </a>
-            <p class="sign-title">로그인</p>
-          </div>
+        <div class="top-head">
+          <p class="sign-title">LOGIN</p>
         </div>
         <div class="sign-content">
           <div class="input-form">
@@ -27,27 +22,30 @@
             <p class="input-form-title">비밀번호</p>
             <input type="password" class="form-control" placeholder="비밀번호">
           </div>
-          <div class="btn-group">
-            <button type="button" class="btn login-btn btn-dark">로그인</button>
-          </div>
+          
           <div class="save-login">
             <div class="form-check form-check-inline">
               <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
               <label class="form-check-label essential">아이디 저장</label>
             </div>
           </div>
-          <ul class="link-login">
-            <li class="findId"><a href="#none">아이디/비밀번호 찾기</a></li>
-            <li class="memberJoin"><a href="#none">회원가입</a></li>
-          </ul>
           <div class="login-type">
             <ul>
-              <li class="kakao"><a href="#" data-sns-id="KKO">카카오로 로그인</a></li>
-              <li class="naver"><a href="#" data-sns-id="NAV">Naver로 로그인</a></li>
-              <li class="google"><a href="#" data-sns-id="GGL">Google로 로그인</a></li>
-              <li class="apple"><a href="#" data-sns-id="aap">Apple로 로그인</a></li>
+              <li class="kakao"><a href="#" data-sns-id="KKO"><i class="icon-kakao"></i>카카오로 빠른 시작</a></li>
+              <li class="naver"><a href="#" data-sns-id="NAV" title="네이버로 로그인"><i class="icon-naver"></i></a></li>
+              <li class="google"><a href="#" data-sns-id="GGL" title="Google로 로그인"><i class="icon-google"></i></a></li>
             </ul>
           </div>
+          <button type="button" class="btn btn-login btn-dark">로그인</button>
+          <div class="info-text">
+            <p><strong>아직 웨어밸리 계정이 없으신가요?</strong></p>
+            <p>회원가입 후 트라이얼 버전 다운로드, 무료교육 등<br>
+              웨어밸리에서 제공하는 다양한 서비스를 받아보세요.</p>
+          </div>
+          <ul class="link-login">
+            <li class="findId"><a href="#none">아이디(이메일)찾기</a></li>
+            <li class="memberJoin"><a href="#none">회원가입</a></li>
+          </ul>
         </div>
       </div>
     </div>
