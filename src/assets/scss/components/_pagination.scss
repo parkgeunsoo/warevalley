@@ -1,5 +1,5 @@
 .navigation{
-    display: flex; align-items: center; justify-content: center; margin:100px 0 40px; gap: 4px;
+    display: flex;flex-wrap: wrap; align-items: center; justify-content: center; margin:100px 0 40px; gap: 4px;
     .page-prev, .page-next{
         a{padding: 0;}
     }
@@ -14,7 +14,7 @@
       &:hover{background-color: $border-color;}
     }
     @include media-breakpoint-down(md){
-        gap: 2.75px; 
+        gap: 2.75px; margin:40px 0;
         .pagination{
             gap:2.75px;
         }

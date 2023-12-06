@@ -9,7 +9,7 @@
   <div id="wrap" class="login bg-gray">
     @@include('@@webRoot/html/_include/_header.html')
     <div class="sign-container">
-      <div class="content h-auto">
+      <div class="content">
         <div class="top-head">
           <p class="sign-title">LOGIN</p>
         </div>
@@ -26,7 +26,7 @@
           <div class="save-login">
             <div class="form-check form-check-inline">
               <input type="checkbox" class="form-check-input" name="agree" autocomplete="off">
-              <label class="form-check-label essential">아이디 저장</label>
+              <label class="form-check-label">아이디 저장</label>
             </div>
           </div>
           <div class="login-type">
@@ -43,8 +43,8 @@
               웨어밸리에서 제공하는 다양한 서비스를 받아보세요.</p>
           </div>
           <ul class="link-login">
-            <li class="findId"><a href="#none">아이디(이메일)찾기</a></li>
-            <li class="memberJoin"><a href="#none">회원가입</a></li>
+            <li><a href="#none">아이디(이메일)찾기</a></li>
+            <li><a href="#none">비밀번호 찾기</a></li>
           </ul>
         </div>
       </div>
@@ -57,5 +57,4 @@
     $('html').addClass('bg-gray');
   })
 </script>
-
 </html>

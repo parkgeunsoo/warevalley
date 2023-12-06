@@ -12,15 +12,20 @@
 
 //content-head
 .content-head{
-  display:flex;flex-direction:column;align-items:center;row-gap:32px;margin-bottom:160px;
-  &.bg-support{
+  display:flex;flex-direction:column;align-items:center;margin-bottom:160px;
+  &.bg{
     background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #E9EBF4 88.02%);
   }
-  h1{font-size: 80px;font-weight: 700;line-height: 130%;text-transform: capitalize;}
-  .text{color:$gray-6;font-size: 18px;line-height: 160%;text-align:center;}
+  
+  h1{font-size: 80px;font-weight: 700;line-height: 130%;margin-bottom:33px;text-transform: capitalize;}
+  .text{color:$gray-6;font-size: 18px;line-height: 160%;text-align:center;
+    strong.text-primary{display:block;margin-bottom:14px;}
+  }
   @include media-breakpoint-down(md){
-    row-gap:24px;margin-bottom:80px;
-    h1{font-size: 32px;line-height: 120%;}
-    .text{font-size: 15px;}
+    margin-bottom:80px;
+    h1{font-size: 32px;line-height: 120%;margin-bottom:24px;}
+    .text{font-size: 15px;
+      strong.text-primary{margin-bottom:27px;}
+    }
   }
 }

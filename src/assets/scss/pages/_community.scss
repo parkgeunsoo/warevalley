@@ -90,29 +90,29 @@
           }
         }
         .text{margin-top:8px;font-size:16px;line-height:25.6px;color:$gray-6;-webkit-box-orient: vertical;display: -webkit-box;white-space: inherit;-webkit-line-clamp: 3;word-break: break-all;}
-        &:hover .text-box .title::after{width:100%;}
-        /*&:hover .text-box .title{box-shadow: inset 0 -7px 0 #B3F200;}*/
+        &:hover .text-box .title{text-decoration: underline;}
       }
     }
   }
-}
-@include media-breakpoint-down(md){
-  ul{
-    row-gap:40px;
-    li{
-      a{flex-direction:column;gap:24px;
-        .img{width:100%;}
-        .text-box{
-          width:100%;padding:0;
-          .title{margin-bottom:8px;font-size: 18px;line-height: 28.8px;-webkit-box-orient: vertical;display: -webkit-box;white-space: inherit;-webkit-line-clamp: 2;word-break: break-all;
-            &::after{display:none;}
+  @include media-breakpoint-down(md){
+    ul{
+      row-gap:40px;
+      li{
+        a{flex-direction:column;gap:24px;
+          .img{width:100%;}
+          .text-box{
+            width:100%;padding:0;
+            .title{margin-bottom:8px;font-size: 18px;line-height: 28.8px;-webkit-box-orient: vertical;display: -webkit-box;white-space: inherit;-webkit-line-clamp: 2;word-break: break-all;
+              &::after{display:none;}
+              }
             }
-          }
-          .text{font-size:14px;line-height:22.4px;}
+            .text{font-size:14px;line-height:22.4px;}
+        }
       }
     }
   }
 }
+
 
 
 //content-detail 공통
@@ -153,9 +153,9 @@
         }
         .title{
           font-size: 18px;font-weight: 700;line-height: 28.8px;
-          &.active{display: inline;box-shadow: inset 0 -7px 0 #B3F200;}
         }
         .text{margin-top:8px;font-size:16px;line-height:25.6px;color:$gray-6;}
+        &:hover .text-box .title{text-decoration: underline;}
       }
     }
     

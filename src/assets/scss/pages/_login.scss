@@ -21,6 +21,9 @@ html.bg-gray{
   
   @include media-breakpoint-down(md){
     margin: 74px auto 0;
+    .content{
+      border:0;
+    }
   }
 
   // 전페이지 공용 ---
@@ -40,14 +43,18 @@ html.bg-gray{
 
   // 전페이지 공용 end ---
   .sign-content{
-    padding: 0 30px;
+    padding: 0 16px;
     @at-root{
       .input-form{
         padding-top: 16px;
+        &:first-child{padding-top:0;}
       }
     }
     .login-btn{width: 100%;}
-    .save-login{margin-top: 10px;}
+    .save-login{
+        margin-top: 10px;
+      .form-check-label{color:$gray-6;}
+      }
     @include media-breakpoint-up(lg){
       padding: 0 83px 74px 77px;
       .save-login{
@@ -146,3 +153,4 @@ html.bg-gray{
     } 
   }
 }
+.icon-warning{width:16px;height:17px;margin-right:4px;background:url("../images/icon-warning.svg");}
