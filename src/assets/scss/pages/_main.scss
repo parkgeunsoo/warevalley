@@ -201,14 +201,14 @@
   
   @keyframes firstrollingleft1 {
     0% { transform: translateX(0); }
-    50% { transform: translateX(100%); }
-    50.01% { transform: translateX(-100%); }
+    50% { transform: translateX(-100%); }
+    50.01% { transform: translateX(100%); }
     100% { transform: translateX(0); }
   }
   
   @keyframes firstrollingleft2 {
     0% { transition: translateX(0); }
-    100% { transform: translateX(200%); }
+    100% { transform: translateX(-200%); }
   }
 
   // 롤링 2
@@ -252,6 +252,9 @@
   }
   .rolling-partners-container{
     display: flex; overflow: hidden;
+    &.third-container{
+      position: absolute; top: 50%; transform: translateY(-50%);
+    }
   }
   .rolling-partners{  min-width: auto;  margin-right: 24px;}
   
