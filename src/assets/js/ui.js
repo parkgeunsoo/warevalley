@@ -87,13 +87,15 @@ let clonePartnersFirst = rollerPartnersFirst.cloneNode(true);
 clonePartnersFirst.id = 'partners2';
 document.querySelector('.rolling-partners-container.first-container').appendChild(clonePartnersFirst); // wrap 하위 자식으로 부착
 
-document.querySelector('.rolling-partners-container.first-container').insertBefore(clonePartnersFirst, document.querySelector('#partners1')); // 오리지날 앞에 클론 삽입
-
 document.querySelector('#partners1').style.left = '0px';
 document.querySelector('#partners2').style.left = document.querySelector('.rolling-partners.first .img-wrap').offsetWidth + 'px';
 
 rollerPartnersFirst.classList.add('original');
 clonePartnersFirst.classList.add('clone');
+
+
+
+
 
 // 파트너스 롤링2
 let rollerPartnersSecond = document.querySelector('.rolling-partners.second');
@@ -109,13 +111,18 @@ document.querySelector('#partners4').style.left = document.querySelector('.rolli
 rollerPartnersSecond.classList.add('original');
 clonePartnersSecond.classList.add('clone');
 
+
+
+
+
+
 // 파트너스 롤링3
 let rollerPartnersThird = document.querySelector('.rolling-partners.third');
 rollerPartnersThird.id = 'partners5'; // 아이디 부여
 
 let clonePartnersThird = rollerPartnersThird.cloneNode(true);
 clonePartnersThird.id = 'partners6';
-// document.querySelector('.rolling-partners-container.third-container').appendChild(clonePartnersThird); // wrap 하위 자식으로 부착
+document.querySelector('.rolling-partners-container.third-container').appendChild(clonePartnersThird); // wrap 하위 자식으로 부착
 
 document.querySelector('.rolling-partners-container.third-container').insertBefore(clonePartnersThird, document.querySelector('#partners5')); // 오리지날 앞에 클론 삽입
 
