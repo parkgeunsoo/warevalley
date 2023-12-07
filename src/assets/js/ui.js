@@ -132,3 +132,13 @@ document.querySelector('#partners6').style.left = document.querySelector('.rolli
 rollerPartnersThird.classList.add('original');
 clonePartnersThird.classList.add('clone');
 
+
+$('#viewMenu').click(function(){
+  $('.full-screen-menu').show();
+})
+$('#closeMenu').click(function(){
+  $('.full-screen-menu').hide();
+})
+
+
+
