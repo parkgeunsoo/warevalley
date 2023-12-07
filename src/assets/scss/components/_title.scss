@@ -14,7 +14,7 @@
 .content-head{
   display:flex;flex-direction:column;align-items:center;margin-bottom:160px;
   &.bg{
-    background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #E9EBF4 88.02%);
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #E9EBF4 88.02%);overflow: hidden;
   }
   
   h1{font-size: 80px;font-weight: 700;line-height: 130%;margin-bottom:33px;text-transform: capitalize;}
@@ -27,5 +27,6 @@
     .text{font-size: 15px;
       strong.text-primary{margin-bottom:27px;}
     }
+    .sub-visual{height: 288px;display: flex;align-items: self-end;}
   }
 }
