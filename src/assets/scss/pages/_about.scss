@@ -119,6 +119,19 @@
     em{display:flex;column-gap:10px;margin-bottom:24px;font-size: 14px;font-weight: 700;line-height: 11px;letter-spacing: 1.2px;text-transform: uppercase;}
     strong{font-size: 32px;font-weight: 700;line-height: 130%;}
   }
+  .place-swiper-box{
+    position:relative;margin-left: 500px;
+    .place-swiper{
+      width:1640px;
+      .swiper-slide{}
+      
+    }
+    .swiper-pagination{width:100%;height:2px;bottom:-60px;background: rgba(0, 0, 0, 0.10);}
+      .swiper-pagination-bullet{}
+      .swiper-pagination-bullet-activ{width: 8px;height: 108px;transform: rotate(-90deg);border-radius: 24px;background-color: $dark;}
+  }
+  
+
   .welfare-list{
     display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin: 0 auto;max-width:1016px;
     .item{padding:32px;border-radius:24px;background-color: $bg-color;
@@ -128,8 +141,12 @@
       .text-box{
         display:flex;flex-direction:column;row-gap:8px;
         .text{
-          strong{display:inline-block;margin-bottom:4px;color:#000;}
-          p{color:$gray-6;}
+          margin-top:4px;
+          strong{display:inline-block;color:#000;}
+          p{
+            color:$gray-6;
+            &::before{display:inline-block;width:3px;height:3px;border-radius:100%;background-color:$gray-6;content:'';vertical-align: middle;margin: 0 8px 0 10px;}
+          }
         }
       }
     }
