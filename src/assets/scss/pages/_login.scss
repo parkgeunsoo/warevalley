@@ -14,13 +14,13 @@ html.bg-gray{
 
 //  로그인 -------
 .sign-container{
-  width: 100%; height: 100%;max-width: 560px; margin: 154px auto 0;
+  width: 100%; height: 100%;max-width: 560px; margin: 154px auto 0;background: #fff;
   .content{
     width: 100%; margin: 0 auto; background-color: $white; border: 1px solid $border-color; 
   }
   
   @include media-breakpoint-down(md){
-    margin: 74px auto 0;
+    margin: 74px auto 0;padding-top: 24px;
     .content{
       border:0;
     }
@@ -50,7 +50,7 @@ html.bg-gray{
         &:first-child{padding-top:0;}
       }
     }
-    .login-btn{width: 100%;}
+    .login-btn{width: 100%;margin-top:60px;}
     .save-login{
         margin-top: 10px;
       .form-check-label{color:$gray-6;}
@@ -113,8 +113,10 @@ html.bg-gray{
       }
     }
     .btn-login{margin-top:40px;width:100%;}
-    .info-text{display:flex;align-items:center;margin-top:40px;flex-direction:column;row-gap:8px;padding:12px;font-size:14px;background-color:$bg-color;
+    .info-text{
+      display:flex;align-items:center;margin-top:40px;text-align:center;flex-direction:column;row-gap:8px;padding:12px;font-size:14px;background-color:$bg-color;
       strong{font-weight:700;color:$gray-6;}
+      &.find-text{margin-bottom:40px;}
     }
   }
 }
