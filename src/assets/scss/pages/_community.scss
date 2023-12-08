@@ -92,7 +92,7 @@
             overflow: hidden;white-space: nowrap;width: 100%;
           }
         }
-        .text{margin-top:8px;font-size:16px;line-height:25.6px;color:$gray-6;-webkit-box-orient: vertical;display: -webkit-box;white-space: inherit;-webkit-line-clamp: 3;word-break: break-all;}
+        .text{font-size:16px;line-height:25.6px;color:$gray-6;-webkit-box-orient: vertical;display: -webkit-box;white-space: inherit;-webkit-line-clamp: 3;word-break: break-all;}
         &:hover .text-box .title{text-decoration: underline;}
       }
     }

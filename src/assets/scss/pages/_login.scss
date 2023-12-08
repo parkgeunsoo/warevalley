@@ -1,12 +1,12 @@
 html.bg-gray{
-  height: 100%; background: #F7F7F7;
+  height: 100%; background: $bg-color;
   body{ height: 100%;}
 }
 #wrap{
   &.login{
     padding-top: 0; 
-    @include media-breakpoint-down(lg){
-      height: 100%;
+    @include media-breakpoint-down(md){
+      height: 100%;background:$white;
     }
   }
 }
@@ -20,7 +20,7 @@ html.bg-gray{
   }
   
   @include media-breakpoint-down(md){
-    margin: 74px auto 0;padding-top: 24px;
+    margin: 0 auto;padding-top: 74px;
     .content{
       border:0;
     }

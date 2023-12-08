@@ -113,43 +113,97 @@
 
 // employ
 .employ-section{
-  margin-bottom:160px;
+  padding:160px 0 0;
+  &.bg-gray{padding:160px 0;background-color:$bg-color;}
   .top-title{
     display:flex;flex-direction:column;align-items:center;margin-bottom:80px;
     em{display:flex;column-gap:10px;margin-bottom:24px;font-size: 14px;font-weight: 700;line-height: 11px;letter-spacing: 1.2px;text-transform: uppercase;}
     strong{font-size: 32px;font-weight: 700;line-height: 130%;}
   }
+  @include media-breakpoint-down(lg){
+    padding:80px 0 0;
+    &.bg-gray{padding:80px 0;}
+    .top-title{
+      margin-bottom:40px;
+      em{margin-bottom:16px;font-size: 12px;}
+      strong{font-size: 20px;line-height: 130%;}
+    }
+  }
   .place-swiper-box{
     position:relative;margin-left: 500px;
     .place-swiper{
-      width:1640px;
+      width:1000px;
       .swiper-slide{}
       
     }
     .swiper-pagination{width:100%;height:2px;bottom:-60px;background: rgba(0, 0, 0, 0.10);}
-      .swiper-pagination-bullet{}
-      .swiper-pagination-bullet-activ{width: 8px;height: 108px;transform: rotate(-90deg);border-radius: 24px;background-color: $dark;}
-  }
-  
+    .swiper-pagination-bullet{}
+    .swiper-pagination-bullet-activ{width: 8px;height: 108px;transform: rotate(-90deg);border-radius: 24px;background-color: $dark;}
+    @include media-breakpoint-down(lg){
 
-  .welfare-list{
-    display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin: 0 auto;max-width:1016px;
-    .item{padding:32px;border-radius:24px;background-color: $bg-color;
-      &:nth-child(-n+3){width:calc((100% - 24px)/2);}
-      &:nth-child(n+3):nth-child(-n+8){width:calc((100% - 48px)/3);}
-      .img{margin-bottom:8px;text-align: right;}
-      .text-box{
-        display:flex;flex-direction:column;row-gap:8px;
-        .text{
-          margin-top:4px;
-          strong{display:inline-block;color:#000;}
-          p{
-            color:$gray-6;
-            &::before{display:inline-block;width:3px;height:3px;border-radius:100%;background-color:$gray-6;content:'';vertical-align: middle;margin: 0 8px 0 10px;}
+    }
+  }
+ 
+  .welfare-list-box{
+    .welfare-list{
+      display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin: 0 auto;max-width:1016px;
+      .item{padding:32px;border-radius:24px;background-color: $bg-color;
+        &:nth-child(-n+3){width:calc((100% - 24px)/2);}
+        &:nth-child(n+3):nth-child(-n+8){width:calc((100% - 48px)/3);}
+        .img{margin-bottom:8px;text-align: right;}
+        .text-box{
+          display:flex;flex-direction:column;row-gap:8px;
+          .text{
+            margin-top:4px;
+            strong{display:inline-block;color:#000;}
+            p{
+              color:$gray-6;text-indent: -21px;margin-left: 21px;
+              &::before{display:inline-block;width:3px;height:3px;border-radius:100%;background-color:$gray-6;content:'';vertical-align: middle;margin: 0 8px 0 10px;}
+            }
           }
         }
       }
     }
   }
+  
+  .accordion{
+    margin-bottom:160px;
+    @include media-breakpoint-down(lg){
+      margin-bottom:80px;
+    }
+  }
+  .employ-company{
+    display:flex;column-gap:24px;
+    li{
+      width:calc((100% - 48px) / 3);
+      a{
+        display:flex;align-items:center;flex-direction: column;align-items: center;row-gap: 6px;justify-content:center;height:180px;background:$white;border:1px solid $border-color;border-radius:16px;
+        p{
+          display: flex;align-items: center;column-gap: 6px;
+          strong{font-weight:700;font-size:24px;}
+        }
+        
+      }
+    }
+    @include media-breakpoint-down(lg){
+      flex-direction:column;row-gap:8px;
+      li{
+        width:100%;
+        a{
+          row-gap: 5.5px;height:100px;
+          img{max-width:154px;}
+          p{
+            font-size:14px;column-gap: 8px;
+            strong{font-size:18px;}
+            .icon-emoji{width:30px;height:30px;}
+          }
+          
+        }
+      }
+    }
+  }
+  .icon-employ-point{width:12px;height:12px;background:url("../images/icon-employ-point.png") ;}
+  .icon-q{width:18px;height:19px;margin:4px 12px 0 0;background:url("../images/icon-q.svg");}
+  .icon-emoji{width:40px;height:40px;background:url("../images/icon-emoji.svg");background-size: 100%;}
+  
 }
-.icon-employ-point{width:12px;height:12px;background:url("../images/icon-employ-point.png") ;}
