@@ -124,8 +124,6 @@ let clonePartnersThird = rollerPartnersThird.cloneNode(true);
 clonePartnersThird.id = 'partners6';
 document.querySelector('.rolling-partners-container.third-container').appendChild(clonePartnersThird); // wrap 하위 자식으로 부착
 
-document.querySelector('.rolling-partners-container.third-container').insertBefore(clonePartnersThird, document.querySelector('#partners5')); // 오리지날 앞에 클론 삽입
-
 document.querySelector('#partners5').style.left = '0px';
 document.querySelector('#partners6').style.left = document.querySelector('.rolling-partners.third .img-wrap').offsetWidth + 'px';
 
