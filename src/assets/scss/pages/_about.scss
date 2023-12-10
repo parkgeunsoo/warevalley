@@ -130,17 +130,18 @@
     }
   }
   .place-swiper-box{
-    position:relative;margin-left: 500px;
+    position:relative;
     .place-swiper{
-      width:1000px;
+      width:1600px;overflow:hidden;
       .swiper-slide{}
       
     }
-    .swiper-pagination{width:100%;height:2px;bottom:-60px;background: rgba(0, 0, 0, 0.10);}
-    .swiper-pagination-bullet{}
-    .swiper-pagination-bullet-activ{width: 8px;height: 108px;transform: rotate(-90deg);border-radius: 24px;background-color: $dark;}
-    @include media-breakpoint-down(lg){
-
+    .swiper-pagination{position: relative;bottom: 0;left: 50%;transform: translateX(-50%);margin:65px 0 0;display: flex;align-items: center;max-width:864px;height:2px;background: rgba(0, 0, 0, 0.10);}
+    .swiper-pagination-bullet{margin:0;background-color:transparent;width: 108px;height: 8px;margin:0;border-radius: 8px;}
+    .swiper-pagination-bullet-active{background-color: $dark;}
+    @include media-breakpoint-down(md){
+      .swiper-pagination{margin:19px 0 0;}
+      .swiper-pagination-bullet{width:70px;height: 4px;border-radius: 4px;}
     }
   }
  
@@ -153,9 +154,9 @@
         .img{margin-bottom:8px;text-align: right;}
         .text-box{
           display:flex;flex-direction:column;row-gap:8px;
+          strong{display:inline-block;color:#000;}
           .text{
             margin-top:4px;
-            strong{display:inline-block;color:#000;}
             p{
               color:$gray-6;text-indent: -21px;margin-left: 21px;
               &::before{display:inline-block;width:3px;height:3px;border-radius:100%;background-color:$gray-6;content:'';vertical-align: middle;margin: 0 8px 0 10px;}
@@ -163,6 +164,29 @@
           }
         }
       }
+    }
+    @include media-breakpoint-down(md){
+      overflow-x: scroll;-ms-overflow-style: none;scrollbar-width: none;
+      &::-webkit-scrollbar{display:none;}
+      .welfare-list{
+        column-gap:16px;width:auto;white-space: nowrap;overflow-x: auto;justify-content: start;flex-wrap: nowrap;
+        .item{padding:12px 24px;border-radius:18.268px;width:242px !important;height:320px;flex: 0 0 auto;
+          .img{
+            img{width: 90px;height: 90px;}
+          }
+          .text-box{
+            strong{font-size: 14px;}
+            .text{
+              margin-top:4px;
+              p{
+                font-size: 12px;text-indent: -21px;margin-left: 21px;white-space: initial;
+                &::before{width:3px;height:3px;border-radius:100%;margin: 0 8px 0 10px;}
+              }
+            }
+          }
+        }
+      }
+
     }
   }
   

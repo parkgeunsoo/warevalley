@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <div id="wrap">
+  <div id="wrap" class="overflow-hidden">
     @@include('@@webRoot/html/_include/_header.html')
     
     <div id="layout">
@@ -19,7 +19,7 @@
             <li><a href="../about-us/employ.html" class="active">인재채용</a></li>
           </ul>
         </div>
-        <div class="sub-content p-0">
+        <div class="sub-content pb-0">
           <div class="content-head bg m-0">
             <h1 class="top-title">employ</h1>
             <div class="text">
@@ -369,10 +369,12 @@
   <script>
     //workplace swiper
     const workSwiper = new Swiper('.place-swiper', {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween:24,
       initialSlide: 1,
-      //loop: true,
+      centeredSlides: false,
+      slidesPerGroup:1,
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
