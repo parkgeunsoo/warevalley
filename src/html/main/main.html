@@ -707,13 +707,33 @@
           },
         })
         const productSwiper = new Swiper('.section-product .swiper', {
-          slidesPerView:2.5,
+          slidesPerView: "auto",
           spaceBetween:32,
           pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
             clickable: true,
           },
+          on: {
+          init: function () {
+            // 슬라이드 크기에 따른 활성 슬라이드 크기 조절
+            const activeSlide = this.slides[this.activeIndex];
+            if (activeSlide) {
+              const isActiveSlide = activeSlide.classList.contains('swiper-slide-active');
+              const newWidth = isActiveSlide ? 392 : 290;
+              activeSlide.style.width = `${newWidth}px`;
+            }
+          },
+          slideChange: function () {
+            // 슬라이드 변경 시 활성 슬라이드 크기 조절
+            const activeSlide = this.slides[this.activeIndex];
+            if (activeSlide) {
+              const isActiveSlide = activeSlide.classList.contains('swiper-slide-active');
+              const newWidth = isActiveSlide ? 392 : 290;
+              activeSlide.style.width = `${newWidth}px`;
+            }
+          },
+        },
         })
 
 

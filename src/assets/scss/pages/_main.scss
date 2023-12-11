@@ -79,7 +79,7 @@
 // section2
 .section-product{
   .product-wrap{
-    display: flex; align-items: center; padding-left: 15%; gap: 100px;
+    display: flex; align-items: center; padding-left: 15%;
     @include media-breakpoint-down(lg){
       flex-direction: column; gap: 20px;
     }
@@ -92,16 +92,16 @@
     }
   }
   .swiper{
-    height: 100%; padding: 80px 0 80px 30px; margin-right: inherit;  opacity: 0; transform: translateY(40px);
+    width: 60%; height: 100%; padding: 80px 0 80px 30px; margin-right: inherit;  opacity: 0; transform: translateY(40px);
     .swiper-wrapper{
       align-items: center;
     }
   }
  
   .swiper-slide{
-    width: 290px !important; height: 413px; position: relative;
+    height: 413px; position: relative;  transition: transform 0.3s ease; 
     &.swiper-slide-active{
-      width: 392px !important; height: 560px !important; background: linear-gradient(155deg, #32A3F8 0.47%, #1576D0 98.29%); border-radius: 32px;
+      height: 560px !important; background: linear-gradient(155deg, #32A3F8 0.47%, #1576D0 98.29%); border-radius: 32px;
       .card{
         .title{ color: #fff;}
         .desc{ color: #fff;}
@@ -117,7 +117,7 @@
     .title{font-size: 24px; font-weight: 700; line-height: 160%;}
     .desc{font-weight: 700; line-height: 140%; margin-top: 16px;}
     .card-active-text{
-      display: none; margin-top: 16px; color: #fff;
+      display: none; margin-top: 16px; color: #fff; transition: color 0.3s ease;
     }
   }
 }
