@@ -79,56 +79,6 @@ $(document).ready(function () {
   });
 });
 
-// 파트너스 롤링1
-let rollerPartnersFirst = document.querySelector('.rolling-partners.first');
-rollerPartnersFirst.id = 'partners1'; // 아이디 부여
-
-let clonePartnersFirst = rollerPartnersFirst.cloneNode(true);
-clonePartnersFirst.id = 'partners2';
-document.querySelector('.rolling-partners-container.first-container').appendChild(clonePartnersFirst); // wrap 하위 자식으로 부착
-
-document.querySelector('#partners1').style.left = '0px';
-document.querySelector('#partners2').style.left = document.querySelector('.rolling-partners.first .img-wrap').offsetWidth + 'px';
-
-rollerPartnersFirst.classList.add('original');
-clonePartnersFirst.classList.add('clone');
-
-
-
-
-
-// 파트너스 롤링2
-let rollerPartnersSecond = document.querySelector('.rolling-partners.second');
-rollerPartnersSecond.id = 'partners3'; // 아이디 부여
-
-let clonePartnersSecond = rollerPartnersSecond.cloneNode(true);
-clonePartnersSecond.id = 'partners4';
-document.querySelector('.rolling-partners-container.second-container').appendChild(clonePartnersSecond); // wrap 하위 자식으로 부착
-
-document.querySelector('#partners3').style.left = '0px';
-document.querySelector('#partners4').style.left = document.querySelector('.rolling-partners.second .img-wrap').offsetWidth + 'px';
-
-rollerPartnersSecond.classList.add('original');
-clonePartnersSecond.classList.add('clone');
-
-
-
-
-
-
-// 파트너스 롤링3
-let rollerPartnersThird = document.querySelector('.rolling-partners.third');
-rollerPartnersThird.id = 'partners5'; // 아이디 부여
-
-let clonePartnersThird = rollerPartnersThird.cloneNode(true);
-clonePartnersThird.id = 'partners6';
-document.querySelector('.rolling-partners-container.third-container').appendChild(clonePartnersThird); // wrap 하위 자식으로 부착
-
-document.querySelector('#partners5').style.left = '0px';
-document.querySelector('#partners6').style.left = document.querySelector('.rolling-partners.third .img-wrap').offsetWidth + 'px';
-
-rollerPartnersThird.classList.add('original');
-clonePartnersThird.classList.add('clone');
 
 
 $('#viewMenu').click(function(){
@@ -140,4 +90,15 @@ $('#closeMenu').click(function(){
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var header = document.getElementById('header');
 
+  window.addEventListener('scroll', function () {
+    // 스크롤 위치가 50 이상이면 배경색 추가, 그 외에는 배경색 제거
+    if (window.scrollY > 50) {
+      header.style.backgroundColor = '#fff';
+    } else {
+      header.style.backgroundColor = 'transparent';
+    }
+  });
+});

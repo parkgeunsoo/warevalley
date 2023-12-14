@@ -1,5 +1,5 @@
 .header{
-  width: 100%;  display: flex; align-items: center; justify-content: space-between; position:fixed; top: 0; left: 0;  z-index: 9999; padding: 17px 80px; 
+  width: 100%;  display: flex; align-items: center; justify-content: space-between; position:fixed; top: 0; left: 0;  z-index: 9999; padding: 17px 80px;
   @include media-breakpoint-down(lg){
     padding: 12px 16px;
     .logo{
@@ -8,6 +8,7 @@
     }
   }
   nav{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
     ul{
       display: flex; align-items: center; gap: 50px;
       li{

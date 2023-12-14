@@ -129,72 +129,36 @@
                   <a href="" class="read-more">Read More <i class="icon-read-more"></i></a>
                 </div>
               </div>
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="product-wrap__box">
-                        <div class="title">Orange</div>
-                        <div class="desc">DBMS 개발 · 관리 도구</div>
-                        <p class="card-active-text">데이터베이스 관리 업무를 단순화하고 편리한 그래픽 UI 기능으로 개발 속도를 높여 사용자의 생산성을  향상시킵니다.</p>
-                      </div>
+              <div class="product-slide">
+                <div class="right-box">
+                  <div class="main-infotech-list">
+                    <div class="list-item">
+                      <a href="">
+                        <div class="item-inner"></div>
+                      </a>
+                    </div>
+                    <div class="list-item">
+                      <a href="">
+                        <div class="item-inner"></div>
+                      </a>
+                    </div>
+                    <div class="list-item">
+                      <a href="">
+                        <div class="item-inner"></div>
+                      </a>
+                    </div>
+                    <div class="list-item">
+                      <a href="">
+                        <div class="item-inner"></div>
+                      </a>
+                    </div>
+                    <div class="list-item">
+                      <a href="">
+                        <div class="item-inner"></div>
+                      </a>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="product-wrap__box">
-                        <div class="title">Log Catch</div>
-                        <div class="desc">개인정보 접속이력 통합관리 솔루션</div>
-                        <p class="card-active-text">WAS시스템을 통한 DBMS 작업에 대해 실시간으로
-                          로그를 수집/가공하여 저장된 로그를 개인정보 접속
-                         록으로 분석하여 다양한 통계 정보를 제공합니다.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="product-wrap__box">
-                        <div class="title">Chakra Max</div>
-                        <div class="desc">DB · Server 접근제어 솔루션</div>
-                        <p class="card-active-text">고객의 시스템과 데이터베이스 내에  저장된  소중한 정보자산 및 개인정보를 안전하고 
-                          편리하게 운영합니다.</p>
-                      </div>
-                    </div>
-                  </div> 
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="product-wrap__box">
-                        <div class="title">Orange Ade</div>
-                        <div class="desc">데이터베이스 종합 관리 솔루션</div>
-                        <p class="card-active-text">오렌지는 데이터베이스 관리 업무를 단순화하고 개발
-                          속도를 높여 생산성을 향상시키는 데이터베이스 개발
-                          및 관리 솔루션입니다</p>
-                      </div>
-                    </div>
-                  </div> 
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="product-wrap__box">
-                        <div class="title">Trusted Orange</div>
-                        <div class="desc">보안과 협업을 위한 데이터베이스 IDE</div>
-                        <p class="card-active-text">기업 비즈니스의 중요 데이터를 안전하게 처리하는
-                          절차를 제공합니다.</p>
-                      </div>
-                    </div>
-                  </div> 
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <div class="product-wrap__box">
-                        <div class="title">Peta SQL</div>
-                        <div class="desc">Column 기반 데이터베이스 솔루션</div>
-                        <p class="card-active-text">빅데이터 분석부터 온라인 트랜젝션의 데이터 
-                          처리까지 높은 압축률과 빠른 검색 속도를 
-                          제공합니다.</p>
-                      </div>
-                    </div>
-                  </div> 
                 </div>
-                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -599,7 +563,6 @@
           </div>
         </div>
       </main>
-      @@include('@@webRoot/html/_include/_footer.html')
       @@include('@@webRoot/html/_include/_modal.html')
     </div>
 
@@ -640,13 +603,6 @@
 
 
       $(document).ready(function () {
-        gsap.to('#animatedButton', {
-          y: 4,
-          repeat: -1,
-          yoyo: true,
-          ease: 'power1.inOut',
-          duration: 1,
-        })
         $('#fullpage').fullpage({
           afterLoad: function (anchorLink, index) {
             const nextButton = document.getElementById('nextButton');
@@ -657,7 +613,7 @@
               gsap.to('.section-desc-sub5', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
               gsap.to('.section-desc-title5', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.2, })
               gsap.to('.read-more', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.3, })
-              gsap.to('.product-wrap .swiper', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.4, })
+              // gsap.to('.product-wrap .swiper', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.4, })
             }
             if( index == 3){
               gsap.to('.section-desc-sub', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
@@ -706,34 +662,65 @@
             }
           },
         })
+        const infotechCon = $('.main-infotech-list');
+        const infotechLength = infotechCon.find('.list-item').length;
+
+        infotechCon.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+          $(this).addClass('slide-on');
+          $(this).find('.list-item').find('svg').removeClass('on');
+          $(this).find('.list-item').eq(nextSlide).find('svg').addClass('on');
+          if (currentSlide < nextSlide) {
+            //$(this).find('.list-item').eq(currentSlide).addClass('off');
+
+            for (var i = 0;i < nextSlide;i++) {
+              $(this).find('.list-item').eq(i).addClass('off');
+            }
+          } else {
+            //$(this).find('.list-item').eq(currentSlide).removeClass('off');
+
+            for (var i = infotechLength;i > nextSlide;i--) {
+              $(this).find('.list-item').eq(i).removeClass('off');
+            }
+          }
+
+          if (nextSlide === infotechLength - 1) {
+            location.href = "/home/case/case.html";
+          }
+        });
+        $('.main-infotech-list').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: false,
+          dots: true,
+          autoplay: false,
+          speed: 500,
+          infinite: false,
+          draggable: true,
+          focusOnSelect: true,
+          easing: 'linear',
+          pauseOnHover: true,
+          useTransform: false,
+        });
+
+        gsap.to('#animatedButton', {
+          y: 4,
+          repeat: -1,
+          yoyo: true,
+          ease: 'power1.inOut',
+          duration: 1,
+        })
+        
+        
+        
         const productSwiper = new Swiper('.section-product .swiper', {
           slidesPerView: "auto",
-          spaceBetween:32,
+          spaceBetween: 60,
           pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
             clickable: true,
           },
-          on: {
-          init: function () {
-            // 슬라이드 크기에 따른 활성 슬라이드 크기 조절
-            const activeSlide = this.slides[this.activeIndex];
-            if (activeSlide) {
-              const isActiveSlide = activeSlide.classList.contains('swiper-slide-active');
-              const newWidth = isActiveSlide ? 392 : 290;
-              activeSlide.style.width = `${newWidth}px`;
-            }
-          },
-          slideChange: function () {
-            // 슬라이드 변경 시 활성 슬라이드 크기 조절
-            const activeSlide = this.slides[this.activeIndex];
-            if (activeSlide) {
-              const isActiveSlide = activeSlide.classList.contains('swiper-slide-active');
-              const newWidth = isActiveSlide ? 392 : 290;
-              activeSlide.style.width = `${newWidth}px`;
-            }
-          },
-        },
         })
 
 
@@ -796,6 +783,58 @@
           loop: true,
         })
       })
+
+      
+      // 파트너스 롤링1
+      let rollerPartnersFirst = document.querySelector('.rolling-partners.first');
+      rollerPartnersFirst.id = 'partners1'; // 아이디 부여
+
+      let clonePartnersFirst = rollerPartnersFirst.cloneNode(true);
+      clonePartnersFirst.id = 'partners2';
+      document.querySelector('.rolling-partners-container.first-container').appendChild(clonePartnersFirst); // wrap 하위 자식으로 부착
+
+      document.querySelector('#partners1').style.left = '0px';
+      document.querySelector('#partners2').style.left = document.querySelector('.rolling-partners.first .img-wrap').offsetWidth + 'px';
+
+      rollerPartnersFirst.classList.add('original');
+      clonePartnersFirst.classList.add('clone');
+
+
+
+
+
+      // 파트너스 롤링2
+      let rollerPartnersSecond = document.querySelector('.rolling-partners.second');
+      rollerPartnersSecond.id = 'partners3'; // 아이디 부여
+
+      let clonePartnersSecond = rollerPartnersSecond.cloneNode(true);
+      clonePartnersSecond.id = 'partners4';
+      document.querySelector('.rolling-partners-container.second-container').appendChild(clonePartnersSecond); // wrap 하위 자식으로 부착
+
+      document.querySelector('#partners3').style.left = '0px';
+      document.querySelector('#partners4').style.left = document.querySelector('.rolling-partners.second .img-wrap').offsetWidth + 'px';
+
+      rollerPartnersSecond.classList.add('original');
+      clonePartnersSecond.classList.add('clone');
+
+
+
+
+
+
+      // 파트너스 롤링3
+      let rollerPartnersThird = document.querySelector('.rolling-partners.third');
+      rollerPartnersThird.id = 'partners5'; // 아이디 부여
+
+      let clonePartnersThird = rollerPartnersThird.cloneNode(true);
+      clonePartnersThird.id = 'partners6';
+      document.querySelector('.rolling-partners-container.third-container').appendChild(clonePartnersThird); // wrap 하위 자식으로 부착
+
+      document.querySelector('#partners5').style.left = '0px';
+      document.querySelector('#partners6').style.left = document.querySelector('.rolling-partners.third .img-wrap').offsetWidth + 'px';
+
+      rollerPartnersThird.classList.add('original');
+      clonePartnersThird.classList.add('clone');
     </script>
   </body>
 </html>

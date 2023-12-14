@@ -1,4 +1,6 @@
-
+.section{
+  position: relative;
+}
 .main-banner{
   position: relative; height: 100%; display: flex; align-items: center; justify-content: center;
   .scroll-down{
@@ -79,47 +81,77 @@
 // section2
 .section-product{
   .product-wrap{
-    display: flex; align-items: center; padding-left: 15%;
+    display: flex; align-items: center; padding-left: 15%; gap: 100px;
     @include media-breakpoint-down(lg){
       flex-direction: column; gap: 20px;
     }
   }
   .main-desc{
-    flex-shrink: 0;
+    flex-shrink: 0; position: relative; z-index: 11; padding: 50px 0; background-color: #fff;
     .title{ font-size: 40px;}
     @at-root{
       .read-more{ margin-top: 80px; font-weight: 500; line-height: 160%; display: flex; align-items: center; gap: 8px; opacity: 0; transform: translateY(40px);}
     }
   }
-  .swiper{
-    width: 60%; height: 100%; padding: 80px 0 80px 30px; margin-right: inherit;  opacity: 0; transform: translateY(40px);
-    .swiper-wrapper{
-      align-items: center;
-    }
+
+
+  .right-box{
+    width: 63%;
+    margin-right: -200px;
   }
- 
-  .swiper-slide{
-    height: 413px; position: relative;  transition: transform 0.3s ease; 
-    &.swiper-slide-active{
-      height: 560px !important; background: linear-gradient(155deg, #32A3F8 0.47%, #1576D0 98.29%); border-radius: 32px;
-      .card{
-        .title{ color: #fff;}
-        .desc{ color: #fff;}
-        .card-active-text{ display: block;}
+  .main-infotech-list{
+    width: 330px;
+    height: 560px;
+    .list-item{
+      position: relative;
+      margin-right: 3rem;
+      height: 42rem;
+      transition: all 0.7s;
+      .item-inner{
+        position: absolute;
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        min-height: 420px;
+        background: yellow;
+        box-shadow: 15px 15px 50px rgba(0,0,0,0.12);
+        transition: all 0.3s linear, min-height 0.3s linear;
+        border-radius: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &.slick-current{
+        .item-inner{
+          width: 400px;
+          min-height: 560px;
+          transform: translate(-200px, -50%);
+          background: red;
+          box-shadow: none;
+        }
       }
     }
   }
-  .product-wrap__box{
-    position: absolute;bottom: 40px; padding:  0 32px;
+  /* 컨텐츠 활성화 off */
+  .main-infotech-list .list-item.off:not(.slick-current){ transform:translateX(-530%) !important; transition-delay:0s !important;}
+  .main-infotech-list .list-item.off.slick-current{transition-delay:0s !important;}
+  .main-infotech-list .list-item.off:not(.slick-current) .item-inner{backdrop-filter: blur(10px); background:none;}
+  
+  .slick-list{
+    overflow: visible !important;
   }
-  .card{
-    width: 100%; height: 100%; padding: 40px 0; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08); border-radius: 32px;
-    .title{font-size: 24px; font-weight: 700; line-height: 160%;}
-    .desc{font-weight: 700; line-height: 140%; margin-top: 16px;}
-    .card-active-text{
-      display: none; margin-top: 16px; color: #fff; transition: color 0.3s ease;
-    }
-  }
+  
+
+  // .product-wrap__box{
+  //   position: absolute;bottom: 40px; padding:  0 32px;
+  // }
+  // .card{
+  //   width:290px !important; height: 413px; padding: 40px 0; box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08); border-radius: 32px;
+  //   .title{font-size: 24px; font-weight: 700; line-height: 160%;}
+  //   .desc{font-weight: 700; line-height: 140%; margin-top: 16px;}
+  //   .card-active-text{
+  //     display: none; margin-top: 16px; color: #fff; transition: color 0.3s ease;
+  //   }
+  // }
 }
 // section3
 .section-desc{
@@ -425,7 +457,7 @@
 .section-solutions{
   position: relative;
   #circle {
-    position: absolute; width: 360px; height: 600px; background-image: url('../images/solutions-bg.png'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 300px; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+    position: absolute; width: 360px; height: 600px; background-image: url('../images/solutions-bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 300px; top: 50%; left: 50%; transform: translate(-50%, -50%); 
     
   }
   .txt-box{

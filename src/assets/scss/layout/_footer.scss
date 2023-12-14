@@ -1,6 +1,7 @@
 #footer {
   background: $white;
   padding: 60px 0 59px;
+  border-top: 1px solid #eee;
   .desc{
     display:flex;flex-direction:column;row-gap:4px;margin-bottom:16px;
     dl{
