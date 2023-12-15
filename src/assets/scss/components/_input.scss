@@ -34,11 +34,11 @@
   .form{
     position: relative;
   }
-  &.error{
+  .error{
     .input-txt{display: block;}
     .form-control{ border: 1px solid $danger;}
   }
-   &.success{
+   .success{
     .form{
       &::after{
         content:""; position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background-image: url('../images/check-input.svg'); width: 18px; height: 18px; background-size: cover; background-position: center; background-repeat: no-repeat;
@@ -63,7 +63,7 @@
 }
 
 .input-form{
-  .input-form-title{font-size: 14px;line-height: 160%; margin-bottom: 5px;}
+  .input-form-title{font-size: 14px;line-height: 160%; margin-bottom: 4px;}
 }
 //  ID 찾기 -------
 .certification-form{
@@ -74,7 +74,7 @@
   }
 }
 .time-form{
-  position: relative; margin-top: 10px;
+  position: relative; margin-top: 24px;
   .timer{
     position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: $danger-dark; font-size: 14px;
   }

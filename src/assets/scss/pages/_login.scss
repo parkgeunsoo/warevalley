@@ -58,11 +58,11 @@ html.bg-gray{
     @include media-breakpoint-up(lg){
       padding: 0 83px 74px 77px;
       .save-login{
-        margin-top: 20px;
+        margin-top: 14px;
       }
     }
     .link-login{
-      margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 16px;
+      margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 33px;
       li{
         position: relative;
         a{
@@ -70,7 +70,7 @@ html.bg-gray{
         }
         &+li{
           &::after{ 
-            content: ""; position: absolute; width: 1px; height: 10px; background-color: $gray; left: -8px; top: 50%; transform: translateY(-50%);
+            content: ""; position: absolute; width: 1px; height: 10px; background-color: $gray; left: -16px; top: 50%; transform: translateY(-50%);
           }
           
         }
@@ -88,7 +88,7 @@ html.bg-gray{
           }
           &.kakao{
             flex: 1 0 0;
-            a{padding: 12px 24px; font-size: 14px;font-weight: 600;line-height: 140%; letter-spacing: -0.07px;background-color: #fee500;border-radius:40px; }
+            a{padding: 9.46px 24px; font-size: 14px;font-weight: 600;line-height: 140%; letter-spacing: -0.07px;background-color: #fee500;border-radius:40px; }
           }
           &.naver{
             a{ width:44px;height:44px;border-radius:100%;background-color: #00c43b;}
@@ -115,8 +115,13 @@ html.bg-gray{
     .btn-login{margin-top:40px;width:100%;}
     .info-text{
       display:flex;align-items:center;margin-top:40px;text-align:center;flex-direction:column;row-gap:8px;padding:12px;font-size:14px;background-color:$bg-color;
-      strong{font-weight:700;color:$gray-6;}
-      &.find-text{margin-bottom:40px;}
+      strong{font-weight:700;color:$gray-6;font-size: 16px;}
+      &.find-text{margin-bottom:40px;
+      strong{color:#000;}
+      }
+      &.success-text{margin-bottom:40px;color:$dark;font-size:16px;
+        strong{font-size:18px;}
+        }
     }
   }
 }
