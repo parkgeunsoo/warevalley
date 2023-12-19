@@ -45,7 +45,7 @@
       width: 100%;
     }
     .title{
-      font-size: 80px; font-weight: 700; line-height: 130%;
+      font-size: 74px; font-weight: 700; line-height: 130%;
       @include media-breakpoint-down(lg){
         font-size: 40px;
       }
@@ -62,6 +62,12 @@
         font-size: 15px;
       }
     }
+    .img{
+      margin-top: 60px;
+      @include media-breakpoint-down(lg){
+        margin-top: 30px;
+      }
+    }
     .visual-head__list{
       margin-top: 24px;
       .list-title{
@@ -71,7 +77,10 @@
         }
       }
       ul{
-        margin-top: 16px;
+        margin-top: 16px; display: flex; flex-direction: column; gap: 16px;
+        @include media-breakpoint-down(lg){
+          gap: 8px;
+        }
         li{
           padding-left: 10px; position: relative; color: #000; line-height: 160%;
           &::before{
@@ -85,14 +94,19 @@
     }
   }
   .visual-img{
-    position: absolute; top: -20%; right: -20%;
+    position: absolute; top: -30%; right: -20%;
     @include media-breakpoint-down(xl){
       position: static;
     }
   }
 }
 .slide-img-box{
-  
+  &.chakra{ margin-top: 84px;}
+  @include media-breakpoint-down(lg){
+    overflow: scroll; height: 250px;
+    img{ max-width: inherit; height: 100%;}
+    &.chakra{ margin-top: 40px;}
+  }
 }
 .shadow-box{
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.10); border-radius: 16px;
@@ -102,11 +116,24 @@
   }
   .img{ margin-bottom: 16px;}
   .title{
-    color: #000; font-size: 24px; font-weight: 700;
+    color: #000; font-size: 20px; font-weight: 700;
     line-height: 160%
   }
   .desc{
     font-size: 18px;line-height: 160%; margin-top: 12px; color: #666;
+    &.text-dark{color: #222;}
+  }
+  ul{
+    margin-top: 10px; display: flex; flex-direction: column; gap: 10px;
+    li{
+      padding-left: 10px; position: relative; color: #666; line-height: 160%;
+      &::before{
+        content: ""; position: absolute; left: 0; top: 10px; width: 4px; height: 4px; background-color: #666; border-radius: 50%;
+      }
+      @include media-breakpoint-down(lg){
+        font-size: 14px;
+      }
+    }  
   }
   @include media-breakpoint-down(lg){
     .img{ 
@@ -136,7 +163,17 @@
   &:last-child{margin-top: 0;}
   p{font-size: 18px; line-height: 160%;}
   ul{
-    li{font-size: 18px; line-height: 160%; }
+    display: flex; flex-direction: column; gap: 16px;
+    &.gap-0{ gap: 0;}
+    li{
+      position: relative; padding-left: 15px;
+      &::before{
+        content: ""; position: absolute; left: 0; top: 10px; width: 4px; height: 4px; background-color: #000; border-radius: 50%;
+      }
+      @include media-breakpoint-down(lg){
+        font-size: 15px;
+      }
+    }
   }
 }
 .oracle-shadow{
@@ -151,6 +188,7 @@
     }
   }
 }
+
 .product-tab-content{
   .table{
     margin: 50px 0;
@@ -179,12 +217,25 @@
        font-size: 12px;
       }
     }
+    >ul{
+      li{
+        font-size: 16px; color: #666;
+          @include media-breakpoint-down(lg){
+            font-size: 12px;
+          }
+        &::before{
+          content: none;
+        }
+      }
+    }
   }
 }
 
 .badge-content{
   margin-bottom: 40px;
-  
+  &.badge-content{
+    margin-bottom: 100px;
+  }
   &.flex{ 
     display: flex; align-items: center; justify-content: space-between;
     .badge-list{
@@ -192,6 +243,27 @@
     }
   }
   &:last-child{margin-bottom: 0;}
+  &.sub{
+    .content{
+      margin-top: 32px;
+      @include media-breakpoint-down(lg){
+        margin-top: 24px;
+      }
+    }
+    .product-intro__subtitle{
+      font-size: 20px; font-weight: 700; line-height: 32px;
+      @include media-breakpoint-down(lg){
+        font-size: 16px;
+      }
+    }
+    .badge-list{
+      margin-top: 16px;
+      @include media-breakpoint-down(lg){
+        margin-top: 8px;
+      }
+    }
+
+  }
   .badge-list{
     width: 80%; margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px;
     .badge{
@@ -203,15 +275,229 @@
       .badge{ font-size: 14px;}
     }
   }
+  .operating-environment{
+    display: flex; gap: 12px; margin-top: 32px;
+    @include media-breakpoint-down(lg){
+      flex-direction: column;
+    }
+    &__box{
+      &.w-70{ 
+        width: 70%;
+      }
+      &.w-30{ 
+        width: 30%;
+      }
+      @include media-breakpoint-down(lg){
+        &.w-70{ 
+          width: 100%;
+        }
+        &.w-30{ 
+          width: 100%;
+        }
+      }
+    }
+    &__title{
+      font-size: 18px; font-weight: 700; padding: 4px 32px; background-color: #eee; border-radius: 16px 16px 0 0;
+      @include media-breakpoint-down(lg){
+        font-size: 16px; padding: 4px 16px;
+      }
+    }
+    &__desc{
+      height:100%; padding: 35px 32px;  display: flex; align-items: center; gap: 62px; background-color: #f7f7f7; border-radius: 0 0 16px 16px;
+      @include media-breakpoint-down(lg){
+        flex-direction: column; gap: 30px; align-items: flex-start; padding: 16px; font-size: 14px;
+      }
+    }
+    .environment-title{
+      font-weight: 700; margin-bottom: 10px;
+    }
+  }
 }
 
 // log-catch
+.product-flex{
+  @include media-breakpoint-down(lg){
+    .row{ gap: 40px;}
+    .od-1{ order: 1;}
+    .od-2{ order: 2;}
+  }
+}
+
 .dot-border-list{
   display: flex; flex-flow: wrap; gap: 24px; margin: 40px 0 60px;
+  @include media-breakpoint-down(lg){
+    gap: 12px;
+  }
   .dot-border{
     width: calc(20% - 20px); height: 190px; padding: 24px 16px; display: flex; flex-direction: column; gap: 16px; border: 1px dotted $primary; border-radius: 24px;
     .desc{
       color: #000; text-align: center; line-height: 160%
+    }
+    @include media-breakpoint-down(lg){
+      width: calc(50% - 12px); height: 156px; padding: 16px 12px;
+      .img{
+        img{ width: 40px; height: 40px;}
+      }
+      .desc{ font-size: 14px;}
+    }
+  }
+}
+.logcatch-shadow{
+  display: flex; flex-wrap: wrap; gap: 32px;
+  @include media-breakpoint-down(lg){
+    gap: 16px;
+  }
+  .shadow-box{
+    width: calc(33.3% - 21px); min-height: 340px;
+    @include media-breakpoint-down(lg){
+      width: 100%; min-height: 230px;
+    }
+  }
+}
+.text-box{
+  .product-intro__list{
+    margin-top: 24px;
+    ul{
+      li{
+        position: relative; padding-left: 15px;
+        &::before{
+          content: ""; position: absolute; left: 0; top: 10px; width: 4px; height: 4px; background-color: #000; border-radius: 50%;
+        }
+        @include media-breakpoint-down(lg){
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+.dotted-graph{
+  display: flex; gap: 40px; margin-top: 40px;
+  @include media-breakpoint-down(lg){
+   gap: 25px;
+  }
+  li{
+    width: 97px; height: 97px; border-radius: 50%; border: 1px dotted $primary;
+    display: flex; align-items: center; justify-content: center; font-weight: 700;line-height: 140%; color: $primary; text-align: center; position: relative;
+    &::after{
+      content:""; width: 39px; border-top: 1px dotted $primary; position: absolute; right: -40px; top: 50%; transform:translateY(-50%);
+    }
+    &:last-child{
+      &::after{content:none;}
+    }
+    @include media-breakpoint-down(lg){
+      width: 62px; height: 62px; font-size: 13px; 
+      &::after{
+        width: 24px; right: -25px;
+      } 
+    }
+  }
+}
+
+// chakra max
+.features-list{
+  .features-box{
+    position: relative; width: 75%; margin-top: 84px; background-color: #fff;
+    @include media-breakpoint-down(lg){
+      width: 100%; margin-top: 100px;
+    }
+    &.mirror{
+      margin-left: auto;
+      .num{
+        left: inherit; right: 0;
+      }
+    }
+    .num{
+      position: absolute; top: -65px; left: -25px; z-index: -1;
+      @include media-breakpoint-down(lg){
+        left: 0;
+      }
+    }
+    .title{
+      font-size: 24px; font-weight: 700; line-height: 160%;
+      @include media-breakpoint-down(lg){
+        font-size: 18px;
+      }
+    }
+    .desc{
+      font-size: 18px; line-height: 160%; margin-top: 16px;
+      @include media-breakpoint-down(lg){
+        font-size: 14px;
+      }
+    }
+    .product-intro__list{
+      margin-top: 16px;
+      ul{
+        li{
+          position: relative; padding-left: 15px;
+          &::before{
+            content: ""; position: absolute; left: 0; top: 10px; width: 4px; height: 4px; background-color: #000; border-radius: 50%;
+          }
+          @include media-breakpoint-down(lg){
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Orange Ade
+
+
+//Trusted Orange
+.trusted-section{
+  .nav-tabs{
+    margin-top: 60px;
+    @include media-breakpoint-down(lg){
+      margin-top: 30px;
+    }
+  }
+  .tab-content__box{
+    display: flex; gap: 24px;margin-top: 60px;
+    @include media-breakpoint-down(lg){
+      margin-top: 25px;
+    }
+  }
+  .tab-content__list{
+    margin-top: 24px;
+    .list-title{
+      font-size: 18px; font-weight: 700; line-height: 160%; color: #000;
+      @include media-breakpoint-down(lg){
+        font-size: 16px;
+      }
+    }
+    ul{
+      margin-top: 16px;
+      li{
+        padding-left: 10px; position: relative; color: #000; line-height: 160%;
+        &::before{
+          content: ""; position: absolute; left: 0; top: 10px; width: 4px; height: 4px; background-color: #000; border-radius: 50%;
+        }
+        @include media-breakpoint-down(lg){
+          font-size: 14px;
+        }
+      }  
+    }
+  }
+}
+
+//Peta SQL
+
+.peta-shadow{
+  display: flex; flex-wrap: wrap; gap: 32px; margin-top: 60px;
+  @include media-breakpoint-down(lg){
+    gap: 16px; margin-top: 30px;
+  }
+  .shadow-box{
+    width: calc(20% - 26px); min-height: 240px; padding: 32px;
+    @include media-breakpoint-down(lg){
+      width: 100%; min-height: 130px;
+    }
+    .desc{
+      font-size: 16px; font-weight: 700;
+      @include media-breakpoint-down(lg){
+        font-size: 14px;
+      }
     }
   }
 }
