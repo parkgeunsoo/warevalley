@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/html/_include/_head.html')
+  </head>
+
+  <body>
+    <div id="wrap">
+      @@include('@@webRoot/html/_include/_header.html')
+      <div id="layout">
+        <main id="main">
+          <div class="dep2 container">
+            <ul>
+                 <li><a href="@@webRoot/html/product/orange.html">Orange</a></li>
+              <li><a href="@@webRoot/html/product/log-catch.html">Log Catch</a></li>
+              <li><a href="@@webRoot/html/product/chakra-max.html" class="active">Chakra Max</a></li>
+              <li><a href="@@webRoot/html/product/orange-ade.html">Orange Ade</a></li>
+              <li><a href="@@webRoot/html/product/trusted-orange.html">Trusted Orange</a></li>
+              <li><a href="@@webRoot/html/product/petasql.html">PetaSQL</a></li>
+            </ul>
+          </div>
+          <section class="product-intro-section main-visual-head">
+            <div class="container">
+              <div class="visual-head">
+                <div class="visual-head__content">
+                  <p class="title">Chakra Max</p>
+                  <p class="desc">합리적이고 진보된 정보 보안 솔루션</p>
+                  <p class="txt">Chakra Max는 인프라 통합 보안 플랫폼으로 데이터베이스 접근제어(DAC), 시스템 접근제어(SAC), 통합 계정관리(IAM) 각각의 솔루션을 유기적으로 결합하여 일원화된 보안 정책과 실용적인 관리 체계를 제공합니다. </p>
+                  
+                  <div class="dashed-tab">
+                    <div class="main-tab">
+                      <a href="@@webRoot/html/product/chakra-max.html" class="btn ">Chakra Max</a>
+                    </div>
+                    <div class="sub-tab">
+                      <a href="@@webRoot/html/product/chakra-max-db.html" class="btn ">DB 접근제어</a>
+                      <a href="@@webRoot/html/product/chakra-max-system.html" class="btn">시스템 접근제어</a>
+                      <a href="@@webRoot/html/product/chakra-max-management.html" class="btn active">통합계정관리</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="visual-img">
+                  <img src="@@webRoot/assets/images/chakra-max-management-01.svg" alt="orange">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- section1 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-6 od-2">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/chakra-max-management-02.svg" alt="Chakra Max는 DAC, SAC, IAM 기능을 통합하여 하나의 인터페이스로 제공함으로써 기대 이상의 시너지를 제공">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 od-1">
+                  <div class="text-box">
+                    <p class="product-intro__title">계정 통합 관리 및 계정 정책 일원화로<br> 보안성 강화 효과</p>
+                    <div class="product-intro__list">
+                      <ul class="gap-6">
+                        <li>계정 수집 및 통합 관리</li>
+                        <li>불법 계정 자동 탐지</li>
+                        <li>계정 표준화 정책</li>
+                        <li>계정 및 패스워드 탈취 방지</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section2 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                  <div class="text-box">
+                    <p class="product-intro__title">계정 및 패스워드 자동화 관리로<br> 업무 효율성 향상 효과</p>
+                    <div class="product-intro__list">
+                      <ul class="gap-6">
+                        <li>계정 Life-Cycle 관리</li>
+                        <li>패스워드 자동 관리</li>
+                        <li>사용자 권한 자동 맵핑</li>
+                        <li>관리 인력 및 시간 절감</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/chakra-max-management-03.svg" alt="로그 추적 관리 SIMPLE & COMPLEX">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="product-intro-section">
+            <div class="container">
+              <p class="product-intro__title width-text text-center">
+                주요 기능 
+              </p>
+              <div class="logcatch-shadow">
+                <div class="shadow-box">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/management-icon-01.svg" alt="Life-Cycle 관리 아이콘">
+                  </div>
+                  <p class="title">Life-Cycle 관리</p>
+                  <ul>
+                    <li>이기종 OS 및 DBMS의 계정
+                      자동 수집 및 동기화</li>
+                    <li>계정의 생성/변경/삭제 등 상태 변경 관리</li>
+                  </ul>
+                </div>
+                <div class="shadow-box">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/management-icon-02.svg" alt="패스워드 관리 아이콘">
+                  </div>
+                  <p class="title">패스워드 관리</p>
+                  <ul>
+                    <li>보안 규칙 관리</li>
+                    <li>패스워드 관리 대장 제공</li>
+                    <li>패스워드 변경 이력 관리</li>
+                  </ul>
+                </div>
+                <div class="shadow-box">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/management-icon-03.svg" alt="계정 정책 관리 아이콘">
+                  </div>
+                  <p class="title">계정 정책 관리</p>
+                  <ul>
+                    <li>이기종 장비 통합 정책 관리</li>
+                    <li>속성 및 유형별 정책 관리</li>
+                   </ul>
+                </div>
+                <div class="shadow-box">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/management-icon-04.svg" alt="계정 이력 관리 아이콘">
+                  </div>
+                  <p class="title">계정 이력 관리</p>
+                  <ul>
+                    <li>이기종 장비 통합 정책 관리</li>
+                    <li>속성 및 유형별 정책 관리</li>
+                  </ul>
+                </div>
+                <div class="shadow-box">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/management-icon-05.svg" alt="편의 기능 아이콘">
+                  </div>
+                  <p class="title">편의 기능</p>
+                  <ul>
+                    <li>계정 상태 변경 일괄 작업</li>
+                    <li>계정 일괄 등록 관리</li>
+                  </ul>
+                </div>
+                <div class="shadow-box">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/management-icon-06.svg" alt="불법 계정 관리 아이콘">
+                  </div>
+                  <p class="title">불법 계정 관리</p>
+                  <ul>
+                    <li>Ghost, 휴면, 만료 등 불법 계정 관리</li>
+                    <li>불법 계정 이력 보고서 제공</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="product-intro-section trusted-section">
+            <div class="container">
+              <p class="product-intro__title text-center">
+                기능소개
+              </p>
+              <div class="scroll-tab">
+                <ul class="nav nav-tabs mypage" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="type-tab1" data-bs-toggle="tab" data-bs-target="#tab1">Life-Cycle 관리</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="type-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button">패스워드 관리</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="type-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button">계정 정책 관리</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="type-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button">불법 계정 관리</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="type-tab5" data-bs-toggle="tab" data-bs-target="#tab5" type="button">편의 기능</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-tab-content">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="tab1" role="tabpanel" aria-labelledby="type-tab1">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-lg-8">
+                        <div class="tab-content__box text-center justify-content-center">
+                          <p>별도의 agent 설치 없이 데이터베이스 · 시스템의 모든 계정 정보를 자동으로 수집하고,<br> 수집된 계정에 대한 생성/변경/삭제 등의 프로비저닝 기능을 지원합니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/chakra-max-management-04.svg" alt="Life-Cycle 관리">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="type-tab2">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-lg-8">
+                        <div class="tab-content__box text-center justify-content-center">
+                          <p>영문+숫자 혼합 · 특수문자 등 다양한 생성 규칙을 통한 일원화된 패스워드 관리 정책을 제공하고,<br> 패스워드 생명 주기에 따라 자동 변경 및 패스워드 이력 관리 기능을 지원합니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/chakra-max-management-05.svg" alt="패스워드 관리">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="type-tab3">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-lg-8">
+                        <div class="tab-content__box text-center justify-content-center">
+                          <p>이기종 장비에 산재되어 있는 모든 계정을 수집 · 취합하여 통합 정책 관리를 지원합니다.<br>
+                            또한 계정의 유형별 · 속성별 관리 정책 수립으로 효율적인 관리가 가능합니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/chakra-max-management-06.svg" alt="계정 정책 관리">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="type-tab4">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-lg-8">
+                        <div class="tab-content__box text-center justify-content-center">
+                          <p>사용자 계정의 유효성을 정기적으로 검사하여 위협이 될 수 있는 불법 생성 · 삭제된 계정을 자동으로 탐지합니다.<br> 또한 불법 계정에 대한 탐지 이력을 별도로 기록하여 감사 보고서를 제공합니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/chakra-max-management-07.svg" alt="불법 계정 관리">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="type-tab5">
+                    <div class="row justify-content-center">
+                      <div class="col-12 col-lg-8">
+                        <div class="tab-content__box text-center justify-content-center">
+                          <p>SYSTEM · 데이터베이스 일괄 등록 기능 및 프로비저닝 검증 플래그를 제공하여 다수의 SYSTEM을 안정적으로<br> 관리할 수 있습니다. 또한 수집된 계정의 일괄 속성 관리 기능으로 업무 효율을 높일 수 있습니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/chakra-max-management-08.svg" alt="편의 기능">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </main>
+      </div>
+      @@include('@@webRoot/html/_include/_footer.html')
+    </div>
+    <script>
+    </script>
+  </body>
+</html>
+
+
+
+
