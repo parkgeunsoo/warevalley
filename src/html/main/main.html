@@ -117,7 +117,7 @@
           </div>
           <!-- section2 -->
           <div class="section section-product">
-            <div class=" product-wrap">
+            <div class="product-wrap">
               <div class="main-desc">
                 <div class="">
                   <p class="sub-title section-desc-sub5">Product</p>
@@ -592,10 +592,10 @@
                     함께
                   </p>
                 </div>
-                <div class="link">
+                <!-- <div class="link">
                   <a href="https://blog.naver.com/warevalley_data" class="link-move blog"  target="_blank">Warevalley 공식 <span>Blog</span></a>
                   <a href="https://www.youtube.com/channel/UCxyTBwV8mkzpoBMIwsy_EZw" target="_blank" class="link-move youtube">Warevalley 공식 <span>Youtube</span></a>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="contact-img"></div>
@@ -723,10 +723,13 @@
               gsap.to('.section-desc-img', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.5, duration: 1 })
               gsap.to('.section-community .swiper', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.3, })
               gsap.to('.btns', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.2, })
+              gsap.to('.swiper-button-prev', { opacity: 1, y: -50 + "%", ease: 'power1.out', delay: 0.5, })
+              gsap.to('.swiper-button-next', { opacity: 1, y: -50 + "%", ease: 'power1.out', delay: 0.5, })
             }
             if( index == 10){
               gsap.to('.section-desc-sub4', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
               gsap.to('.section-desc-title4', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.2, })
+              gsap.to('.partners-member', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.3, })
             }
             if( index == 11){
               gsap.to('.section-desc-sub6', { opacity: 1, y: 0, ease: 'power1.out', delay: 0.1, })
@@ -770,7 +773,6 @@
           slidesToScroll: 1,
           arrows: false,
           fade: false,
-          dots: true,
           autoplay: false,
           speed: 500,
           infinite: false,

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/html/_include/_head.html')
+  </head>
+
+  <body>
+    <div id="wrap">
+      @@include('@@webRoot/html/_include/_header.html')
+      <div id="layout">
+        <main id="main">
+          <div class="dep2 container">
+            <ul>
+              <li><a href="@@webRoot/html/product/orange.html">Orange</a></li>
+              <li><a href="@@webRoot/html/product/log-catch.html" >Log Catch</a></li>
+              <li><a href="@@webRoot/html/product/chakra-max.html" >Chakra Max</a></li>
+              <li><a href="@@webRoot/html/product/orange-ade.html" class="active">Orange Ade</a></li>
+              <li><a href="@@webRoot/html/product/trusted-orange.html">Trusted Orange</a></li>
+              <li><a href="@@webRoot/html/product/peta-sql.html">PetaSQL</a></li>
+            </ul>
+          </div>
+          <section class="product-intro-section main-visual-head">
+            <div class="container">
+              <div class="visual-head">
+                <div class="visual-head__content">
+                  <p class="title">Orange Ade</p>
+                  <p class="desc">데이터베이스 종합 관리 솔루션</p>
+                  <div class="visual-head__list">
+                    <p class="list-title">데이터베이스 종합 관리 솔루션</p>
+                    <p class="txt mt-1">오렌지는 데이터베이스 관리 업무를 단순화하고 개발 속도를 높여 생산성을 향상시키는 데이터베이스 개발 및 관리 솔루션입니다.</p>
+                  </div>
+                  <div class="visual-head__list">
+                    <p class="list-title">개발 생산성 향상</p>
+                    <p class="txt mt-1">데이터베이스 개발에 필요한 다양한 도구와 실효적인 편의 기능을 갖추었습니다. 비즈니스 요구사항 충족을 위한 설계, 개발, 디버깅, 튜닝에 이르는 전반적인 업무 싸이클을 단축시키고 스마트한 업무 환경을 구성하십시오.</p>
+                  </div>
+                  <div class="visual-head__list">
+                    <p class="list-title">단일 프로그램으로 동시에 다양한 DBMS 지원</p>
+                  </div>
+                  <div class="visual-head__list">
+                    <p class="list-title">ODBC 뿐만 아니라 JDBC 접속 지원</p>
+                  </div>
+                </div>
+                <div class="visual-img ade">
+                  <img src="@@webRoot/assets/images/orange-ade-01.svg" alt="orange ade">
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section class="product-intro-section trusted-section">
+            <div class="container">
+              <p class="product-intro__title text-center">
+                Orange Ade 3.0
+              </p>
+              <div class="scroll-tab">
+                <ul class="nav nav-tabs mypage" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="type-tab1" data-bs-toggle="tab" data-bs-target="#tab1">Orange Ade3.0</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="type-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button">Orange Ade3.0 Toolset</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="type-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button">Orange Ade3.0 DB Set</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-tab-content">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="tab1" role="tabpanel" aria-labelledby="type-tab1">
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/orange-ade-02.svg" alt="Orange Ade3.0">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="type-tab2">
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/orange-ade-03.svg" alt="Orange Ade3.0 Toolset">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="type-tab3">
+                    <div class="slide-img-box chakra">
+                      <img src="@@webRoot/assets/images/orange-ade-04.svg" alt="Orange Ade3.0 DB Set">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section1 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-6 od-2">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-05.svg" alt="ODBC + JDBC 접속 지원">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 od-1">
+                  <div class="text-box">
+                    <p class="product-intro__title">ODBC + JDBC 접속 지원</p>
+                    <div class="product-intro__list">
+                      <ul class="gap-6">
+                        <li>ODBC 뿐만 아니라 JDBC를 통한 접속을 지원</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section2 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                  <div class="text-box">
+                    <p class="product-intro__title">Schema Browser</p>
+                    <div class="product-intro__list">
+                      <ul class="gap-6">
+                        <li>데이터베이스에 존재하는 객체 정보를 사용자 별 트리 형태로 일목요연하게 표현</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-06.svg" alt="Schema Browser">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section3 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-6 od-2">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-07.svg" alt="SQL Tool">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 od-1">
+                  <div class="text-box">
+                    <p class="product-intro__title">SQL Tool</p>
+                    <div class="product-intro__list">
+                      <ul class="gap-6">
+                        <li>다수의 SQL 문장을 일괄 또는 순차 실행하거나 특정 SQL 만을 선택적으로 실행할 수 있고 편집 모드 실행을 통하여 실행 결과를 직접 수정 기능 제공</li>
+                      </ul>
+                    </div>
+                    <div class="product-intro__list mt-4">
+                      <ul class="gap-6">
+                        <li>여러 SQL의 다양한 실행 옵션</li>
+                        <li>Workspace 기능</li>
+                        <li>SQL 의 저장, 불러오기, 실행기능</li>
+                        <li>SQL 실행결과 GRID 형태, Text, Excel 형태 파일로 출력 및 정렬기능</li>
+                        <li>미려한 SQL 포맷기능(SQL Formatter)</li>
+                        <li>Fetch As Need 기능</li>
+                        <li>자동완성 기능 (Hive 제외)</li>
+                        <li>Syntax Highlight 기능</li>
+                        <li>다양하고 편리한 Edit 기능</li>
+                        <li>SQL 을 Visual Basic, Power Builder, C/C++, Java Delphi, Perl, PHP 코드로 변환 및 역 변환 기능 제공</li>
+                        <li>SQL History 기능. Cached SQL, Named Script 제공</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section4 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                  <div class="text-box">
+                    <p class="product-intro__title">Table Editor</p>
+                    <div class="product-intro__list mt-4">
+                      <ul class="gap-6">
+                        <li>테이블 데이터의 편집(Insert, Update, Delete)과 조건에 의한 일부 데이터 조회 및 저장 기능을 제공합니다. 변경된 Grid 셀은 각각의 변경 타입에 따라 색상으로 구분되어 Commit 또는 Rollback 작업이 직관적이고 편리합니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-08.svg" alt="Table Editor">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section5 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-6 od-2">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-09.svg" alt="Description Tool">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 od-1">
+                  <div class="text-box">
+                    <p class="product-intro__title">Description Tool</p>
+                    <div class="product-intro__list mt-4">
+                      <ul class="gap-6">
+                        <li>데이터베이스 객체의 상세 정보(객체 생성 스크립트, 기본 속성, Column, Index 정보, Trigger 정보 등)를 제공</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section6 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                  <div class="text-box">
+                    <p class="product-intro__title">Database Information</p>
+                    <div class="product-intro__list mt-4">
+                      <ul class="gap-6">
+                        <li>데이터베이스 기본 설정 정보를 제공하여 데이터베이스의 각종 운영 정보 및 Parameter 운영환경 확인</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-10.svg" alt="Database Information">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>          
+
+          <!-- section7 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-6 od-2">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-11.svg" alt="Query Builder">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 od-1">
+                  <div class="text-box">
+                    <p class="product-intro__title">Query Builder</p>
+                    <div class="product-intro__list mt-4">
+                      <ul class="gap-6">
+                        <li>GUI환경에서 마우스 조작만으로 오브젝트의 추가 및 오브젝트들 간의 관계 설정을 통해 SQL 문장을 생성, 편집을 할 수 있는 기능을 제공</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- section8 -->
+          <section class="product-intro-section">
+            <div class="container product-flex">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                  <div class="text-box">
+                    <p class="product-intro__title">Load Tool / Unload Tool</p>
+                    <div class="product-intro__list mt-4">
+                      <ul class="gap-6">
+                        <li>테이블을 선택하거나 쿼리 작성을 통하여 txt, csv, xls, xlsx,json, ldrd 등 다양한 포맷의 파일로 데이터를 내려받거나 외부 파일로부터 테이블에 데이터를 저장할 수 있는 기능을 제공</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1">
+                  <div class="img">
+                    <img src="@@webRoot/assets/images/orange-ade-12.svg" alt="Load Tool / Unload Tool">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="product-intro-section">
+            <div class="container">
+              <div class="badge-content flex">
+                <div>
+                  <p class="product-intro__title">운영환경</p>
+                  <div class="badge-list">
+                    <span class="badge">Windows 7/8/8.1/10/11</span>
+                    <span class="badge">Windows Server 2012/2016e</span>
+                  </div>
+                </div>
+                <div class="img">
+                  <img src="@@webRoot/assets/images/orange-img-05.png" alt="운영환경">
+                </div>
+              </div>
+              <div class="badge-content sub">
+                <p class="product-intro__title">지원환경(DBMS)</p>
+                <div class="badge-list">
+                  <span class="badge">Oracle 11.2 이상</span>
+                  <span class="badge">Tibero 5 이상</span>
+                  <span class="badge">Altibase 6 이상</span>
+                  <span class="badge">IBM DB2 10.5 이상</span>
+                  <span class="badge">SQL Server 2012 sp3이상</span>
+                  <span class="badge">Cubrid 8.2 이상</span>
+                  <span class="badge">PostgreSQL 9.5 이상</span>
+                  <span class="badge">Greenplum 5 이상</span>
+                  <span class="badge">PPAS 9.5 이상</span>
+                  <span class="badge">Teradata 16 이상</span>
+                  <span class="badge">SAP HANA 2 이상</span>
+                  <span class="badge">SunDB 2</span>
+                  <span class="badge">Apache hive</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      @@include('@@webRoot/html/_include/_footer.html')
+    </div>
+    <script>
+    </script>
+  </body>
+</html>
+
+

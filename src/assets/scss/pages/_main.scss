@@ -40,6 +40,7 @@
     }
     @media screen and (max-width: 1560px) {
       .text{ left: 0;}
+      .img{width: 70%;}
     }
     @include media-breakpoint-down(xxl){
       .text{ top: -30px; left: 50px;}
@@ -415,8 +416,8 @@
     }
   }
   .swiper-button-prev{ 
-    width: 32px; height: 32px;background-size:cover; background-image: url('../images/community-slide-prev.svg'); left: -20px;  top: 60%;
-    transform: translateY(-50%);
+    width: 32px; height: 32px;background-size:cover; background-image: url('../images/community-slide-prev.svg'); left: -20px; top: 60%;
+    opacity: 0; transform: translateY(40px);
     &::after{content: none;}
     @include media-breakpoint-down(xl){
       display: none;
@@ -424,7 +425,7 @@
   }
   .swiper-button-next{
     width: 32px; height: 32px; background-size:cover; background-image: url('../images/community-slide-next.svg'); right: -20px; top: 60%;
-    transform: translateY(-50%);
+    opacity: 0; transform: translateY(40px);
     &::after{content: none;}
     @include media-breakpoint-down(xl){
       display: none;
@@ -473,7 +474,7 @@
     }
   }
   .partners-member{
-    position: relative; display: flex; flex-direction: column; gap: 25px;
+    position: relative; display: flex; flex-direction: column; gap: 25px; opacity: 0; transform: translateY(40px);
     @include media-breakpoint-down(xl){
       gap: 13px;
     }
