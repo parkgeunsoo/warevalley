@@ -28,7 +28,7 @@ html.bg-gray{
 
   // 전페이지 공용 ---
   .top-head{
-    display: flex; align-items: center; justify-content: center;padding: 70px 83px 0 77px;margin-bottom:80px;
+    display: flex; align-items: center; justify-content: center;padding: 70px 80px 0;margin-bottom:80px;
     .sign-title{
       font-size: 32px;font-weight: 700;line-height: 160%;text-transform: uppercase;
     }
@@ -56,7 +56,7 @@ html.bg-gray{
       .form-check-label{color:$gray-6;}
       }
     @include media-breakpoint-up(lg){
-      padding: 0 83px 74px 77px;
+      padding: 0 80px 80px;
       .save-login{
         margin-top: 14px;
       }
@@ -114,26 +114,30 @@ html.bg-gray{
     }
     .btn-login{margin-top:40px;width:100%;}
     .info-text{
-      display:flex;align-items:center;margin-top:40px;text-align:center;flex-direction:column;row-gap:8px;padding:12px;font-size:14px;background-color:$bg-color;
-      strong{font-weight:700;color:$gray-6;font-size: 16px;}
-      &.find-text{margin-bottom:40px;
-      strong{color:#000;}
+      display:flex;align-items:center;margin:40px 0;text-align:center;flex-direction:column;row-gap:8px;padding:12px;font-size:14px;border-radius: 8px;background: rgba(0, 35, 131, 0.04);
+      strong{font-size: 16px;font-weight:700;}
+      &.login-text{background-color:$bg-color;border-radius:0;margin:40px 0 0;
+        strong{color:$gray-6;}
       }
-      &.success-text{margin-bottom:40px;color:$dark;font-size:16px;
-        strong{font-size:18px;}
+      &.success-text{display:block;padding:32px 12px;margin:60px 0 0;color:$dark;font-size:16px;
+        strong{font-size:18px;color:$primary;font-weight:400;}
         }
     }
+  }
+  // ID 찾기 완료
+  .find-result{
+    text-align: center; margin-top:-40px;
+    .icon-find{width:160px;height:160px;background:url("../images/icon-find.svg");}
+    .success-text{margin:60px 0 40px;}
+    .login-btn{margin-top:40px;}
   }
 }
 
 
 
 
-// ID 찾기 완료
-.find-result{
-  text-align: center; font-size: 18px; margin: 50px 0px;
-  strong{ font-size: 20px;}
-}
+
+
 
 // 회원가입
 .signup-title{

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap" class="login bg-gray">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div class="sign-container">
+      <div class="content">
+        <div class="top-head">
+          <p class="sign-title">비밀번호 재설정 완료</p>
+        </div>
+        <div class="sign-content find-result">
+          <i class="icon-find"></i>  
+          <div class="info-text success-text">
+            입력비밀번호를 재설정 완료하였습니다.
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn login-btn btn-dark">로그인 페이지로 이동</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('html').addClass('bg-gray');
+  })
+</script>
+
+</html>
