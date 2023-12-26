@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div id="layout">
+      <main id="main">
+        <div class="sub-content">
+          <div class="container">
+            <div class="error-page">
+              <div class="img">
+                <img src="@@webRoot/assets/images/error-500.svg" alt="500에러">
+              </div>
+              <p class="title">500 Error</p>
+              <p class="desc">
+                죄송합니다.<br>
+                요청하신 페이지에 오류가 발생하였습니다.
+              </p>
+              <p class="example">
+                방문하시려는 페이지의 주소가 잘못 입력되었거나,<br>
+                페이지의 주소가 변경 혹은 삭제되어 요청하신  <br>
+                페이지를 찾을 수 없습니다.
+              </p>
+              <button type="button" onclick="window.history.back(-1)" class="btn btn-lg btn-dark">Go Back</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    @@include('@@webRoot/html/_include/_footer.html')
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+
+</html>

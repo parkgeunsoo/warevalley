@@ -491,7 +491,7 @@
       gap: 6px;
     }
     .btn{ 
-      width: calc(33.3% - 8px); font-size: 18px; font-weight: 700; line-height: 160%; text-align: center; border: 1px dashed #000; padding: 11px 15px; border-radius: 8px;
+      width: calc(33.3% - 8px); font-size: 18px; font-weight: 700; line-height: 160%; text-align: center; border: 1px dashed #000; padding: 11px 15px; border-radius: 8px; line-height: 1.1;
       @include media-breakpoint-down(lg){
         font-size: 12px; padding: 8px 4px; width: calc(33.3% - 4px);
       }

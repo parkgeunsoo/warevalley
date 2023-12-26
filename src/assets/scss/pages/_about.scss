@@ -145,32 +145,23 @@
     }
   }
  
-  .welfare-list-box{
-    .welfare-list{
-      display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin: 0 auto;max-width:1016px;
-      .item{padding:32px;border-radius:24px;background-color: $bg-color;
-        &:nth-child(-n+3){width:calc((100% - 24px)/2);}
-        &:nth-child(n+3):nth-child(-n+8){width:calc((100% - 48px)/3);}
-        .img{margin-bottom:8px;text-align: right;}
-        .text-box{
-          display:flex;flex-direction:column;row-gap:8px;
-          strong{display:inline-block;color:#000;}
-          .text{
-            margin-top:4px;
-            p{
-              color:$gray-6;text-indent: -21px;margin-left: 21px;
-              &::before{display:inline-block;width:3px;height:3px;border-radius:100%;background-color:$gray-6;content:'';vertical-align: middle;margin: 0 8px 0 10px;}
-            }
+
+    .item{
+      padding:32px 24px;border-radius:24px;background-color: $bg-color;margin-bottom: 20px;
+      .img{margin-bottom:8px;text-align: right;}
+      .text-box{
+        display:flex;flex-direction:column;row-gap:8px;
+        strong{font-size: 20px; display:inline-block;color:#000; }
+        .text{
+          margin-top:4px;
+          p{
+            color:$gray-6;
           }
         }
       }
-    }
-    @include media-breakpoint-down(md){
-      overflow-x: scroll;-ms-overflow-style: none;scrollbar-width: none;
-      &::-webkit-scrollbar{display:none;}
-      .welfare-list{
-        column-gap:16px;width:auto;white-space: nowrap;overflow-x: auto;justify-content: start;flex-wrap: nowrap;
-        .item{padding:12px 24px;border-radius:18.268px;width:242px !important;height:320px;flex: 0 0 auto;
+      @include media-breakpoint-down(md){
+        .item{
+          padding:12px 24px;border-radius:18.268px;width:242px !important;height:320px;flex: 0 0 auto;
           .img{
             img{width: 90px;height: 90px;}
           }
@@ -179,14 +170,12 @@
             .text{
               margin-top:4px;
               p{
-                font-size: 12px;text-indent: -21px;margin-left: 21px;white-space: initial;
-                &::before{width:3px;height:3px;border-radius:100%;margin: 0 8px 0 10px;}
+                font-size: 12px;
               }
             }
-          }
+          } 
         }
       }
-
     }
   }
   
@@ -229,5 +218,147 @@
   .icon-employ-point{width:12px;height:12px;background:url("../images/icon-employ-point.png") ;}
   .icon-q{width:18px;height:19px;margin:4px 12px 0 0;background:url("../images/icon-q.svg");}
   .icon-emoji{width:40px;height:40px;background:url("../images/icon-emoji.svg");background-size: 100%;}
-  
+
+
+
+.history-wrap{
+  position: relative; height: 700px;
+  @include media-breakpoint-down(md){
+    height: 500px;
+  }
+  .years{
+    position: sticky; top: 0; flex-shrink: 0;
+    @include media-breakpoint-down(xl){
+      position: static; margin-bottom: 100px;
+    }
+    @include media-breakpoint-down(md){
+      margin-bottom: 50px;
+    }
+    .company{
+      display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; letter-spacing: 1.2px; margin-bottom: 32px;
+      @include media-breakpoint-down(xl){
+        margin-bottom: 16px;
+      }
+    }
+    .desc{
+      font-size: 40px; line-height: 130%; margin-bottom: 40px; 
+      @include media-breakpoint-down(md){
+        font-size: 24px; margin-bottom: 16px; 
+      }
+    }
+    
+  }
+  .history-list{
+    width: 57%; height: 100%; overflow: auto; position: absolute; top: 0; right: 0; 
+    @include media-breakpoint-down(xl){
+      width: 100%; position: static;
+    }
+    /* 아래의 모든 코드는 영역::코드로 사용 */
+    &::-webkit-scrollbar {
+      width: 6px;  /* 스크롤바의 너비 */
+      @include media-breakpoint-down(md){
+        width: 4px;
+      }
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 15%; /* 스크롤바의 길이 */
+      background: #222; /* 스크롤바의 색상 */
+      border-radius: 24px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.10);  /*스크롤바 뒷 배경 색상*/
+    }
+    .history-content{
+      display: flex; gap: 23px; padding-top: 40px; padding-right: 25px;
+      @include media-breakpoint-down(xl){
+        gap: 40px;
+      }
+      @include media-breakpoint-down(md){
+        gap: 23px; padding-top: 25px; padding-right: 15px;
+      }
+      .years-txt{
+        font-size: 32px; font-weight: 700; color: $primary; flex-shrink: 0; line-height: 1;
+        @include media-breakpoint-down(md){
+          font-size: 20px;
+        }
+      }
+      &:first-child{
+        padding-top: 0;
+      }
+      ul{
+        display: flex; flex-direction: column; gap: 32px;  border-bottom: 1px solid #eee; padding-bottom: 40px;
+        @include media-breakpoint-down(md){
+          padding-bottom: 25px; gap: 20px;
+        }
+        li{
+          display: flex; 
+          .key{
+            font-size: 18px; font-weight: 700; width: 80px; flex-shrink: 0;
+            @include media-breakpoint-down(md){
+              width: 65px; font-size: 16px;
+            }
+          }
+          .value{
+            font-size: 18px; color: #666;
+            @include media-breakpoint-down(md){
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// location
+.location-section{
+  .box{
+    margin-bottom: 80px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 40px;
+    }
+    .title{
+      font-size: 32px; font-weight: 700; line-height: 160%;
+    }
+    .desc{
+      font-size: 18px; font-weight: 400; line-height: 160%; color: #666; margin-top: 32px;
+    }
+    ul{
+      padding-left: 20px; margin-top: 32px; display: flex; flex-direction: column; gap: 8px;
+      @include media-breakpoint-down(lg){
+        margin-top: 16px;
+      }
+      li{
+        list-style: disc; font-size: 18px; color: #666; line-height: 160%;
+        @include media-breakpoint-down(lg){
+          font-size: 16px;
+        }
+        .second-line{
+          display: inline-block; width: 24px; height: 24px; border-radius: 50%; background-color: #00C62C; color: #fff; font-weight: 700;     display: inline-flex; align-items: center; justify-content: center;    line-height: 1;
+          @include media-breakpoint-down(lg){
+            width: 18px; height: 18px; font-size: 12px;
+          }
+        }
+        .sixth-line{
+          display: inline-block; width: 24px; height: 24px; border-radius: 50%; background-color: #BA814D; color: #fff; font-weight: 700;
+          display: inline-flex; align-items: center; justify-content: center;    line-height: 1;
+          @include media-breakpoint-down(lg){
+            width: 18px; height: 18px; font-size: 12px;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(lg){
+      margin-bottom: 40px;
+      .title{ font-size: 24px; }
+      .desc{ font-size: 16px; }
+    }
+    #map{
+      width: 100%; height: 600px; background-color: #D9D9D9;
+      @include media-breakpoint-down(lg){
+        height: 300px;
+      }
+    }
+  }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  @@include('@@webRoot/html/_include/_head.html')
+</head>
+
+<body>
+  <div id="wrap">
+    @@include('@@webRoot/html/_include/_header.html')
+    <div id="layout">
+      <main id="main">
+        <div class="dep2 container">
+          <ul>
+            <li><a href="../about-us/about-us.html">회사소개</a></li>
+            <li><a href="../about-us/history.html">연혁</a></li>
+            <li><a href="../about-us/certification.html">인증 및 수상</a></li>
+            <li><a href="../about-us/employ.html">인재채용</a></li>
+            <li><a href="../about-us/location.html" class="active">오시는길</a></li>
+          </ul>
+        </div>
+        <div class="sub-content">
+          <div class="content-head bg">
+            <h1 class="top-title">Location </h1>
+            <div class="text">
+              <p>언제 어디서나 더 가까운 곳에서 함께 합니다.</p>
+            </div>
+            <div class="sub-visual" data-aos="fade-up" data-aos-duration="1000">
+              <picture>
+                <source srcset="@@webRoot/assets/images/location-visual-m.svg" media="(max-width: 768px)" />
+                <img src="@@webRoot/assets/images/location-visual.svg" alt="서브 비주얼" />
+              </picture>
+            </div>
+          </div>
+          <div class="container">
+            <div class="location-section">
+              <div class="box" data-aos="fade-up" data-aos-duration="1000">
+                <div class="title">(주)웨어밸리 본사</div>
+                <div class="desc">
+                  (04029) 서울시 마포구 잔다리로 81(서교동, 466-2) 효산빌딩 대표이사 손삼수<br>
+                  Tel. 1660-1675 Fax. 02-743-3023
+                </div>
+              </div>
+              <div class="box" data-aos="fade-up" data-aos-duration="1500">
+                <div class="title">오시는 길</div>
+                <ul>
+                  <li>
+                    지하철 <span class="second-line">2</span> 호선, <span class="sixth-line">6</span> 호선 합정역 2번 출구에서 553m (도보 9분)
+                  </li>
+                  <li>
+                    지하철 <span class="second-line">2</span> 호선 홍대입구역 1번 출구에서 742m (도보 12분)
+                  </li>
+                  <li>
+                    지하철 <span class="sixth-line">6</span> 호선 망원역 1번 출구에서 617m (도보 10분)
+                  </li>
+                </ul>
+              </div>
+              <div class="box">
+                <div id="map">
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    @@include('@@webRoot/html/_include/_footer.html')
+    @@include('@@webRoot/html/_include/_modal.html')
+  </div>
+</body>
+
+</html>
