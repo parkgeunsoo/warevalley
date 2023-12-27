@@ -218,6 +218,9 @@
 }
 // section3
 .section-desc{
+  @include media-breakpoint-down(md){
+    .fp-tableCell{ vertical-align: top !important;}
+  }
   @at-root{
     .main-desc{
       .sub-title{
@@ -308,6 +311,9 @@
 .sectopn-rolling{
   .fp-tableCell{ vertical-align: middle !important;}
 }
+.poligon-wrap{
+  position: relative;z-index: 15;
+}
 .poligon{
   background: linear-gradient(180deg, #82C3FF 21.68%, #3D9CEC 53.71%, #0061B2 96.67%); width: 200px; height: 500px;border-radius: 150px; margin-left: 20%; position: relative; z-index: 15; overflow: hidden;
   @include media-breakpoint-down(xl){
@@ -371,7 +377,8 @@
   100% { transform: translateX(200%); }
 }
 
-.rolling-container{display: flex; overflow: hidden;  position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);}
+.rolling-container{display: flex; overflow: hidden;  position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);
+z-index: 5;}
 .rolling-box{  min-width: auto;  margin-right: 140px;}
 .img-wrap{
   display: flex; gap: 140px;
@@ -610,7 +617,7 @@
   .contact-img{
     width: 30%; height: 544px; background-size: cover; background-image: url('../images/contact-img.png'); background-position: center;
     @include media-breakpoint-down(xl){
-      height: 130px; position: absolute; bottom: 268px; z-index: -1;
+      height: 130px; position: absolute; bottom: 285px; z-index: -1;
     }
   }
   #footer{
