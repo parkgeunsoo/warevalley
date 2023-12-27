@@ -1,6 +1,6 @@
 
 @include media-breakpoint-down(xl){
-  .fp-tableCell{ vertical-align: top !important; padding-top: 70px;}
+  .fp-tableCell{  padding-top: 70px;}
 }
 .section{
   position: relative;
@@ -87,6 +87,21 @@
 }
 // section2
 .section-product{
+  position: relative;
+  &::before{
+    content: ""; background-image: url('../images/figure-01.svg'); background-size: contain; background-position: center; width: 200px; height: 400px; top: 50%; transform: translateY(-50%); position: absolute; display: block;
+    @include media-breakpoint-down(xl){
+     content: none;
+    }
+  }
+  &::after{
+    content: ""; background-image: url('../images/figure-02.svg'); background-size: contain; background-position: center;background-repeat: no-repeat;  width: 348px; height: 800px; top: 50%; transform: translateY(-50%); position: absolute; display: block;
+    right: 0; 
+    z-index: -1;
+    @include media-breakpoint-down(xl){
+     content: none;
+    }
+  }
   .product-wrap{
     display: flex; align-items: center; padding-left: 15%; gap: 100px;
     @include media-breakpoint-down(xl){
@@ -113,7 +128,7 @@
   }
 
   .product-slide{
-    margin-top: 10%;  margin-left: 15%;
+    margin-top: 10%; margin-left: 15%; transform: translateY(50px); opacity: 0;
     @include media-breakpoint-down(xl){
       width: 100%; margin-top: 20px; margin-left: 0; padding-left: 26px;
     }
@@ -294,7 +309,7 @@
   .fp-tableCell{ vertical-align: middle !important;}
 }
 .poligon{
-  background: linear-gradient(180deg, #82C3FF 21.68%, #3D9CEC 53.71%, #0061B2 96.67%); width: 200px; height: 500px;border-radius: 150px; margin-left: 20%; position: relative; z-index: 10; overflow: hidden;
+  background: linear-gradient(180deg, #82C3FF 21.68%, #3D9CEC 53.71%, #0061B2 96.67%); width: 200px; height: 500px;border-radius: 150px; margin-left: 20%; position: relative; z-index: 15; overflow: hidden;
   @include media-breakpoint-down(xl){
     width: 170px; height: 430px; margin-left: 25%;
   }
@@ -563,6 +578,9 @@
 }
 
 .section-contact{
+  .fp-tableCell{
+    vertical-align: top !important;
+  }
   .main-desc{
     position: absolute; width: 100%; display: flex; align-items: flex-start; justify-content: space-between; top: -100px;
     @include media-breakpoint-down(xl){

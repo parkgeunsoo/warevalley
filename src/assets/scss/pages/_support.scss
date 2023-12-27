@@ -6,7 +6,7 @@
   }
   .email-text{
     display:flex;flex-direction:column;row-gap:16px;margin-bottom:216px;
-    .title{font-size: 24px;font-weight: 700;}
+    .title{font-size: 32px;font-weight: 700;}
     p{color:$gray-6;}
   }
   .form-container{
@@ -27,7 +27,7 @@
     }
     .email-text{
       row-gap:8px;margin-bottom:40px;
-      .title{font-size: 16px;}
+      .title{font-size: 24px;}
       p{font-size:14px;}
     }
     .form-container{

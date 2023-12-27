@@ -266,7 +266,10 @@
   &.flex{ 
     display: flex; align-items: center; justify-content: space-between;
     .badge-list{
-      width: 100%;
+      width: 80%;
+    }
+    .img{
+      flex-shrink: 0;
     }
   }
   &:last-child{margin-bottom: 0;}
@@ -292,7 +295,7 @@
 
   }
   .badge-list{
-    width: 80%; margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px;
+    width: 100%; margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px;
     .badge{
       padding: 8px 16px; border-radius: 30px; background-color: #F7F7F7;
       font-size: 16px; line-height: 160%; color: #333;
